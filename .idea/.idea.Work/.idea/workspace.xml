@@ -2,14 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b775748c-78e5-4a6e-a39a-082beed9becd" name="默认的" comment="First submit">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Work/.idea/contentModel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Work/.idea/dictionaries/888.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Work/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Work/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Work/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Work/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Work/.idea/riderModule.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Work/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/.idea.Work/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor-firstpass.csproj" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" afterDir="false" />
@@ -18988,8 +18980,16 @@
       <workItem from="1668998302627" duration="28269000" />
       <workItem from="1669076114760" duration="1257000" />
       <workItem from="1669092417285" duration="26226000" />
-      <workItem from="1669161147357" duration="16791000" />
+      <workItem from="1669161147357" duration="18456000" />
     </task>
+    <task id="LOCAL-00001" summary="First submit">
+      <created>1669188209138</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669188209138</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
