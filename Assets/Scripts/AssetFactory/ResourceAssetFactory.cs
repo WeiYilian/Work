@@ -5,6 +5,7 @@ using UnityEngine;
 public class ResourceAssetFactory : IAssetFactory
 {
     public string SlashPath = "Slash/";
+    public string DataPath = "GameData/";
     
     /// <summary>
     /// 实例化特效
@@ -15,7 +16,7 @@ public class ResourceAssetFactory : IAssetFactory
     {
         return LoadGameObject(SlashPath + name);
     }
-    
+
     private GameObject LoadGameObject(string path)
     {
         Object o = Resources.Load(path);

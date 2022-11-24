@@ -58,9 +58,11 @@
      <Compile Include="Assets\Scripts\Controller\CharacterController\Skill\Base\BaseSkill.cs" />
      <Compile Include="Assets\Scripts\SceneState\Concrete\StartScene.cs" />
      <Compile Include="Assets\Scripts\UIPanel\Concrete\NoticePanel.cs" />
-     <Compile Include="Assets\Scripts\Controller\CharacterController\MoveConctroller.cs" />
+     <Compile Include="Assets\Scripts\Controller\CharacterController\PlayerConctroller.cs" />
      <Compile Include="Assets\Scripts\Manager\MainPanelManager.cs" />
      <Compile Include="Assets\Scripts\DataManager\DataManager.cs" />
+     <Compile Include="Assets\Scripts\Character Stats\ScriptableObject\CharacterData_SO.cs" />
+     <Compile Include="Assets\Scripts\Character Stats\CharacterStats.cs" />
      <Compile Include="Assets\Scripts\SceneState\Base\SceneState.cs" />
      <Compile Include="Assets\Scripts\AnimationScript\StopMove.cs" />
      <Compile Include="Assets\Scripts\UIPanel\Concrete\RegisterPanel.cs" />
@@ -87,6 +89,8 @@
      <Compile Include="Assets\Scripts\UIPanel\Base\UIType.cs" />
      <Compile Include="Assets\Scripts\SceneState\SceneStateController.cs" />
      <Compile Include="Assets\Scripts\AssetFactory\ResourceAssetFactory.cs" />
+     <Compile Include="Assets\Scripts\Controller\CharacterController\EnemyController\WarriorConcroller.cs" />
+     <Compile Include="Assets\Scripts\Tool\ExtensionMethod.cs" />
      <None Include="Assets\Asset Package\主角\Toon\Shader\Toon_DoubleShadeWithFeather_Mobile_TransClipping_StencilMask.shader" />
      <None Include="Assets\Asset Package\主角\Toon\Shader\Toon_ShadingGradeMap_Mobile_StencilMask.shader" />
      <None Include="Assets\Asset Package\主角\Toon\Shader\Tess\Toon_DoubleShadeWithFeather_Tess_Light_StencilMask.shader" />
@@ -104,8 +108,10 @@
      <None Include="Assets\Asset Package\主角\Toon\Shader\Tess\Toon_ShadingGradeMap_AngelRing_Tess_Light.shader" />
      <None Include="Assets\Asset Package\主角\Toon\Shader\Tess\ToonColor_DoubleShadeWithFeather_Tess_StencilOut.shader" />
      <None Include="Assets\Asset Package\主角\Toon\Shader\Tess\UCTS_Outline_Tess.cginc" />
+     <None Include="Assets\Shard\UnityURPToonLitShaderExample-master\SimpleURPToonLitOutlineExample.shader" />
      <None Include="Assets\Asset Package\主角\Toon\Shader\Toon_ShadingGradeMap_AngelRing_TransClipping_StencilOut.shader" />
      <None Include="Assets\Asset Package\主角\Toon\Shader\Toon_OutlineObject.shader" />
+     <None Include="Assets\Shard\UnityURPToonLitShaderExample-master\SimpleURPToonLitOutlineExample_LightingEquation.hlsl" />
      <None Include="Assets\Asset Package\主角\Toon\Shader\Tess\UCTS_ShadowCaster_Tess.cginc" />
      <None Include="Assets\Asset Package\主角\Toon\Shader\Toon_ShadingGradeMap_StencilOut.shader" />
      <None Include="Assets\Asset Package\主角\Toon\Shader\Toon_ShadingGradeMap_AngelRing_TransClipping.shader" />
@@ -131,6 +137,7 @@
      <None Include="Assets\Asset Package\主角\Toon\Shader\Tess\Toon_ShadingGradeMap_Tess_Light.shader" />
      <None Include="Assets\Asset Package\主角\Toon\Shader\Toon_DoubleShadeWithFeather_Mobile_StencilOut.shader" />
      <None Include="Assets\Asset Package\技能特效\Sword slash VFX\Shaders\Add_Fresnel.shader" />
+     <None Include="Assets\Shard\UnityURPToonLitShaderExample-master\SimpleURPToonLitOutlineExample_Shared.hlsl" />
      <None Include="Assets\Asset Package\主角\Toon\Shader\ToonColor_ShadingGradeMap_AngelRing_TransClipping_StencilOut.shader" />
      <None Include="Assets\Asset Package\技能特效\Sword slash VFX\Shaders\Ice.shader" />
      <None Include="Assets\Asset Package\主角\Toon\Shader\Tess\Toon_OutlineObject_Tess_StencilOut.shader" />
@@ -156,6 +163,7 @@
      <None Include="Assets\Asset Package\主角\Toon\Shader\Tess\ToonColor_ShadingGradeMap_AngelRing_Tess.shader" />
      <None Include="Assets\Asset Package\主角\Toon\Shader\Tess\ToonColor_DoubleShadeWithFeather_Clipping_Tess_StencilMask.shader" />
      <None Include="Assets\Asset Package\主角\Toon\Shader\Toon_DoubleShadeWithFeather_Mobile_Clipping.shader" />
+     <None Include="Assets\Shard\UnityURPToonLitShaderExample-master\NiloInvLerpRemap.hlsl" />
      <None Include="Assets\Asset Package\主角\Toon\Shader\Tess\Toon_DoubleShadeWithFeather_TransClipping_Tess_StencilMask.shader" />
      <None Include="Assets\Asset Package\主角\Toon\Shader\Tess\Toon_ShadingGradeMap_Tess_Light_StencilOut.shader" />
      <None Include="Assets\Asset Package\主角\Toon\Shader\Toon_ShadingGradeMap_Mobile_TransClipping_StencilMask.shader" />
@@ -185,6 +193,7 @@
      <None Include="Assets\Asset Package\主角\Toon\Shader\Tess\ToonColor_DoubleShadeWithFeather_Clipping_Tess.shader" />
      <None Include="Assets\Asset Package\主角\Toon\Shader\ToonColor_ShadingGradeMap_TransClipping_StencilMask.shader" />
      <None Include="Assets\Asset Package\主角\Toon\Shader\Toon_DoubleShadeWithFeather.shader" />
+     <None Include="Assets\Shard\UnityURPToonLitShaderExample-master\NiloOutlineUtil.hlsl" />
      <None Include="Assets\Asset Package\主角\Toon\Shader\Toon_DoubleShadeWithFeather_TransClipping_StencilOut.shader" />
      <None Include="Assets\Asset Package\主角\Toon\Shader\Tess\ToonColor_DoubleShadeWithFeather_Transparent_Tess.shader" />
      <None Include="Assets\Asset Package\主角\Toon\Shader\Tess\ToonColor_ShadingGradeMap_TransClipping_Tess.shader" />
@@ -207,6 +216,7 @@
      <None Include="Assets\Asset Package\主角\Toon\Shader\Tess\UCTS_ShadingGradeMap_tess.cginc" />
      <None Include="Assets\Asset Package\技能特效\Sword slash VFX\Shaders\Add_CenterGlow.shader" />
      <None Include="Assets\Asset Package\主角\Toon\Shader\ToonColor_ShadingGradeMap_TransClipping.shader" />
+     <None Include="Assets\Shard\UnityURPToonLitShaderExample-master\NiloZOffset.hlsl" />
      <None Include="Assets\Asset Package\主角\Toon\Shader\Toon_DoubleShadeWithFeather_Clipping_StencilOut.shader" />
      <None Include="Assets\Asset Package\主角\Toon\Shader\ToonColor_DoubleShadeWithFeather_StencilOut.shader" />
      <None Include="Assets\Asset Package\主角\Toon\Shader\Toon_OutlineObject_StencilOut.shader" />

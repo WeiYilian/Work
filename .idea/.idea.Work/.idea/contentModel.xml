@@ -182,11 +182,20 @@
             <e p="IAssetFactory.cs" t="Include" />
             <e p="ResourceAssetFactory.cs" t="Include" />
           </e>
+          <e p="Character Stats" t="Include">
+            <e p="CharacterStats.cs" t="Include" />
+            <e p="ScriptableObject" t="Include">
+              <e p="CharacterData_SO.cs" t="Include" />
+            </e>
+          </e>
           <e p="Controller" t="Include">
             <e p="CameraController.cs" t="Include" />
             <e p="CharacterController" t="Include">
               <e p="AttactController.cs" t="Include" />
-              <e p="MoveConctroller.cs" t="Include" />
+              <e p="EnemyController" t="Include">
+                <e p="WarriorConcroller.cs" t="Include" />
+              </e>
+              <e p="PlayerConctroller.cs" t="Include" />
               <e p="Skill" t="Include">
                 <e p="Base" t="Include">
                   <e p="BaseSkill.cs" t="Include" />
@@ -219,6 +228,9 @@
             </e>
             <e p="SceneStateController.cs" t="Include" />
           </e>
+          <e p="Tool" t="Include">
+            <e p="ExtensionMethod.cs" t="Include" />
+          </e>
           <e p="UIPanel" t="Include">
             <e p="AccountManager" t="Include">
               <e p="AccountManager.cs" t="Include" />
@@ -243,6 +255,16 @@
             <e p="UITool" t="Include">
               <e p="UITool.cs" t="Include" />
             </e>
+          </e>
+        </e>
+        <e p="Shard" t="Include">
+          <e p="UnityURPToonLitShaderExample-master" t="Include">
+            <e p="NiloInvLerpRemap.hlsl" t="Include" />
+            <e p="NiloOutlineUtil.hlsl" t="Include" />
+            <e p="NiloZOffset.hlsl" t="Include" />
+            <e p="SimpleURPToonLitOutlineExample.shader" t="Include" />
+            <e p="SimpleURPToonLitOutlineExample_LightingEquation.hlsl" t="Include" />
+            <e p="SimpleURPToonLitOutlineExample_Shared.hlsl" t="Include" />
           </e>
         </e>
       </e>

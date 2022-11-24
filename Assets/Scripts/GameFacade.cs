@@ -17,7 +17,7 @@ public class GameFacade : MonoBehaviour
     /// </summary>
     private IAssetFactory assetFactory;
 
-    public MainPanelManager PanelManager;
+    [HideInInspector]public MainPanelManager PanelManager;
 
     public string PlayerName
     {
@@ -33,8 +33,14 @@ public class GameFacade : MonoBehaviour
         PanelManager = GameObject.Find("MainPanel").GetComponent<MainPanelManager>();
     }
 
+    /// <summary>
+    /// 获得技能特效
+    /// </summary>
+    /// <param name="name"></param>
+    /// <returns></returns>
     public GameObject LoadSlash(string name)
     {
         return assetFactory.LoadSlash(name);
     }
+
 }

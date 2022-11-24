@@ -37,7 +37,7 @@ public class AttactController : MonoBehaviour
     
     private void Start()
     {
-        animator = MoveConctroller.Instance.animator;
+        animator = PlayerConctroller.Instance.animator;
         
         Skills.Add(new SkillOne(emitPoint,GameFacade.Instance.PanelManager.skill1));
         Skills.Add(new SkillTwo(emitPoint,GameFacade.Instance.PanelManager.skill2));
@@ -52,19 +52,19 @@ public class AttactController : MonoBehaviour
     /// </summary>
     public void Attack()
     {
-        if (Input.GetMouseButtonDown(0) && !isAttack && !MoveConctroller.Instance.isJump)
+        if (Input.GetMouseButtonDown(0) && !isAttack && !PlayerConctroller.Instance.isJump)
         {
             isAttack = true;
             comboStep++;
             if (comboStep > 4)
                 comboStep = 1;
             timer = interval;
-            MoveConctroller.Instance.animator.SetTrigger("Attack");
-            MoveConctroller.Instance.animator.SetInteger("ComboStep",comboStep);
+            PlayerConctroller.Instance.animator.SetTrigger("Attack");
+            PlayerConctroller.Instance.animator.SetInteger("ComboStep",comboStep);
         }
-        else if (Input.GetMouseButtonDown(0) && !isAttack && MoveConctroller.Instance.isJump)
+        else if (Input.GetMouseButtonDown(0) && !isAttack && PlayerConctroller.Instance.isJump)
         {
-            MoveConctroller.Instance.animator.SetTrigger("JumpAttack");
+            PlayerConctroller.Instance.animator.SetTrigger("JumpAttack");
         }
        
 
@@ -98,7 +98,7 @@ public class AttactController : MonoBehaviour
 
     #endregion
 
-    #region 技能
+    #region 技能攻击
 
     // ReSharper disable Unity.PerformanceAnalysis
     /// <summary>
