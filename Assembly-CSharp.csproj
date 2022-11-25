@@ -52,29 +52,32 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Controller\CharacterController\Skill\Concrete\SkillTwo.cs" />
-     <Compile Include="Assets\Scripts\Controller\CharacterController\Skill\Concrete\SkillThree.cs" />
+     <Compile Include="Assets\Scripts\AnimationScript\Attacked.cs" />
+     <Compile Include="Assets\Scripts\Manager\Skill\Concrete\SkillTwo.cs" />
+     <Compile Include="Assets\Scripts\Tool\IEndGameObserver.cs" />
+     <Compile Include="Assets\Scripts\Tool\ExtensionMethod.cs" />
+     <Compile Include="Assets\Scripts\Manager\Skill\Concrete\SkillThree.cs" />
      <Compile Include="Assets\Scripts\UIPanel\Base\BasePanel.cs" />
-     <Compile Include="Assets\Scripts\Controller\CharacterController\Skill\Base\BaseSkill.cs" />
+     <Compile Include="Assets\Scripts\Manager\Skill\Base\BaseSkill.cs" />
      <Compile Include="Assets\Scripts\SceneState\Concrete\StartScene.cs" />
      <Compile Include="Assets\Scripts\UIPanel\Concrete\NoticePanel.cs" />
-     <Compile Include="Assets\Scripts\Controller\CharacterController\PlayerConctroller.cs" />
-     <Compile Include="Assets\Scripts\Manager\MainPanelManager.cs" />
-     <Compile Include="Assets\Scripts\DataManager\DataManager.cs" />
+     <Compile Include="Assets\Scripts\Character\CharacterController\EnemyController\WarriorConcroller.cs" />
+     <Compile Include="Assets\Scripts\Character\CharacterController\PlayerConctroller.cs" />
+     <Compile Include="Assets\Scripts\UIPanel\MainPanelManager.cs" />
+     <Compile Include="Assets\Scripts\Manager\DataManager\DataManager.cs" />
      <Compile Include="Assets\Scripts\Character Stats\ScriptableObject\CharacterData_SO.cs" />
      <Compile Include="Assets\Scripts\Character Stats\CharacterStats.cs" />
      <Compile Include="Assets\Scripts\SceneState\Base\SceneState.cs" />
      <Compile Include="Assets\Scripts\AnimationScript\StopMove.cs" />
      <Compile Include="Assets\Scripts\UIPanel\Concrete\RegisterPanel.cs" />
-     <Compile Include="Assets\Scripts\AnimationScript\RollingOrJump.cs" />
      <Compile Include="Assets\Scripts\GameLoop.cs" />
-     <Compile Include="Assets\Scripts\Controller\CharacterController\AttactController.cs" />
-     <Compile Include="Assets\Scripts\Controller\CharacterController\Skill\Concrete\SkillOne.cs" />
+     <Compile Include="Assets\Scripts\Character\CharacterController\AttactController.cs" />
+     <Compile Include="Assets\Scripts\Manager\Skill\Concrete\SkillOne.cs" />
      <Compile Include="Assets\Scripts\UIPanel\Concrete\StartPanel.cs" />
-     <Compile Include="Assets\Scripts\Controller\CameraController.cs" />
+     <Compile Include="Assets\Scripts\Character\CameraController.cs" />
      <Compile Include="Assets\Scripts\UIPanel\Managers\PanelManager.cs" />
-     <Compile Include="Assets\Scripts\Controller\CharacterController\Skill\Concrete\SkillFour.cs" />
-     <Compile Include="Assets\Scripts\UIPanel\AccountManager\AccountManager.cs" />
+     <Compile Include="Assets\Scripts\Manager\Skill\Concrete\SkillFour.cs" />
+     <Compile Include="Assets\Scripts\UIPanel\AccountManager.cs" />
      <Compile Include="Assets\Asset Package\技能特效\Sword slash VFX\Demo scene\CameraHolder.cs" />
      <Compile Include="Assets\Scripts\SceneState\Concrete\LoadScene.cs" />
      <Compile Include="Assets\Scripts\UIPanel\UITool\UITool.cs" />
@@ -86,11 +89,10 @@
      <Compile Include="Assets\Scripts\UIPanel\Concrete\MainPanel.cs" />
      <Compile Include="Assets\Scripts\UIPanel\Concrete\SettingPanel.cs" />
      <Compile Include="Assets\Scripts\UIPanel\Concrete\LoginPanel.cs" />
+     <Compile Include="Assets\Scripts\AnimationScript\StopAgent.cs" />
      <Compile Include="Assets\Scripts\UIPanel\Base\UIType.cs" />
      <Compile Include="Assets\Scripts\SceneState\SceneStateController.cs" />
      <Compile Include="Assets\Scripts\AssetFactory\ResourceAssetFactory.cs" />
-     <Compile Include="Assets\Scripts\Controller\CharacterController\EnemyController\WarriorConcroller.cs" />
-     <Compile Include="Assets\Scripts\Tool\ExtensionMethod.cs" />
      <None Include="Assets\Asset Package\主角\Toon\Shader\Toon_DoubleShadeWithFeather_Mobile_TransClipping_StencilMask.shader" />
      <None Include="Assets\Asset Package\主角\Toon\Shader\Toon_ShadingGradeMap_Mobile_StencilMask.shader" />
      <None Include="Assets\Asset Package\主角\Toon\Shader\Tess\Toon_DoubleShadeWithFeather_Tess_Light_StencilMask.shader" />

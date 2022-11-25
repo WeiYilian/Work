@@ -12,19 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00cdfd95ae9343c41b9f1930ba66e8b5, type: 3}
   m_Name: PlayerData
   m_EditorClassIdentifier: 
-  maxHealth: 100
-  currentHealth: 100
+  maxHealth: 110
+  currentHealth: 82
   baseDefence: 2
   currentDefence: 2
   killPoint: 0
-  attackRange: 0
+  attackRange: 1
+  skillRange: 0
   coolDown: 0
-  minDamge: 3
-  maxDamge: 5
+  minDamge: 5
+  maxDamge: 7
   criticalMultiplier: 2
   criticalChance: 0.2
-  currentLevel: 1
+  currentLevel: 2
   maxLevel: 10
-  baseExp: 50
+  baseExp: 105
   currentExp: 0
   levelBuff: 0.1

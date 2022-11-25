@@ -65,7 +65,6 @@ public class CharacterStats : MonoBehaviour
             else
                 defener.GetComponentInChildren<Animator>().SetTrigger("Hit");
         }
-            
         else
             defener.GetComponent<Animator>().SetTrigger("Hit");//播放敌人被打动画
 

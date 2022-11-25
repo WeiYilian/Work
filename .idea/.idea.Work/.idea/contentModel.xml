@@ -175,20 +175,15 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="AnimationScript" t="Include">
-            <e p="RollingOrJump.cs" t="Include" />
+            <e p="Attacked.cs" t="Include" />
+            <e p="StopAgent.cs" t="Include" />
             <e p="StopMove.cs" t="Include" />
           </e>
           <e p="AssetFactory" t="Include">
             <e p="IAssetFactory.cs" t="Include" />
             <e p="ResourceAssetFactory.cs" t="Include" />
           </e>
-          <e p="Character Stats" t="Include">
-            <e p="CharacterStats.cs" t="Include" />
-            <e p="ScriptableObject" t="Include">
-              <e p="CharacterData_SO.cs" t="Include" />
-            </e>
-          </e>
-          <e p="Controller" t="Include">
+          <e p="Character" t="Include">
             <e p="CameraController.cs" t="Include" />
             <e p="CharacterController" t="Include">
               <e p="AttactController.cs" t="Include" />
@@ -196,26 +191,31 @@
                 <e p="WarriorConcroller.cs" t="Include" />
               </e>
               <e p="PlayerConctroller.cs" t="Include" />
-              <e p="Skill" t="Include">
-                <e p="Base" t="Include">
-                  <e p="BaseSkill.cs" t="Include" />
-                </e>
-                <e p="Concrete" t="Include">
-                  <e p="SkillFour.cs" t="Include" />
-                  <e p="SkillOne.cs" t="Include" />
-                  <e p="SkillThree.cs" t="Include" />
-                  <e p="SkillTwo.cs" t="Include" />
-                </e>
-              </e>
             </e>
           </e>
-          <e p="DataManager" t="Include">
-            <e p="DataManager.cs" t="Include" />
+          <e p="Character Stats" t="Include">
+            <e p="CharacterStats.cs" t="Include" />
+            <e p="ScriptableObject" t="Include">
+              <e p="CharacterData_SO.cs" t="Include" />
+            </e>
           </e>
           <e p="GameFacade.cs" t="Include" />
           <e p="GameLoop.cs" t="Include" />
           <e p="Manager" t="Include">
-            <e p="MainPanelManager.cs" t="Include" />
+            <e p="DataManager" t="Include">
+              <e p="DataManager.cs" t="Include" />
+            </e>
+            <e p="Skill" t="Include">
+              <e p="Base" t="Include">
+                <e p="BaseSkill.cs" t="Include" />
+              </e>
+              <e p="Concrete" t="Include">
+                <e p="SkillFour.cs" t="Include" />
+                <e p="SkillOne.cs" t="Include" />
+                <e p="SkillThree.cs" t="Include" />
+                <e p="SkillTwo.cs" t="Include" />
+              </e>
+            </e>
           </e>
           <e p="SceneState" t="Include">
             <e p="Base" t="Include">
@@ -230,11 +230,10 @@
           </e>
           <e p="Tool" t="Include">
             <e p="ExtensionMethod.cs" t="Include" />
+            <e p="IEndGameObserver.cs" t="Include" />
           </e>
           <e p="UIPanel" t="Include">
-            <e p="AccountManager" t="Include">
-              <e p="AccountManager.cs" t="Include" />
-            </e>
+            <e p="AccountManager.cs" t="Include" />
             <e p="Base" t="Include">
               <e p="BasePanel.cs" t="Include" />
               <e p="UIType.cs" t="Include" />
@@ -248,6 +247,7 @@
               <e p="StartPanel.cs" t="Include" />
               <e p="UserManagerPanel.cs" t="Include" />
             </e>
+            <e p="MainPanelManager.cs" t="Include" />
             <e p="Managers" t="Include">
               <e p="PanelManager.cs" t="Include" />
               <e p="UIManager.cs" t="Include" />
