@@ -48,6 +48,12 @@ public abstract class BasePanel
     {
         UITool.GetOrAddComponent<CanvasGroup>().blocksRaycasts = false;
     }
+
+    /// <summary>
+    /// UI打开时进行的操作
+    /// </summary>
+    public virtual void OnUpdata() { }
+    
     /// <summary>
     /// UI继续时执行的操作
     /// </summary>

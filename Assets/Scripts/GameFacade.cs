@@ -17,21 +17,25 @@ public class GameFacade : MonoBehaviour
     /// </summary>
     private IAssetFactory assetFactory;
 
-    [HideInInspector]public MainPanelManager PanelManager;
-
     public string PlayerName
     {
         get => playerName;
-        private set => playerName = value;
+        set => playerName = value;
     }
 
     private void Awake()
     {
-        Instance = this;
-        PlayerName = PlayerPrefs.GetString("Player");
-        assetFactory = new ResourceAssetFactory();
-        PanelManager = GameObject.Find("MainPanel").GetComponent<MainPanelManager>();
+        if(Instance == null)
+            Instance = this;
+        else
+            Destroy(gameObject);
+        DontDestroyOnLoad(gameObject);//场景跳转之后不销毁该游戏物体
+        assetFactory = new ResourceAssetProxy();
+        // GameObject canvas = GameObject.Find("Canvas");
+        // mainPanelManager = canvas.transform.GetChild(0).GetComponent<MainPanelManager>();
     }
+
+    #region 加载资源
 
     /// <summary>
     /// 获得技能特效
@@ -43,4 +47,25 @@ public class GameFacade : MonoBehaviour
         return assetFactory.LoadSlash(name);
     }
 
+    /// <summary>
+    /// 获得开始界面的玩家信息面板
+    /// </summary>
+    /// <returns></returns>
+    public GameObject LoadAccount()
+    {
+        return assetFactory.LoadAccount("Account");
+    }
+
+    /// <summary>
+    /// 加载背包系统的格子
+    /// </summary>
+    /// <param name="name"></param>
+    /// <returns></returns>
+    public GameObject LoadSlot()
+    {
+        return assetFactory.LoadSlot("Slot");
+    }
+    
+    #endregion
+    
 }

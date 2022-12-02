@@ -10,27 +10,23 @@ public class StartScene : SceneState
 {
     public StartScene(SceneStateController sceneStateController) : base("Start", sceneStateController) { }
 
-    private PanelManager panelManager;
-
     public override void StateStart()
     {
-        panelManager = new PanelManager();
         if (SceneManager.GetActiveScene().name != "Start"/*如果当前的场景名不为sceneName*/)
         {
             SceneManager.LoadScene("Start");//加载名为sceneName的场景
-            SceneManager.sceneLoaded += SceneLoaded;
+            PanelManager.Instance.Push(new StartPanel());
         }
         else
         {
-            panelManager.Push(new StartPanel());
-            GameLoop.Instance.SetAction(panelManager.Push);
+            PanelManager.Instance.Push(new StartPanel());
         }
     }
 
     public override void StateEnd()
     {
         SceneManager.sceneLoaded -= SceneLoaded;
-        panelManager.PopAll();
+        PanelManager.Instance.PopAll();
     }
 
     /// <summary>
@@ -40,7 +36,6 @@ public class StartScene : SceneState
     /// <param name="loadSceneMode"></param>
     private void SceneLoaded(Scene scene, LoadSceneMode loadSceneMode)
     {
-        panelManager.Push(new StartPanel());
-        GameLoop.Instance.SetAction(panelManager.Push);
+        //PanelManager.Instance.Push(new StartPanel());
     }
 }

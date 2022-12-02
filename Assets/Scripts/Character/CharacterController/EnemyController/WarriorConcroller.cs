@@ -25,9 +25,6 @@ public class WarriorConcroller : MonoBehaviour,IEndGameObserver
     public float lookAtTime;//巡逻停留时间
     private float remainLookAtTime;//巡逻计时器
     private float lastAttackTime;//攻击计时器
-    
-    [Header("Skill")] 
-    public float kickForce;
 
     [Header("Patrol State")] 
     public float patrolRange;//巡逻范围
@@ -89,6 +86,10 @@ public class WarriorConcroller : MonoBehaviour,IEndGameObserver
         animator.SetBool("Death", isDead);
     }
     
+    
+    /// <summary>
+    /// 状态切换
+    /// </summary>
     void SwitchStates()
     {
         //如果生命值等于0，切换到DEAD
@@ -121,7 +122,7 @@ public class WarriorConcroller : MonoBehaviour,IEndGameObserver
                 break;
             case EnemyStates.PATROL://巡逻模式的敌人
                 isChase = false;
-                agent.speed = speed * 0.5f;
+                agent.speed = speed * 0.8f;
                 
                 //判断是否到了随机巡逻点
                 if (Vector3.Distance(wayPoint,transform.position) <= agent.stoppingDistance)
@@ -169,7 +170,7 @@ public class WarriorConcroller : MonoBehaviour,IEndGameObserver
                 {
                     isFollow = false;
                     agent.isStopped = true;
-
+                    transform.LookAt(AttackTarget.transform);
                     if (lastAttackTime < 0)
                     {
                         lastAttackTime = characterStats.characterData.coolDown;
@@ -184,7 +185,6 @@ public class WarriorConcroller : MonoBehaviour,IEndGameObserver
                 break;
             case EnemyStates.DEAD://死亡模式
                 collider.enabled = false;//关闭collider
-                //agent.enabled = false;//关闭导航系统
                 agent.radius = 0;
                 Destroy(gameObject,2f);
                 break;
@@ -193,19 +193,17 @@ public class WarriorConcroller : MonoBehaviour,IEndGameObserver
 
     void Attack()
     {
-        transform.LookAt(AttackTarget.transform);
-        
-        if (animator.GetCurrentAnimatorStateInfo(2).IsName("Damage")) return;
-        
         if (TargetInSkillRange())
         {
             //技能攻击动画
             animator.SetTrigger("Skill");
+            Debug.Log("技能攻击动画被触发");
         }
         else if (TargetInAttackRange())
         {
             //近身攻击动画
             animator.SetTrigger("Attack");
+            Debug.Log("普通攻击动画被触发");
         }
     }
 
@@ -260,19 +258,15 @@ public class WarriorConcroller : MonoBehaviour,IEndGameObserver
         NavMeshHit hit;
         wayPoint = NavMesh.SamplePosition(randomPoint, out hit, patrolRange, 1) ? hit.position : transform.position;
     }
-    
-    //将各种范围可视化
-    void OnDrawGizmos()
-    {
-        Gizmos.color = Color.blue;
-        Gizmos.DrawWireSphere(transform.position, sightRadius);
-    }
+
+
+    #region 动画事件
 
     //Animation Event
     void Hit()
     {
         //如果攻击目标不为空，攻击目标在前方，没有被打就可以执行
-        if (AttackTarget != null && transform.IsFacingTarget(AttackTarget.transform)/*扩展方法*/)
+        if (TargetInAttackRange() && transform.IsFacingTarget(AttackTarget.transform)/*扩展方法*/)
         {
             var targetStats = AttackTarget.GetComponentInChildren<CharacterStats>();
             targetStats.TakeDamage(characterStats, targetStats);
@@ -282,16 +276,17 @@ public class WarriorConcroller : MonoBehaviour,IEndGameObserver
     //Animation Event
     public void KickOff()
     {
-        if(AttackTarget != null && transform.IsFacingTarget(AttackTarget.transform)/*扩展方法*/)
+        if(TargetInSkillRange() && transform.IsFacingTarget(AttackTarget.transform)/*扩展方法*/)
         {
-            transform.LookAt(AttackTarget.transform);
-            
             var targetStats = AttackTarget.GetComponentInChildren<CharacterStats>();
             targetStats.TakeDamage(characterStats, targetStats,true);
             
         }
     }
 
+    #endregion
+    
+    
     //怪物胜利，游戏结束
     public void EndNotify()
     {
@@ -306,5 +301,11 @@ public class WarriorConcroller : MonoBehaviour,IEndGameObserver
 
     }
     
-    
+    //将各种范围可视化
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(transform.position, sightRadius);
+    }
+
 }

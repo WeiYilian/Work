@@ -16,7 +16,7 @@ public class UIManager
    }
 
    /// <summary>
-   /// 获取一个UI对象
+   /// 获取一个UIPanel对象
    /// </summary>
    /// <param name="type">UI信息</param>
    /// <returns></returns>
@@ -39,7 +39,7 @@ public class UIManager
    }
 
    /// <summary>
-   /// 销毁一个UI对象
+   /// 销毁一个UIPanel对象
    /// </summary>
    /// <param name="type">UI信息</param>
    public void DestroyUI(UIType type)

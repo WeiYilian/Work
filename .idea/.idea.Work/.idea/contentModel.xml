@@ -8,6 +8,84 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Asset Package" t="Include">
+          <e p="ExplosiveLLC" t="Include">
+            <e p="Editor" t="Include">
+              <e p="SetupInputLayers.cs" t="Include" />
+            </e>
+            <e p="SuperCharacterController" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="Gravity.cs" t="Include" />
+                <e p="PlayerCamera.cs" t="Include" />
+                <e p="PlayerInputController.cs" t="Include" />
+                <e p="PlayerMachine.cs" t="Include" />
+                <e p="PlayerMachineDebug.cs" t="Include" />
+                <e p="SimpleStateMachine.cs" t="Include" />
+              </e>
+              <e p="SuperCharacterController" t="Include">
+                <e p="Core" t="Include">
+                  <e p="BruteForceMesh.cs" t="Include" />
+                  <e p="BSPTree.cs" t="Include" />
+                  <e p="SuperCharacterController.cs" t="Include" />
+                  <e p="SuperCollider.cs" t="Include" />
+                  <e p="SuperCollisionType.cs" t="Include" />
+                  <e p="SuperMath.cs" t="Include" />
+                  <e p="SuperStateMachine.cs" t="Include" />
+                </e>
+                <e p="DebugDraw.cs" t="Include" />
+                <e p="Math3d.cs" t="Include" />
+                <e p="README.txt" t="Include" />
+              </e>
+            </e>
+            <e p="Warrior FREE" t="Include">
+              <e p="Code" t="Include">
+                <e p="AnimatorParentMove.cs" t="Include" />
+                <e p="IKHands.cs" t="Include" />
+                <e p="WarriorAnimatorEvents.cs" t="Include" />
+                <e p="WarriorController.cs" t="Include" />
+                <e p="WarriorData.cs" t="Include" />
+                <e p="WarriorInputController.cs" t="Include" />
+                <e p="WarriorInputSystemController.cs" t="Include" />
+                <e p="WarriorMovementController.cs" t="Include" />
+                <e p="WarriorTiming.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Polytope Studio" t="Include">
+            <e p="Lowpoly Medieval Characters" t="Include">
+              <e p="Sources" t="Include">
+                <e p="Shaders" t="Include">
+                  <e p="PT_Medieval_Armors_Shader_PBR.shader" t="Include" />
+                  <e p="PT_Medieval_Armors_Shader_Toon.shader" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="TriForge Assets" t="Include">
+            <e p="Top Down - Fantasy Forest" t="Include">
+              <e p="Shaders" t="Include">
+                <e p="Flame.shader" t="Include" />
+                <e p="StandardCullOff.shader" t="Include" />
+                <e p="TreeLod.shader" t="Include" />
+                <e p="TreeTopDown.shader" t="Include" />
+                <e p="Water.shader" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="UI" t="Include">
+            <e p="bag" t="Include">
+              <e p="Cainos" t="Include">
+                <e p="Pixel Art Icon Pack - RPG" t="Include">
+                  <e p="Shader" t="Include">
+                    <e p="SH Sprite Icon Outline Color.shader" t="Include" />
+                    <e p="SH UI Icon Outline Color.shader" t="Include" />
+                  </e>
+                </e>
+              </e>
+            </e>
+            <e p="面板" t="Include">
+              <e p="Dark_Brown_GUI_kit.txt" t="Include" />
+            </e>
+          </e>
           <e p="主角" t="Include">
             <e p="Toon" t="Include">
               <e p="Editor" t="Include">
@@ -182,30 +260,47 @@
           <e p="AssetFactory" t="Include">
             <e p="IAssetFactory.cs" t="Include" />
             <e p="ResourceAssetFactory.cs" t="Include" />
+            <e p="ResourceAssetProxy.cs" t="Include" />
           </e>
           <e p="Character" t="Include">
-            <e p="CameraController.cs" t="Include" />
+            <e p="Character Stats" t="Include">
+              <e p="CharacterStats.cs" t="Include" />
+              <e p="ScriptableObject" t="Include">
+                <e p="CharacterData_SO.cs" t="Include" />
+              </e>
+            </e>
             <e p="CharacterController" t="Include">
-              <e p="AttactController.cs" t="Include" />
               <e p="EnemyController" t="Include">
                 <e p="WarriorConcroller.cs" t="Include" />
               </e>
-              <e p="PlayerConctroller.cs" t="Include" />
-            </e>
-          </e>
-          <e p="Character Stats" t="Include">
-            <e p="CharacterStats.cs" t="Include" />
-            <e p="ScriptableObject" t="Include">
-              <e p="CharacterData_SO.cs" t="Include" />
+              <e p="PlayerController" t="Include">
+                <e p="AttackController.cs" t="Include" />
+                <e p="AttribController.cs" t="Include" />
+                <e p="CameraController.cs" t="Include" />
+                <e p="MoveController.cs" t="Include" />
+                <e p="PlayerConctroller.cs" t="Include" />
+              </e>
             </e>
           </e>
           <e p="GameFacade.cs" t="Include" />
           <e p="GameLoop.cs" t="Include" />
+          <e p="Inventory" t="Include">
+            <e p="Base" t="Include">
+              <e p="BagItem.cs" t="Include" />
+              <e p="Inventory.cs" t="Include" />
+            </e>
+            <e p="Drag" t="Include">
+              <e p="ItemOnDrag.cs" t="Include" />
+              <e p="MoveBag.cs" t="Include" />
+            </e>
+            <e p="ItemOnSlot.cs" t="Include" />
+            <e p="Slot.cs" t="Include" />
+          </e>
           <e p="Manager" t="Include">
             <e p="DataManager" t="Include">
               <e p="DataManager.cs" t="Include" />
             </e>
-            <e p="Skill" t="Include">
+            <e p="SkillManager" t="Include">
               <e p="Base" t="Include">
                 <e p="BaseSkill.cs" t="Include" />
               </e>
@@ -217,6 +312,7 @@
               </e>
             </e>
           </e>
+          <e p="Plane.cs" t="Include" />
           <e p="SceneState" t="Include">
             <e p="Base" t="Include">
               <e p="SceneState.cs" t="Include" />
@@ -231,14 +327,15 @@
           <e p="Tool" t="Include">
             <e p="ExtensionMethod.cs" t="Include" />
             <e p="IEndGameObserver.cs" t="Include" />
+            <e p="Singleton.cs" t="Include" />
           </e>
           <e p="UIPanel" t="Include">
-            <e p="AccountManager.cs" t="Include" />
             <e p="Base" t="Include">
               <e p="BasePanel.cs" t="Include" />
               <e p="UIType.cs" t="Include" />
             </e>
             <e p="Concrete" t="Include">
+              <e p="CharacterPanel.cs" t="Include" />
               <e p="LoginPanel.cs" t="Include" />
               <e p="MainPanel.cs" t="Include" />
               <e p="NoticePanel.cs" t="Include" />
@@ -247,8 +344,10 @@
               <e p="StartPanel.cs" t="Include" />
               <e p="UserManagerPanel.cs" t="Include" />
             </e>
-            <e p="MainPanelManager.cs" t="Include" />
             <e p="Managers" t="Include">
+              <e p="ConcreteManager" t="Include">
+                <e p="AccountManager.cs" t="Include" />
+              </e>
               <e p="PanelManager.cs" t="Include" />
               <e p="UIManager.cs" t="Include" />
             </e>

@@ -41,7 +41,7 @@ public class LoginPanel : BasePanel
             {
                 Debug.Log("进入下一个场景");
                 PlayerPrefs.SetString("Player",username);
-                GameLoop.Instance.controller.SetState(new LoadScene(GameLoop.Instance.controller.mSceneState.mController));
+                SceneStateController.Instance.SetState(new LoadScene(SceneStateController.Instance.mSceneState.mController));
             }
             else
             {

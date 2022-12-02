@@ -10,11 +10,9 @@ public class MainScene : SceneState
 {
     public MainScene(string sceneName, SceneStateController stateController) : base("Main", stateController) { }
 
-    private PanelManager panelManager;
-
+    // ReSharper disable Unity.PerformanceAnalysis
     public override void StateStart()
     {
-        panelManager = new PanelManager();
         if (SceneManager.GetActiveScene().name != "Main"/*如果当前的场景名不为sceneName*/)
         {
             SceneManager.LoadScene("Main");//加载名为sceneName的场景
@@ -22,15 +20,14 @@ public class MainScene : SceneState
         }
         else
         {
-            panelManager.Push(new MainPanel());
-            GameLoop.Instance.SetAction(panelManager.Push);
+            PanelManager.Instance.Push(new MainPanel());
         }
     }
 
     public override void StateEnd()
     {
         SceneManager.sceneLoaded -= SceneLoaded;
-        panelManager.PopAll();
+        PanelManager.Instance.PopAll();
     }
 
     /// <summary>
@@ -40,7 +37,6 @@ public class MainScene : SceneState
     /// <param name="loadSceneMode"></param>
     private void SceneLoaded(Scene scene, LoadSceneMode loadSceneMode)
     {
-        panelManager.Push(new MainPanel());
-        GameLoop.Instance.SetAction(panelManager.Push);
+        
     }
 }

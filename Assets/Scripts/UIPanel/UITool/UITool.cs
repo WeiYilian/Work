@@ -15,6 +15,7 @@ public class UITool
         activePanel = panel;
     }
 
+    // ReSharper disable Unity.PerformanceAnalysis
     /// <summary>
     /// 给当前的活动面板获取或者添加一个组件
     /// </summary>
@@ -28,6 +29,7 @@ public class UITool
         return activePanel.GetComponent<T>();
     }
 
+    // ReSharper disable Unity.PerformanceAnalysis
     /// <summary>
     /// 根据名称查找一个子对象
     /// </summary>
@@ -49,6 +51,7 @@ public class UITool
         return null;
     }
 
+    // ReSharper disable Unity.PerformanceAnalysis
     /// <summary>
     /// 根据名称获取一个子对象的组件
     /// </summary>

@@ -7,6 +7,7 @@ using UnityEngine;
 /// </summary>
 public class PanelManager
 {
+   public static PanelManager _instance;
    //存储UI面板的栈
    private Stack<BasePanel> stackPanel;
    //UI管理器
@@ -14,7 +15,19 @@ public class PanelManager
    //方便接UI面板
    private BasePanel panel;
 
-   public PanelManager()
+   public static PanelManager Instance
+   {
+      get
+      {
+         if (_instance == null)
+         {
+            _instance = new PanelManager();
+         }
+         return _instance;
+      }
+   }
+
+   private PanelManager()
    {
       stackPanel = new Stack<BasePanel>();
       uIManager = new UIManager();
@@ -60,5 +73,29 @@ public class PanelManager
       {
          stackPanel.Pop().OnExit();
       }
+   }
+
+   public BasePanel CurrentPanel()
+   {
+      if (stackPanel.Count == 0)
+         return null;
+      else
+         return stackPanel.Peek();
+   }
+
+   public MainPanel MainPanel()
+   {
+      if (stackPanel.Peek().UIType.Name == "MainPanel")
+         return stackPanel.Peek() as MainPanel;
+      else
+         return null;
+   }
+
+   public CharacterPanel CharacterPanel()
+   {
+      if (stackPanel.Peek().UIType.Name == "CharacterPanel")
+         return stackPanel.Peek() as CharacterPanel;
+      else
+         return null;
    }
 }
