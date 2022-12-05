@@ -11,10 +11,11 @@ public class LoadScene : SceneState
     private Image mLoadBar;
     private Text mLoadNumber;//加载的进度百分比
     private float WaitTime = 0;//和进度条绑定的时间  实时的进度条
-    private float AllTime = 100;//等待的总时间
+    private float AllTime = 10;//等待的总时间
 
     public override void StateStart()
     {
+        AudioManager.Instance.PlayBGMAudio("Loading");
         mLoadBar = GameObject.Find("LoadBar").GetComponent<Image>();
         mLoadNumber = GameObject.Find("LoadNumber").GetComponent<Text>();
     }

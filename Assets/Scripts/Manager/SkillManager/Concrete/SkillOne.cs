@@ -15,6 +15,8 @@ public class SkillOne : BaseSkill
         go.transform.rotation = PlayerConctroller.Instance.characterController.transform.rotation;
         GameObject.Destroy(go,1f);
         
+        AudioManager.Instance.PlayAudio(2,"SwingEmpty");
+        
         base.EmitSpecialEffects();
     }
 

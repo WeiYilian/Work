@@ -15,6 +15,8 @@ public class SkillFour : BaseSkill
         go.transform.Rotate(new Vector3(0,-90,0));
         GameObject.Destroy(go,1f);
         
+        //TODO:重击声音
+        
         base.EmitSpecialEffects();
     }
     

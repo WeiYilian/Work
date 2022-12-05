@@ -10,7 +10,10 @@ public class ResourceAssetProxy : IAssetFactory
     private Dictionary<string, GameObject> SlashDic = new Dictionary<string, GameObject>();
     private Dictionary<string, GameObject> AccountDic = new Dictionary<string, GameObject>();
     private Dictionary<string, GameObject> SlotDic = new Dictionary<string, GameObject>();
-    
+    private Dictionary<string, GameObject> EnemyDic = new Dictionary<string, GameObject>();
+    private Dictionary<string, AudioClip> AudioClipDic = new Dictionary<string, AudioClip>();
+    private Dictionary<string, Sprite> SpriteDic = new Dictionary<string, Sprite>();
+
     /// <summary>
     /// 代理加载特效
     /// </summary>
@@ -24,7 +27,7 @@ public class ResourceAssetProxy : IAssetFactory
         }
         else
         {
-            GameObject asset = assetFactory.LoadAsset(assetFactory.SlashPath) as GameObject;
+            GameObject asset = assetFactory.LoadAsset(assetFactory.SlashPath + name) as GameObject;
             SlashDic.Add(name, asset);
             return GameObject.Instantiate(asset);
         }
@@ -43,7 +46,7 @@ public class ResourceAssetProxy : IAssetFactory
         }
         else
         {
-            GameObject asset = assetFactory.LoadAsset(assetFactory.AccountPath) as GameObject;
+            GameObject asset = assetFactory.LoadAsset(assetFactory.AccountPath + name) as GameObject;
             AccountDic.Add(name, asset);
             return GameObject.Instantiate(asset);
         }
@@ -61,9 +64,51 @@ public class ResourceAssetProxy : IAssetFactory
         }
         else
         {
-            GameObject asset = assetFactory.LoadAsset(assetFactory.SlotPath) as GameObject;
+            GameObject asset = assetFactory.LoadAsset(assetFactory.SlotPath + name) as GameObject;
             SlotDic.Add(name, asset);
             return GameObject.Instantiate(asset);
+        }
+    }
+
+    public GameObject LoadEnemy(string name)
+    {
+        if (EnemyDic.ContainsKey(name))
+        {
+            return GameObject.Instantiate(EnemyDic[name]);
+        }
+        else
+        {
+            GameObject asset = assetFactory.LoadAsset(assetFactory.EnemyPath + name) as GameObject;
+            EnemyDic.Add(name, asset);
+            return GameObject.Instantiate(asset);
+        }
+    }
+
+    public AudioClip loadAudioClip(string name)
+    {
+        if (AudioClipDic.ContainsKey(name))
+        {
+            return AudioClipDic[name];
+        }
+        else
+        {
+            AudioClip asset = assetFactory.loadAudioClip(assetFactory.AudioClipPath + name);
+            AudioClipDic.Add(name, asset);
+            return asset;
+        }
+    }
+
+    public Sprite LoadSprite(string name)
+    {
+        if (SpriteDic.ContainsKey(name))
+        {
+            return SpriteDic[name];
+        }
+        else
+        {
+            Sprite asset = assetFactory.LoadSprite(assetFactory.SpritePath + name);
+            SpriteDic.Add(name, asset);
+            return asset;
         }
     }
 }

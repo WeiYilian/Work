@@ -8,8 +8,6 @@ public class CharacterPanel : BasePanel
 
     public CharacterPanel() : base(new UIType(path)) { }
 
-    public List<GameObject> slots;
-    
     public GameObject slotGird;
     public Text itemInfromation;
     
@@ -17,7 +15,7 @@ public class CharacterPanel : BasePanel
     public override void OnEnter()
     {
         init();
-        RefreshBagItem();
+        InventoryManager.Instance.RefreshBagItem();
         UITool.GetOrAddComponentInChildren<Button>("BtnExit").onClick.AddListener(Pop);
     }
 
@@ -29,34 +27,17 @@ public class CharacterPanel : BasePanel
 
     private void init()
     {
-        slots = new List<GameObject>();
-        
         GameObject CharacterPanel = GameObject.Find("Canvas/CharacterPanel");
         slotGird = CharacterPanel.transform.Find("Center/Right/ItemView/Viewport/ItemList").gameObject;
         itemInfromation = CharacterPanel.transform.Find("Center/Right/Footer").GetComponentInChildren<Text>();
-        
+        CharacterPanel.transform.Find("Center/Lift/Top/Level/Text").GetComponent<Text>().text = PlayerConctroller.Instance.PlayerAttrib[5];
+        CharacterPanel.transform.Find("Center/Lift/Top/name/Text").GetComponent<Text>().text = PlayerConctroller.Instance.PlayerAttrib[1];
+        CharacterPanel.transform.Find("Center/Lift/Button/Damage/InputField").GetComponent<Text>().text = 
+            PlayerConctroller.Instance.characterStats.characterData.minDamage + "~" + PlayerConctroller.Instance.characterStats.characterData.minDamage;
+        CharacterPanel.transform.Find("Center/Lift/Button/Defence/InputField").GetComponent<Text>().text =
+            PlayerConctroller.Instance.characterStats.characterData.baseDefence.ToString();
+        CharacterPanel.transform.Find("Center/Lift/Button/Health/InputField").GetComponent<Text>().text =
+            PlayerConctroller.Instance.characterStats.MaxHealth.ToString();
         itemInfromation.text = "";
-    }
-    
-    public void UpdateItemInfo(string itemDescription)
-    {
-        itemInfromation.text = itemDescription;
-    }
-    
-    public void RefreshBagItem()
-    {
-        for (int i = 0; i < slotGird.transform.childCount; i++)
-        {
-            if (slotGird.transform.childCount == 0) break;
-            slotGird.transform.GetChild(i).GetComponent<Slot>().DestroySlot();
-            slots.Clear();
-        }
-
-        for (int i = 0; i < PlayerConctroller.Instance.myBag.itemList.Count; i++)
-        {
-            slots.Add(GameFacade.Instance.LoadSlot());
-            slots[i].transform.SetParent(slotGird.transform);
-            slots[i].GetComponent<Slot>().SetupSlot(PlayerConctroller.Instance.myBag.itemList[i]);
-        }
     }
 }

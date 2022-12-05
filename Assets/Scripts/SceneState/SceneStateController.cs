@@ -10,7 +10,7 @@ using UnityEngine.UI;
 /// </summary>
 public class SceneStateController
 {
-    public static SceneStateController _instance;
+    private static SceneStateController _instance;
     
     public static SceneStateController Instance
     {
@@ -32,6 +32,8 @@ public class SceneStateController
     private bool mIsRunStart;
 
     private float progressValue;
+
+    public bool IsGameOver { get; set; }
 
     // ReSharper disable Unity.PerformanceAnalysis
     /// <summary>
@@ -75,7 +77,7 @@ public class SceneStateController
         
         
         //异步操作如果完成了，就跳转场景
-        if (mAo != null && mAo.isDone && mIsRunStart == false/*mIsRunStart用来防止多次满足条件，重复调用状态初始化StateStart*/)
+        if (mAo != null && mAo.isDone && mIsRunStart == false)
         {
             mSceneState.StateStart();
             mIsRunStart = true;

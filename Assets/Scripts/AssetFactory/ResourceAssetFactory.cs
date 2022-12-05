@@ -7,6 +7,9 @@ public class ResourceAssetFactory : IAssetFactory
     public string SlashPath = "Slash/";
     public string AccountPath = "UI/Account/";
     public string SlotPath = "UI/Slot/";
+    public string EnemyPath = "Enemy/";
+    public string AudioClipPath = "music/";
+    public string SpritePath = "Sprite/";
 
     /// <summary>
     /// 实例化特效
@@ -26,6 +29,21 @@ public class ResourceAssetFactory : IAssetFactory
     public GameObject LoadSlot(string name)
     {
         return LoadGameObject(SlotPath + name);
+    }
+
+    public GameObject LoadEnemy(string name)
+    {
+        return LoadGameObject(EnemyPath + name);
+    }
+
+    public AudioClip loadAudioClip(string name)
+    {
+        return Resources.Load<AudioClip>(name);
+    }
+
+    public Sprite LoadSprite(string name)
+    {
+        return Resources.Load<Sprite>(name);
     }
 
 

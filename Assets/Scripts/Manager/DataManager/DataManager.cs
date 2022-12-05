@@ -178,4 +178,67 @@ public static class DataManager
             conn.Close();
         }
     }
+
+    /// <summary>
+    /// 依据用户名查询信息
+    /// </summary>
+    /// <param name="username"></param>
+    /// <returns></returns>
+    public static List<string> SelectUser(string username)
+    {
+        List<string> users = new List<string>();
+        
+        MySqlConnection conn = new MySqlConnection(connStr);
+        try
+        {
+            conn.Open();
+            string sqlQuary = $"select * from usermessage where username = '{username}'";
+            MySqlCommand comd = new MySqlCommand(sqlQuary, conn);
+
+            MySqlDataReader reader = comd.ExecuteReader();
+            if (reader.Read())
+            {
+                for (int i = 0; i < reader.FieldCount; i++)
+                {
+                    users.Add(reader.GetString(i));
+                }
+                //Debug.Log(reader.GetInt32(0) + " " + reader.GetString(1) + " " + reader.GetString(2));
+            }
+        }
+        catch (System.Exception e)
+        {
+
+            Debug.Log(e.Message);
+        }
+        finally
+        {
+            conn.Close();
+        }
+        return users;
+    }
+
+    /// <summary>
+    /// 保存数据
+    /// </summary>
+    /// <param name="users"></param>
+    public static void UpdataUserMessage(List<string> users)
+    {
+        MySqlConnection conn = new MySqlConnection(connStr);
+        try
+        {
+            conn.Open();
+            string sqlQuary = "update usermessage SET password = '{users[2]}',age = '{users[3]}',gender = '{users[4]}',level = '{users[5]}',exp = '{users[6]}',health = '{users[7]}'  where username = '{users[1]}'";
+            MySqlCommand comd = new MySqlCommand(sqlQuary, conn);
+            comd.ExecuteReader();
+        }
+        catch (System.Exception e)
+        {
+
+            Debug.Log(e.Message);
+        }
+        finally
+        {
+            conn.Close();
+        }
+    }
 }

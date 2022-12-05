@@ -8,4 +8,20 @@ AnimatorOverrideController:
   m_PrefabAsset: {fileID: 0}
   m_Name: Mage
   m_Controller: {fileID: 9100000, guid: f757fe6d3e752ad4a8f33c304ecd00ae, type: 2}
-  m_Clips: []
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: f8c2d6a0ce3bc2d40b090cd67dd23862, type: 3}
+    m_OverrideClip: {fileID: 7400000, guid: be797334aa848784d838447aa3d3a0e4, type: 3}
+  - m_OriginalClip: {fileID: 7400000, guid: e3134dcc166cb094cbea4d98c7a84dbe, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: f8a66c15787dfb944987231e40cb524c, type: 3}
+  - m_OriginalClip: {fileID: 7400016, guid: 5fe51830c6e12034892d1041e85357b6, type: 3}
+    m_OverrideClip: {fileID: 7400000, guid: d9d469953be3eeb468fe9ec060467ded, type: 3}
+  - m_OriginalClip: {fileID: 7400000, guid: c274a1c9b7799424cbdb2122eb60032a, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: b02430a054524da49b8a1b7470eb4b58, type: 3}
+  - m_OriginalClip: {fileID: 7400000, guid: 30d4fe7af77240a44b9354aaed8e5beb, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 30d4fe7af77240a44b9354aaed8e5beb, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: d9aeb0314d9085b418c5e879eeb48c7b, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 2925abae0215239468ddfddfb64d2b13, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: c49724b227700c54b83e0d53e886a3c5, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 221eb808f97b3544aaf3ff64929a1088, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: dfa8085c88d2fb14e900a90807fb965c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: dfa8085c88d2fb14e900a90807fb965c, type: 2}

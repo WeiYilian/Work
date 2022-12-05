@@ -17,6 +17,8 @@ public class SkillThree :BaseSkill
         go.transform.rotation = PlayerConctroller.Instance.characterController.transform.rotation;
         GameObject.Destroy(go,2f);
         
+        AudioManager.Instance.PlayAudio(2,"Skill3");
+        
         base.EmitSpecialEffects();
     }
 

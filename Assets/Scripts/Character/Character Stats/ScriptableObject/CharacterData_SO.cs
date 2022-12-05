@@ -46,7 +46,7 @@ public class CharacterData_SO : ScriptableObject
 
     public float LevelMultiplier
     {
-        get { return 1 + (currentLevel - 1) * levelBuff;/*获得当前等级所需要获得的总的提升比例*/ }
+        get { return 1 + levelBuff;/*获得当前等级所需要获得的总的提升比例*/ }
     }
 
     /// <summary>
@@ -57,6 +57,8 @@ public class CharacterData_SO : ScriptableObject
     {
         currentExp += point;
         
+        PlayerConctroller.Instance.PlayerAttrib[6] = currentExp.ToString();
+        
         if (currentExp >= baseExp)
             LeveUp();
     }
@@ -66,15 +68,23 @@ public class CharacterData_SO : ScriptableObject
     /// </summary>
     private void LeveUp()
     {
+        GameObject go = GameFacade.Instance.LoadSlash("UPLevel");
+        go.transform.SetParent(GameObject.Find("Player").transform);
+        go.transform.position = GameObject.Find("Player").transform.position;
+        Destroy(go,1f);
+
+        PlayerConctroller.Instance.PlayerAttrib[5] = currentLevel.ToString();
+
         //所有想要提升的数据方法都可以写到这里
         currentLevel = Mathf.Clamp(currentLevel + 1, 0, maxLevel);//限制等级不能超过最大等级
         
-        baseExp += (int) (baseExp * LevelMultiplier/*以原始经验值的比例提升*/);//每一级所需要的经验增加
+        baseExp += baseExp;//每一级所需要的经验翻倍
         currentExp = 0;//经验值清零
-
+        PlayerConctroller.Instance.PlayerAttrib[6] = currentExp.ToString();
+        
         maxHealth = (int) (maxHealth * LevelMultiplier/*可以换成LevelBuff,就是以当前总生命值的比例提升*/);//每升一级，提升最大血量
         currentHealth = maxHealth;//恢复满血
-
+        
         Debug.Log("LEVEL UP!" +currentLevel+ "Max Health:" + maxHealth);
     }
 }

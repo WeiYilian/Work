@@ -11,24 +11,21 @@ public class GameLoop : MonoBehaviour
 {
     public static GameLoop Instance { get; private set; }
 
-    /// <summary>
-    /// 显示面板  可以在框架以外的地方显示面板
-    /// </summary>
-    public UnityAction<BasePanel> Push { get; private set; }
-
     private void Awake()
     {
         if(Instance == null)
             Instance = this;
         else
             Destroy(gameObject);
-
+        
         DontDestroyOnLoad(gameObject);//场景跳转之后不销毁该游戏物体
+        
+        //PanelManager.Instance.Push(new MainPanel());
     }
 
     private void Start()
     {
-        //SceneStateController.Instance.SetState(new StartScene(SceneStateController.Instance),false);
+        SceneStateController.Instance.SetState(new StartScene(SceneStateController.Instance),false);
     }
     
     private void Update()

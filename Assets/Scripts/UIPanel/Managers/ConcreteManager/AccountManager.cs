@@ -33,12 +33,14 @@ public class AccountManager : MonoBehaviour
         {
             account.GetComponent<Button>().onClick.AddListener(() =>
             {
+                AudioManager.Instance.PlayButtonAudio();
                 string username = account.transform.GetChild(3).GetComponent<Text>().text;
                 PanelManager.Instance.Push(new LoginPanel(username));
             });
             
             account.transform.GetChild(1).GetComponent<Button>().onClick.AddListener(() =>
             {
+                AudioManager.Instance.PlayButtonAudio();
                 //数据库中注销账号
                 DataManager.DeleteData(account.transform.GetChild(3).GetComponent<Text>().text);
                 Destroy(account.gameObject);

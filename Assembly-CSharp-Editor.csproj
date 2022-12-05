@@ -52,8 +52,8 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Asset Package\动画\ExplosiveLLC\Editor\SetupInputLayers.cs" />
      <Compile Include="Assets\Asset Package\主角\Toon\Editor\UTS2GUI.cs" />
-     <Compile Include="Assets\Asset Package\ExplosiveLLC\Editor\SetupInputLayers.cs" />
  <Reference Include="UnityEngine">
  <HintPath>D:/Unity/Editor/2020.3.36f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>

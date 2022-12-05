@@ -15,6 +15,8 @@ public class SkillTwo : BaseSkill
         go.GetComponentInChildren<ParticleSystem>().Play();
         GameObject.Destroy(go,1f);
         
+        //TODO:重击声音
+        
         base.EmitSpecialEffects();
     }
 

@@ -5,8 +5,7 @@ using UnityEngine;
 
 public class CharacterStats : MonoBehaviour
 {
-    //TODO：添加血条UI
-    //public event Action<int, int> UpdateHealthBarOnAttack;
+    public event Action<float, float> UpdateHealthBarOnAttack;
 
     public CharacterData_SO templateData;//模板数据
     
@@ -90,6 +89,7 @@ public class CharacterStats : MonoBehaviour
         CurrentHealth = Mathf.Max(CurrentHealth - damage, 0);
         if (defener.CompareTag("Player"))
         {
+            PlayerConctroller.Instance.PlayerAttrib[7] = CurrentHealth.ToString();
             PlayerConctroller.Instance.isHit = true;
             if(isSkill) 
                 defener.GetComponentInChildren<Animator>().SetTrigger("Repelled");
@@ -100,11 +100,28 @@ public class CharacterStats : MonoBehaviour
             defener.GetComponent<Animator>().SetTrigger("Hit");//播放敌人被打动画
 
         //update UI
-        //UpdateHealthBarOnAttack?.Invoke(CurrentHealth,MaxHealth);
+        UpdateHealthBarOnAttack?.Invoke(CurrentHealth,MaxHealth);
         //经验update
         if(CurrentHealth <= 0)
             attacker.characterData.UpdateExp(characterData.killPoint);
         
+    }
+    
+    /// <summary>
+    /// 法师攻击玩家时计算伤害
+    /// </summary>
+    /// <param name="damage"></param>
+    /// <param name="defener"></param>
+    public void TakeDamage(int damage, CharacterStats defener)
+    {
+        int CurrentDamage = Mathf.Max(damage - defener.CurrentDefence,0);
+        CurrentHealth = Mathf.Max(CurrentHealth - CurrentDamage, 0);
+        
+        //TODO:降低玩家的防御值并显示防御值下降UI
+        
+        //经验update
+        if(CurrentHealth <= 0)
+            PlayerConctroller.Instance.characterStats.characterData.UpdateExp(characterData.killPoint);
     }
 
     /// <summary>
@@ -120,7 +137,6 @@ public class CharacterStats : MonoBehaviour
             coreDamage *= characterData.criticalMultiplier;
             Debug.Log("暴击"+coreDamage);
         }
-
         return (int)coreDamage;
     }
     

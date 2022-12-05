@@ -11,7 +11,7 @@ public class GameFacade : MonoBehaviour
     /// 保存用户名方便其他模块调用
     /// </summary>
     private string playerName;
-    
+
     /// <summary>
     /// 工厂实例
     /// </summary>
@@ -30,9 +30,8 @@ public class GameFacade : MonoBehaviour
         else
             Destroy(gameObject);
         DontDestroyOnLoad(gameObject);//场景跳转之后不销毁该游戏物体
+        
         assetFactory = new ResourceAssetProxy();
-        // GameObject canvas = GameObject.Find("Canvas");
-        // mainPanelManager = canvas.transform.GetChild(0).GetComponent<MainPanelManager>();
     }
 
     #region 加载资源
@@ -65,7 +64,32 @@ public class GameFacade : MonoBehaviour
     {
         return assetFactory.LoadSlot("Slot");
     }
+
+    /// <summary>
+    /// 获得敌人
+    /// </summary>
+    /// <param name="name"></param>
+    /// <returns></returns>
+    public GameObject LoadEnemy(string name)
+    {
+        return assetFactory.LoadEnemy(name);
+    }
+
+    /// <summary>
+    /// 获得音效
+    /// </summary>
+    /// <param name="name"></param>
+    /// <returns></returns>
+    public AudioClip LoadAudioClip(string name)
+    {
+        return assetFactory.loadAudioClip(name);
+    }
     
+    public Sprite LoadSprite(string name)
+    {
+        return assetFactory.LoadSprite(name);
+    }
+
     #endregion
     
 }

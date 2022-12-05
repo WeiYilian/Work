@@ -13,10 +13,11 @@ public class MainScene : SceneState
     // ReSharper disable Unity.PerformanceAnalysis
     public override void StateStart()
     {
+        AudioManager.Instance.StopAudio(0);
+
         if (SceneManager.GetActiveScene().name != "Main"/*如果当前的场景名不为sceneName*/)
         {
             SceneManager.LoadScene("Main");//加载名为sceneName的场景
-            SceneManager.sceneLoaded += SceneLoaded;
         }
         else
         {
@@ -26,17 +27,8 @@ public class MainScene : SceneState
 
     public override void StateEnd()
     {
-        SceneManager.sceneLoaded -= SceneLoaded;
         PanelManager.Instance.PopAll();
     }
 
-    /// <summary>
-    /// 场景加载后执行的方法
-    /// </summary>
-    /// <param name="scene"></param>
-    /// <param name="loadSceneMode"></param>
-    private void SceneLoaded(Scene scene, LoadSceneMode loadSceneMode)
-    {
-        
-    }
+    
 }

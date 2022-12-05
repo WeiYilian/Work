@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,6 +9,8 @@ public class MainPanel : BasePanel
     private static readonly string path = "UI/Panel/MainPanel";
     
     public MainPanel():base(new UIType(path)){}
+
+    public static event Action PlayerInit;
     
     public Text userName;
 
@@ -27,6 +30,8 @@ public class MainPanel : BasePanel
     public override void OnEnter()
     {
         Init();
+        EvenCenter.AddListener(EventNum.GAMEOVER,ShowEndPanel);
+        PlayerInit?.Invoke();
     }
 
     // ReSharper disable Unity.PerformanceAnalysis
@@ -36,6 +41,21 @@ public class MainPanel : BasePanel
         {
             Push(new CharacterPanel());
         }
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            Push(new TaskPanel());
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Push(new SetPanel());
+        }
+    }
+
+    public override void OnExit()
+    {
+        EvenCenter.RemoveListener(EventNum.GAMEOVER,ShowEndPanel);
     }
 
     public void Init()
@@ -50,8 +70,11 @@ public class MainPanel : BasePanel
         skill1 = mainPanel.transform.Find("Content/SkillPanel/skillOne/Image/skill1").GetComponent<Image>();
         skill2 = mainPanel.transform.Find("Content/SkillPanel/skillTwo/Image/skill2").GetComponent<Image>();
         skill3 = mainPanel.transform.Find("Content/SkillPanel/skillThree/Image/skill3").GetComponent<Image>();
-        GameObject player = GameObject.Find("Player");
-        player.transform.GetChild(1).gameObject.SetActive(true);
-        player.transform.GetChild(0).gameObject.SetActive(true);
+    }
+    
+    private void ShowEndPanel()
+    {
+        if(!GameObject.Find("Canvas/OverPanel"))
+            PanelManager.Instance.Push(new OverPanel("任务失败"));
     }
 }

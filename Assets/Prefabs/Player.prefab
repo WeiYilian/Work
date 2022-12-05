@@ -8004,13 +8004,14 @@ GameObject:
   - component: {fileID: 3657502580033743660}
   - component: {fileID: 3336214207035774727}
   - component: {fileID: 2014297986860172426}
+  - component: {fileID: 2077728810}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6254044900573904614
 Transform:
   m_ObjectHideFlags: 0
@@ -8018,7 +8019,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6737671049766020188}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.580465, y: -0.77612495, z: -1.8115234}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -8094,11 +8095,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterController: {fileID: 0}
-  moveDirection: {x: 0, y: 0, z: 0}
-  formerMoveDirection: {x: 0, y: 0, z: 0}
+  animator: {fileID: 0}
+  characterStats: {fileID: 0}
+  photographer: {fileID: 0}
+  followingTarget: {fileID: 0}
+  myBag: {fileID: 11400000, guid: 74da1f0d562a6344490aa36e01b0629d, type: 2}
+  playerName: 
   canMove: 1
-  isRun: 0
   isHit: 0
+  isAttack: 0
+--- !u!136 &2077728810
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6737671049766020188}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.35
+  m_Height: 1.5
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.75, z: 0}
 --- !u!1 &6746080271316565972
 GameObject:
   m_ObjectHideFlags: 0

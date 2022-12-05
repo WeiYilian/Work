@@ -35,7 +35,7 @@ public abstract class BasePanel
     {
         UIManager = uiManager;
     }
-    
+
     /// <summary>
     /// UI进入时执行的操作，只会执行一次
     /// </summary>
@@ -66,6 +66,7 @@ public abstract class BasePanel
     /// </summary>
     public virtual void OnExit()
     {
+        AudioManager.Instance.PlayButtonAudio();
         UIManager.DestroyUI(UIType);
     }
 
