@@ -4,6 +4,12 @@
     <list default="true" id="b775748c-78e5-4a6e-a39a-082beed9becd" name="默认的" comment="3">
       <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Work/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Work/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +87,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/NoticePanel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/LoginPanel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/RegisterPanel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/ConfirmPanel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Base/BasePanel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Manager/InventoryManager/InventoryManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Manager/InventoryManager/Slot.cs" />
@@ -115,6 +120,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/CharacterPanel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/PlayerController/AttribController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/SettingPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/ConfirmPanel.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2HZjwdHyCQfyqko8RaV0ymMn4sG" />
@@ -229,6 +235,7 @@
       <workItem from="1670201002175" duration="15096000" />
       <workItem from="1670230073867" duration="12000" />
       <workItem from="1670239368406" duration="2262000" />
+      <workItem from="1670285072742" duration="671000" />
     </task>
     <task id="LOCAL-00001" summary="First submit">
       <created>1669188209138</created>
@@ -322,7 +329,8 @@
     <MESSAGE value="222" />
     <MESSAGE value="3" />
     <MESSAGE value="22213" />
-    <option name="LAST_COMMIT_MESSAGE" value="22213" />
+    <MESSAGE value="123" />
+    <option name="LAST_COMMIT_MESSAGE" value="123" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
