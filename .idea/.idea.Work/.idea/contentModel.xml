@@ -265,6 +265,7 @@
             <e p="CharacterController" t="Include">
               <e p="EnemyController" t="Include">
                 <e p="EnemyConcroller.cs" t="Include" />
+                <e p="EnemySpawn.cs" t="Include" />
                 <e p="Mage.cs" t="Include" />
                 <e p="Tool" t="Include">
                   <e p="HealthBarUI.cs" t="Include" />
@@ -272,7 +273,7 @@
                 </e>
               </e>
               <e p="MessageController" t="Include">
-                <e p="Discussant.cs" t="Include" />
+                <e p="Message.cs" t="Include" />
                 <e p="RockController.cs" t="Include" />
               </e>
               <e p="PlayerController" t="Include">
@@ -323,9 +324,6 @@
               <e p="TaskManager.cs" t="Include" />
             </e>
           </e>
-          <e p="Observer" t="Include">
-            <e p="EvenCenter.cs" t="Include" />
-          </e>
           <e p="SceneState" t="Include">
             <e p="Base" t="Include">
               <e p="SceneState.cs" t="Include" />
@@ -339,7 +337,15 @@
           </e>
           <e p="Tool" t="Include">
             <e p="ExtensionMethod.cs" t="Include" />
-            <e p="IEndGameObserver.cs" t="Include" />
+            <e p="IEnemy.cs" t="Include" />
+            <e p="ObjectPool" t="Include">
+              <e p="IPoolable.cs" t="Include" />
+              <e p="ObjectPool.cs" t="Include" />
+              <e p="Poolable.cs" t="Include" />
+            </e>
+            <e p="Observer" t="Include">
+              <e p="EvenCenter.cs" t="Include" />
+            </e>
             <e p="Singleton.cs" t="Include" />
           </e>
           <e p="UIPanel" t="Include">
@@ -350,7 +356,7 @@
             <e p="Concrete" t="Include">
               <e p="CharacterPanel.cs" t="Include" />
               <e p="ConfirmPanel.cs" t="Include" />
-              <e p="LoadingPanel.cs" t="Include" />
+              <e p="DialoguePanel.cs" t="Include" />
               <e p="LoginPanel.cs" t="Include" />
               <e p="MainPanel.cs" t="Include" />
               <e p="NoticePanel.cs" t="Include" />

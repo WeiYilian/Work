@@ -106,6 +106,18 @@ public class CharacterStats : MonoBehaviour
             attacker.characterData.UpdateExp(characterData.killPoint);
         
     }
+
+    public void SkillTakeDamage(CharacterStats attacker, CharacterStats defener,int Multiple)
+    {
+        int damage = Mathf.Max(attacker.CurrentDamage() * Multiple - defener.CurrentDefence, 0);
+        CurrentHealth = Mathf.Max(CurrentHealth - damage, 0);
+        defener.GetComponent<Animator>().SetTrigger("Hit");//播放敌人被打动画
+        //update UI
+        UpdateHealthBarOnAttack?.Invoke(CurrentHealth,MaxHealth);
+        //经验update
+        if(CurrentHealth <= 0)
+            attacker.characterData.UpdateExp(characterData.killPoint);
+    }
     
     /// <summary>
     /// 法师攻击玩家时计算伤害

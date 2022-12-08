@@ -9,11 +9,11 @@ public class SkillFour : BaseSkill
         
     public override void EmitSpecialEffects()
     {
-        GameObject go = GameFacade.Instance.LoadSlash("Sword_Slash_A");
+        GameObject go = ObjectPool.Instance.Get("Sword_Slash_A");
         go.transform.position = EmitPoint.transform.position + Vector3.up * 0.5f;
         go.transform.rotation = PlayerConctroller.Instance.characterController.transform.rotation;
         go.transform.Rotate(new Vector3(0,-90,0));
-        GameObject.Destroy(go,1f);
+        ObjectPool.Instance.Remove("Sword_Slash_A",go,1f);
         
         //TODO:重击声音
         
@@ -22,7 +22,7 @@ public class SkillFour : BaseSkill
     
     public override void SkillHit(CharacterStats playerStats, CharacterStats enemyStats)
     {
-        //第四下攻击增加 5 点真实伤害
-        enemyStats.characterData.currentHealth -= 5;
+        //双倍伤害
+        enemyStats.SkillTakeDamage(playerStats, enemyStats,2);
     }
 }

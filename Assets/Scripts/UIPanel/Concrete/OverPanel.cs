@@ -21,17 +21,17 @@ public class OverPanel : BasePanel
         UITool.GetOrAddComponentInChildren<Button>("Resume").onClick.AddListener(() =>
         {
             AudioManager.Instance.PlayButtonAudio();
-            SceneStateController.Instance.SetState(new StartScene(SceneStateController.Instance.mSceneState.mController));
+            SceneStateController.Instance.SetState(new StartScene());
         });
         
         UITool.GetOrAddComponentInChildren<Button>("Quit").onClick.AddListener(() =>
         {
             AudioManager.Instance.PlayButtonAudio();
-#if UNITY_EDITOR
+    #if UNITY_EDITOR
             UnityEditor.EditorApplication.isPlaying = false;//在编辑器中退出
-#else
+    #else
            Application.Quit();//在打包之后的退出游戏
-#endif
+    #endif
         });
     }
 }

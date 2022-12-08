@@ -22,8 +22,7 @@ public class SetPanel : BasePanel
         UITool.GetOrAddComponentInChildren<Button>("MainMenu").onClick.AddListener(() =>
         {
             AudioManager.Instance.PlayButtonAudio();
-            //TODO:保存数据
-            SceneStateController.Instance.SetState(new StartScene(SceneStateController.Instance.mSceneState.mController));
+            SceneStateController.Instance.SetState(new StartScene());
         });
         
         UITool.GetOrAddComponentInChildren<Button>("ExitGame").onClick.AddListener(() =>

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Object = System.Object;
 
 public class AttribController
 {
@@ -58,10 +59,9 @@ public class AttribController
     {
         if (beforeHealth < characterStats.CurrentHealth)
         {
-            GameObject go = GameFacade.Instance.LoadSlash("Treat");
-            go.transform.SetParent(GameObject.Find("Player").transform);
-            go.transform.position = GameObject.Find("Player").transform.position;
-            GameObject.Destroy(go,1f);
+            GameObject go = ObjectPool.Instance.Get("Treat", playerConctroller.transform);
+            go.transform.position = playerConctroller.transform.position;
+            ObjectPool.Instance.Remove("Treat",go,1);
         }
         beforeHealth = characterStats.CurrentHealth;
     }

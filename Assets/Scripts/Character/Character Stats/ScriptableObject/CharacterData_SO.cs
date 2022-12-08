@@ -68,10 +68,9 @@ public class CharacterData_SO : ScriptableObject
     /// </summary>
     private void LeveUp()
     {
-        GameObject go = GameFacade.Instance.LoadSlash("UPLevel");
-        go.transform.SetParent(GameObject.Find("Player").transform);
-        go.transform.position = GameObject.Find("Player").transform.position;
-        Destroy(go,1f);
+        GameObject go = ObjectPool.Instance.Get("UPLevel", PlayerConctroller.Instance.transform);
+        go.transform.position = PlayerConctroller.Instance.transform.position;
+        ObjectPool.Instance.Remove("UPLevel",go,1);
 
         PlayerConctroller.Instance.PlayerAttrib[5] = currentLevel.ToString();
 

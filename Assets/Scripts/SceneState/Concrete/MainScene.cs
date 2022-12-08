@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 /// </summary>
 public class MainScene : SceneState
 {
-    public MainScene(string sceneName, SceneStateController stateController) : base("Main", stateController) { }
+    public MainScene() : base("Main") { }
 
     // ReSharper disable Unity.PerformanceAnalysis
     public override void StateStart()
@@ -19,9 +19,20 @@ public class MainScene : SceneState
         {
             SceneManager.LoadScene("Main");//加载名为sceneName的场景
         }
+        PanelManager.Instance.Push(new MainPanel());
+    }
+
+    public override void StateUpdate()
+    {
+        if (PanelManager.Instance.CurrentPanel().UIType.Name != "MainPanel")
+        {
+            Time.timeScale = 0;
+            PlayerConctroller.Instance.isTimeOut = true;
+        }
         else
         {
-            PanelManager.Instance.Push(new MainPanel());
+            Time.timeScale = 1;
+            PlayerConctroller.Instance.isTimeOut = false;
         }
     }
 
@@ -30,5 +41,5 @@ public class MainScene : SceneState
         PanelManager.Instance.PopAll();
     }
 
-    
+
 }

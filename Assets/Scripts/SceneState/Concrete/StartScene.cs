@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 /// </summary>
 public class StartScene : SceneState
 {
-    public StartScene(SceneStateController sceneStateController) : base("Start", sceneStateController) { }
+    public StartScene() : base("Start") { }
 
     public override void StateStart()
     {
@@ -25,17 +25,6 @@ public class StartScene : SceneState
 
     public override void StateEnd()
     {
-        SceneManager.sceneLoaded -= SceneLoaded;
         PanelManager.Instance.PopAll();
-    }
-
-    /// <summary>
-    /// 场景加载后执行的方法
-    /// </summary>
-    /// <param name="scene"></param>
-    /// <param name="loadSceneMode"></param>
-    private void SceneLoaded(Scene scene, LoadSceneMode loadSceneMode)
-    {
-        //PanelManager.Instance.Push(new StartPanel());
     }
 }

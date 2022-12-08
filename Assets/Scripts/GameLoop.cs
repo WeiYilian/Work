@@ -3,6 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 /// <summary>
 /// 管理全局东西
@@ -13,21 +16,22 @@ public class GameLoop : MonoBehaviour
 
     private void Awake()
     {
-        if(Instance == null)
+        var find = GameObject.Find("GameLoop");
+
+        if (find == gameObject)
+        {
             Instance = this;
+            DontDestroyOnLoad(gameObject);//场景跳转之后不销毁该游戏物体
+        }
         else
             Destroy(gameObject);
-        
-        DontDestroyOnLoad(gameObject);//场景跳转之后不销毁该游戏物体
-        
-        //PanelManager.Instance.Push(new MainPanel());
     }
 
     private void Start()
     {
-        SceneStateController.Instance.SetState(new StartScene(SceneStateController.Instance),false);
+        //SceneStateController.Instance.SetState(new StartScene(),false);
     }
-    
+
     private void Update()
     {
         //在不同的状态下，需要更新的数据是不一样的
@@ -39,6 +43,6 @@ public class GameLoop : MonoBehaviour
         
         if(PanelManager.Instance.CurrentPanel() != null)
             PanelManager.Instance.CurrentPanel().OnUpdata();
-        
     }
+
 }

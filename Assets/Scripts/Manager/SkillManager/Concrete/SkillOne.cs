@@ -10,10 +10,10 @@ public class SkillOne : BaseSkill
 
     public override void EmitSpecialEffects()
     {
-        GameObject go = GameFacade.Instance.LoadSlash("Sword_Slash_1");
+        GameObject go = ObjectPool.Instance.Get("Sword_Slash_1");
         go.transform.position = EmitPoint.transform.position + Vector3.up * 0.5f;
         go.transform.rotation = PlayerConctroller.Instance.characterController.transform.rotation;
-        GameObject.Destroy(go,1f);
+        ObjectPool.Instance.Remove("Sword_Slash_1",go,1f);
         
         AudioManager.Instance.PlayAudio(2,"SwingEmpty");
         
@@ -22,6 +22,7 @@ public class SkillOne : BaseSkill
 
     public override void SkillHit(CharacterStats playerStats, CharacterStats enemyStats)
     {
+        enemyStats.TakeDamage(playerStats, enemyStats);
         //技能一：吸取总血量的10%
         int absorbHealth = (int) (playerStats.characterData.maxHealth * 0.1f);
         playerStats.characterData.currentHealth = Mathf.Min(playerStats.characterData.currentHealth + absorbHealth,playerStats.characterData.maxHealth);

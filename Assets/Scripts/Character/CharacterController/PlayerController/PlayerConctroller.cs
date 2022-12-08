@@ -41,8 +41,10 @@ public class PlayerConctroller : MonoBehaviour
     [HideInInspector] public bool isHit;
     //判断是否攻击
     [HideInInspector] public bool isAttack;
-    
+    //判断是否死亡
     [HideInInspector] public bool isDeath;
+    //判断是否暂停
+    [HideInInspector] public bool isTimeOut;
 
     public string PlayerName
     {
@@ -60,7 +62,10 @@ public class PlayerConctroller : MonoBehaviour
     {
         if(Instance == null)
             Instance = this;
-        
+    }
+
+    private void Start()
+    {
         Init();
     }
 
@@ -78,9 +83,9 @@ public class PlayerConctroller : MonoBehaviour
 
     private void Init()
     {
-        PlayerName = PlayerPrefs.GetString("Player");
+        //TODO:PlayerName = PlayerPrefs.GetString("Player");
+        PlayerName = "吴先谱";
         PlayerAttrib = DataManager.SelectUser(PlayerName);
-        Debug.Log(playerAttrib[7]);
 
         characterController = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
@@ -93,6 +98,19 @@ public class PlayerConctroller : MonoBehaviour
         attackController = new AttackController();
         attribController = new AttribController();
         
+        //TODO:测试用
+        PanelManager.Instance.Push(new MainPanel());
+        ObjectPool.Instance.Init("Mage",GameFacade.Instance.LoadGameObject("Mage"),5);
+        ObjectPool.Instance.Init("Warrior",GameFacade.Instance.LoadGameObject("Warrior"),5);
+        ObjectPool.Instance.Init("Sword_Slash_A",GameFacade.Instance.LoadGameObject("Sword_Slash_A"),1);
+        ObjectPool.Instance.Init("Sword_Slash_1",GameFacade.Instance.LoadGameObject("Sword_Slash_1"),1);
+        ObjectPool.Instance.Init("Sword_Slash_2",GameFacade.Instance.LoadGameObject("Sword_Slash_2"),1);
+        ObjectPool.Instance.Init("Sword_Slash_3",GameFacade.Instance.LoadGameObject("Sword_Slash_3"),1);
+        ObjectPool.Instance.Init("MageSkill",GameFacade.Instance.LoadGameObject("MageSkill"),1);
+        ObjectPool.Instance.Init("MageAttack",GameFacade.Instance.LoadGameObject("MageAttack"),1);
+        ObjectPool.Instance.Init("UPLevel",GameFacade.Instance.LoadGameObject("UPLevel"),1);
+        ObjectPool.Instance.Init("Treat",GameFacade.Instance.LoadGameObject("Treat"),1);
+
         //将数据库中的数据装入游戏中
         characterStats.CurrentHealth = Convert.ToSingle(playerAttrib[7]);
         characterStats.CurrentExp = Convert.ToSingle(playerAttrib[6]);

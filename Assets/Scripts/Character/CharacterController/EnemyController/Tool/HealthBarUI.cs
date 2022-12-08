@@ -6,10 +6,8 @@ using UnityEngine.UI;
 
 public class HealthBarUI : MonoBehaviour
 {
-    //血条的Prefab
-    public GameObject healthUIPrefab;
     //实例化血条的位置
-    public Transform barPoint;
+    private GameObject barPoint;
     //判断血条是否长久可见
     public bool alwayVisible;
     //控制血条可视化时间
@@ -20,43 +18,44 @@ public class HealthBarUI : MonoBehaviour
     //血条滑动条
     private Image healthSlider;
     //用来接创建出来的血条位置，方便与barPoint保持一致
-    private Transform UIbar;
+    private GameObject UIbar;
     //拿到摄像机的位置，因为需要将血条面向摄像机
-    private Transform cam;
+    private Camera cam;
 
     private CharacterStats currentStats;
     
     private void Awake()
     {
         currentStats = GetComponent<CharacterStats>();
-
+        barPoint = transform.Find("HealthBarPoint").gameObject;
         currentStats.UpdateHealthBarOnAttack += UpdateHealthBar;
     }
 
     private void OnEnable()
     {
-        cam = Camera.main.transform;
+        cam = Camera.main;
 
         foreach (Canvas canvas in FindObjectsOfType<Canvas>()/*获得所有Canvas组件*/)
         {
-            if (canvas.renderMode == RenderMode.WorldSpace)/*判断Canvas的模式是否是WorldSpace模式（世界模式）*/
+            if (canvas.renderMode == RenderMode.WorldSpace && barPoint.transform.childCount == 0)/*判断Canvas的模式是否是WorldSpace模式（世界模式）*/
             {
-                UIbar = Instantiate(healthUIPrefab, canvas.transform).transform;
-                healthSlider = UIbar.GetChild(0).GetComponent<Image>();
+                UIbar = ObjectPool.Instance.Get("Health",canvas.transform);
+                UIbar.transform.position = barPoint.transform.position;
+                healthSlider = UIbar.transform.GetChild(0).GetComponent<Image>();
                 UIbar.gameObject.SetActive(alwayVisible);
             }
         }
     }
 
     /// <summary>
-    /// 实例化血条出来，并且血条随当前生命值变化
+    /// 更新血条,让血条随生命值变化
     /// </summary>
     /// <param name="currentHealth"></param>
     /// <param name="maxHealth"></param>
     private void UpdateHealthBar(float currentHealth, float maxHealth)
     {
         if(currentHealth <= 0)
-            Destroy(UIbar.gameObject);
+            ObjectPool.Instance.Remove("Health",UIbar);
 
         UIbar.gameObject.SetActive(true);
         timeLeft = visibleTime;
@@ -73,8 +72,8 @@ public class HealthBarUI : MonoBehaviour
     {
         if (UIbar != null)
         {
-            UIbar.position = barPoint.position;
-            UIbar.forward = -cam.forward;//血条面向摄像机
+            UIbar.transform.position = barPoint.transform.position;
+            UIbar.transform.forward = -cam.transform.forward;//血条面向摄像机
 
             if (timeLeft <= 0 && !alwayVisible)
                 UIbar.gameObject.SetActive(false);

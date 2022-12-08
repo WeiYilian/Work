@@ -4,37 +4,9 @@ using UnityEngine;
 
 public class ResourceAssetFactory : IAssetFactory
 {
-    public string SlashPath = "Slash/";
-    public string AccountPath = "UI/Account/";
-    public string SlotPath = "UI/Slot/";
-    public string EnemyPath = "Enemy/";
     public string AudioClipPath = "music/";
     public string SpritePath = "Sprite/";
-
-    /// <summary>
-    /// 实例化特效
-    /// </summary>
-    /// <param name="name"></param>
-    /// <returns></returns>
-    public virtual GameObject LoadSlash(string name)
-    {
-        return LoadGameObject(SlashPath + name);
-    }
-
-    public GameObject LoadAccount(string name)
-    {
-        return LoadGameObject(AccountPath + name);
-    }
-
-    public GameObject LoadSlot(string name)
-    {
-        return LoadGameObject(SlotPath + name);
-    }
-
-    public GameObject LoadEnemy(string name)
-    {
-        return LoadGameObject(EnemyPath + name);
-    }
+    public string GOSPath = "GameObject/";
 
     public AudioClip loadAudioClip(string name)
     {
@@ -46,8 +18,13 @@ public class ResourceAssetFactory : IAssetFactory
         return Resources.Load<Sprite>(name);
     }
 
+    public GameObject LoadGameObject(string name)
+    {
+        return LoadGOS(GOSPath + name);
+    }
 
-    private GameObject LoadGameObject(string path)
+
+    private GameObject LoadGOS(string path)
     {
         Object o = Resources.Load(path);
 

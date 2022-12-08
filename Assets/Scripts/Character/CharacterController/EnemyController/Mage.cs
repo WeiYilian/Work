@@ -10,16 +10,16 @@ public class Mage : EnemyConcroller
 
     public override void Hit()
     {
-        GameObject MageSkill = GameFacade.Instance.LoadSlash("MageSkill");
+        GameObject MageSkill = ObjectPool.Instance.Get("MageSkill",transform);
         MageSkill.transform.position = attackPoint.transform.position;
         MageSkill.GetComponent<MageAttack>().attackTarget = AttackTarget;
     }
 
     public override void KickOff()
     {
-        GameObject MageAttack = GameFacade.Instance.LoadSlash("MageAttack");
+        GameObject MageAttack = ObjectPool.Instance.Get("MageAttack");
         MageAttack.transform.position = RandomSpawnPoint();
-        GameObject Warrior = GameFacade.Instance.LoadEnemy("Warrior");
+        GameObject Warrior = ObjectPool.Instance.Get("Warrior");
         Warrior.transform.position = MageAttack.transform.position;
         Warrior.GetComponent<EnemyConcroller>().isSpawn = true;
         StartCoroutine(SpawnWarrior(Warrior,MageAttack));
@@ -50,9 +50,14 @@ public class Mage : EnemyConcroller
     // ReSharper disable Unity.PerformanceAnalysis
     IEnumerator SpawnWarrior(GameObject Warrior,GameObject MageAttack)
     {
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(5);
         Destroy(MageAttack);
         Warrior.GetComponent<EnemyConcroller>().isSpawn = false;
         Warrior.GetComponent<Collider>().enabled = true;
+    }
+
+    public override void EnemyDie()
+    {
+        ObjectPool.Instance.Remove("Mage",gameObject);
     }
 }

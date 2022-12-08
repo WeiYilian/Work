@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Timeline.Actions;
 using UnityEngine;
 using UnityEngine.AI;
 using Random = UnityEngine.Random;
@@ -9,7 +10,7 @@ using Random = UnityEngine.Random;
 public enum EnemyStates {GUARD, PATROL, CHASE ,DEAD }
 [RequireComponent(typeof(NavMeshAgent))]//要求脚本挂载的物体上必须要有某个组件
 [RequireComponent(typeof(CharacterStats))]
-public class EnemyConcroller : MonoBehaviour,IEndGameObserver
+public class EnemyConcroller : MonoBehaviour,IEnemy,IPoolable
 {
     private EnemyStates enemyStates;
     private NavMeshAgent agent;
@@ -94,11 +95,11 @@ public class EnemyConcroller : MonoBehaviour,IEndGameObserver
         animator.SetBool("Walk",isWalk);
         animator.SetBool("Chase",isChase);
         animator.SetBool("Follow",isFollow);
-        animator.SetBool("Critical",characterStats.isCritical);
         animator.SetBool("Death", isDead);
     }
     
     
+    // ReSharper disable Unity.PerformanceAnalysis
     /// <summary>
     /// 状态切换
     /// </summary>
@@ -109,7 +110,10 @@ public class EnemyConcroller : MonoBehaviour,IEndGameObserver
             enemyStates = EnemyStates.DEAD;
         //如果发现Player，切换到CHASE
         else if (FoundPlayer())
+        {
             enemyStates = EnemyStates.CHASE;
+        }
+            
 
         switch (enemyStates)
         {
@@ -198,7 +202,7 @@ public class EnemyConcroller : MonoBehaviour,IEndGameObserver
             case EnemyStates.DEAD://死亡模式
                 collider.enabled = false;//关闭collider
                 agent.radius = 0;
-                Destroy(gameObject,2f);
+                Invoke(nameof(EnemyDie), 2f);
                 break;
         }
     }
@@ -301,6 +305,11 @@ public class EnemyConcroller : MonoBehaviour,IEndGameObserver
         }
     }
 
+    public virtual void EnemyDie()
+    {
+        ObjectPool.Instance.Remove("warrior",gameObject);
+    }
+
     #endregion
     
     
@@ -325,4 +334,14 @@ public class EnemyConcroller : MonoBehaviour,IEndGameObserver
         Gizmos.DrawWireSphere(transform.position, sightRadius);
     }
 
+    public void Dispose()
+    {
+        gameObject.SetActive(false);
+    }
+
+    public void Init()
+    {
+        characterStats.CurrentHealth = characterStats.MaxHealth;
+        gameObject.SetActive(true);
+    }
 }

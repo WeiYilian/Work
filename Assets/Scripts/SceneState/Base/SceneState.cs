@@ -12,10 +12,10 @@ public abstract class SceneState
     //场景状态管理
     public SceneStateController mController;
     public string MSceneName { get => mSceneName;}
-    public SceneState(string sceneName, SceneStateController stateController)
+    public SceneState(string sceneName)
     {
         mSceneName = sceneName;
-        mController = stateController;
+        mController = SceneStateController.Instance;
     }
     
     //每次进入到这个状态的时候调用

@@ -49,10 +49,9 @@ public abstract class BaseSkill
 
         foreach (var enemy in colliders)
         {
-            if (enemy.CompareTag("Enemy") && Player.transform.IsFacingTarget(enemy.transform,SkillAngle)/*扩展方法*/)
+            if (enemy.GetComponent<IEnemy>() != null && Player.transform.IsFacingTarget(enemy.transform,SkillAngle)/*扩展方法*/)
             {
                 var targetStats = enemy.GetComponent<CharacterStats>();
-                targetStats.TakeDamage(playerCharacterStats, targetStats);
                 SkillHit(playerCharacterStats, targetStats);
             }
         }

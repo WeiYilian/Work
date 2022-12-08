@@ -51,7 +51,7 @@ public class InventoryManager
 
         for (int i = 0; i < PlayerConctroller.Instance.myBag.itemList.Count; i++)
         {
-            slots.Add(GameFacade.Instance.LoadSlot());
+            slots.Add(GameFacade.Instance.LoadGameObject("Slot"));
             slots[i].transform.SetParent(slotGird.transform);
             slots[i].GetComponent<Slot>().SetupSlot(PlayerConctroller.Instance.myBag.itemList[i]);
         }

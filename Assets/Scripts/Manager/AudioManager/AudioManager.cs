@@ -11,8 +11,15 @@ public class AudioManager : MonoBehaviour
  
     void Awake()
     {
-        Instance = this;
-        DontDestroyOnLoad(this);
+        var find = GameObject.Find("GameLoop");
+
+        if (find == this.gameObject)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);//场景跳转之后不销毁该游戏物体
+        }
+        else
+            Destroy(gameObject);
     }
 
     //audioClipl列表
@@ -145,7 +152,6 @@ public class AudioManager : MonoBehaviour
         AudioClip audioClip;
         if (audioDic.TryGetValue(audioNme, out audioClip))
         {
-            Debug.Log("dwadsadwad");
             bgAudioSource.gameObject.SetActive(true);
             bgAudioSource.clip = audioClip;
             transform.GetChild(0).gameObject.SetActive(true);

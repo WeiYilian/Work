@@ -12,7 +12,7 @@ public class AccountManager : MonoBehaviour
 
     private void Awake()
     {
-        accountPrefab = GameFacade.Instance.LoadAccount();
+        accountPrefab = GameFacade.Instance.LoadGameObject("Account");
     }
 
     private void Start()

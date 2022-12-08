@@ -32,7 +32,7 @@ public class AttackController
         Skills.Add(new SkillThree(PlayerConctroller.PanelManager.MainPanel().skill3));
         Skills.Add(new SkillFour());
     }
-    
+
     #region 普通攻击参数设置
     
     [Header("攻击参数设置")]
@@ -166,7 +166,6 @@ public class AttackController
             cdTime = 0;
         }
     }
-
     #endregion
 
     #region 动画事件
@@ -188,7 +187,8 @@ public class AttackController
 
         foreach (var enemy in colliders)
         {
-            if (enemy.CompareTag("Enemy") && PlayerConctroller.Instance.transform.IsFacingTarget(enemy.transform)/*扩展方法*/)
+           
+            if (enemy.GetComponent<IEnemy>() != null && PlayerConctroller.Instance.transform.IsFacingTarget(enemy.transform)/*扩展方法*/)
             {
                 AudioManager.Instance.PlayAudio(2,"Attack1");
                 var targetStats = enemy.GetComponent<CharacterStats>();

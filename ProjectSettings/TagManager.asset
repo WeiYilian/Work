@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - MageFire
+  - Mage
   layers:
   - Default
   - TransparentFX

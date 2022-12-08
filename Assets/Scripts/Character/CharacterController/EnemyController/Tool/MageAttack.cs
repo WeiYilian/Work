@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEditor.Timeline.Actions;
 using UnityEngine;
 
-public class MageAttack : MonoBehaviour
+public class MageAttack : MonoBehaviour,IPoolable
 {
     public GameObject attackTarget;
     private CharacterStats parentStats;
@@ -29,7 +29,17 @@ public class MageAttack : MonoBehaviour
         {
             var targetStats = attackTarget.GetComponentInChildren<CharacterStats>();
             targetStats.TakeDamage(damage, targetStats);
-            Destroy(gameObject);
+            ObjectPool.Instance.Remove("MageSkill",gameObject);
         }
+    }
+
+    public void Dispose()
+    {
+        gameObject.SetActive(false);
+    }
+
+    public void Init()
+    {
+        gameObject.SetActive(true);
     }
 }

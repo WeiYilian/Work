@@ -25,54 +25,31 @@ public class GameFacade : MonoBehaviour
 
     private void Awake()
     {
-        if(Instance == null)
+        var find = GameObject.Find("GameLoop");
+
+        if (find == this.gameObject)
+        {
             Instance = this;
+            DontDestroyOnLoad(gameObject);//场景跳转之后不销毁该游戏物体
+        }
         else
             Destroy(gameObject);
-        DontDestroyOnLoad(gameObject);//场景跳转之后不销毁该游戏物体
         
         assetFactory = new ResourceAssetProxy();
     }
 
     #region 加载资源
 
+    
+
     /// <summary>
-    /// 获得技能特效
+    /// 获得游戏物体
     /// </summary>
     /// <param name="name"></param>
     /// <returns></returns>
-    public GameObject LoadSlash(string name)
+    public GameObject LoadGameObject(string name)
     {
-        return assetFactory.LoadSlash(name);
-    }
-
-    /// <summary>
-    /// 获得开始界面的玩家信息面板
-    /// </summary>
-    /// <returns></returns>
-    public GameObject LoadAccount()
-    {
-        return assetFactory.LoadAccount("Account");
-    }
-
-    /// <summary>
-    /// 加载背包系统的格子
-    /// </summary>
-    /// <param name="name"></param>
-    /// <returns></returns>
-    public GameObject LoadSlot()
-    {
-        return assetFactory.LoadSlot("Slot");
-    }
-
-    /// <summary>
-    /// 获得敌人
-    /// </summary>
-    /// <param name="name"></param>
-    /// <returns></returns>
-    public GameObject LoadEnemy(string name)
-    {
-        return assetFactory.LoadEnemy(name);
+        return assetFactory.LoadGameObject(name);
     }
 
     /// <summary>

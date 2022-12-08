@@ -7,7 +7,7 @@ public class Dead : StateMachineBehaviour
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        if (animator.transform.name == "Mage")
+        if (animator.CompareTag("Mage"))
             TaskManager.Instance.Tasks[0].TaskCompletion++;
     }
 
