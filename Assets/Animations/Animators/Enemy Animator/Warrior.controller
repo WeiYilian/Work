@@ -162,8 +162,7 @@ AnimatorState:
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
-  m_StateMachineBehaviours:
-  - {fileID: -2278795736406094363}
+  m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -436,7 +435,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: Win Layer
     m_StateMachine: {fileID: 1258549370448616078}
-    m_Mask: {fileID: 0}
+    m_Mask: {fileID: 31900000, guid: 9913981f76397fc46b0c2110420ae8df, type: 2}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0
@@ -728,7 +727,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 8c40e2e07d454734183021515f5adff9, type: 2}
+  m_Motion: {fileID: -203655887218126122, guid: db653f990740c2b4392a0161aebbd2e0, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

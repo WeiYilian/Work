@@ -47,6 +47,8 @@ public class ObjectPool : MonoBehaviour
     {
         for (int i = 0; i < defaultCount; i++)
         {
+            if (parent == null)
+                parent = GameObject.Find("GameObject").transform;
             GameObject go = Instantiate(obj,parent);
             // 将生成的对象入队
             if (Pool.TryGetValue(type,out Queue<GameObject> queue))
@@ -64,6 +66,7 @@ public class ObjectPool : MonoBehaviour
         }
     }
     
+    // ReSharper disable Unity.PerformanceAnalysis
     /// <summary>
     /// 从池子中取出物体
     /// </summary>
@@ -80,13 +83,12 @@ public class ObjectPool : MonoBehaviour
                 // 将对象出队
                 tmp = pool.Dequeue();
                 tmp.GetComponent<IPoolable>().Init();
+                tmp.transform.SetParent(parent);
             }
-            // 如果池子中没有物体，直接新建一个物体
-            else
+            else// 如果池子中没有物体，直接新建一个物体
             {
                 
                 tmp = GameFacade.Instance.LoadGameObject(type);
-                pool.Enqueue(tmp);
                 return Instantiate(tmp,parent);
             }
         }
@@ -95,12 +97,12 @@ public class ObjectPool : MonoBehaviour
             Queue<GameObject> newPool = new Queue<GameObject>();
             Pool.Add(type,newPool);
             tmp = GameFacade.Instance.LoadGameObject(type);
-            newPool.Enqueue(tmp);
             return Instantiate(tmp,parent);
         }
         return tmp;
     }
     
+    // ReSharper disable Unity.PerformanceAnalysis
     /// <summary>
     /// 将物体回收进池子
     /// </summary>

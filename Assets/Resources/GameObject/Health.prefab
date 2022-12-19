@@ -70,7 +70,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.9
+  m_FillAmount: 0.96
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -101,8 +101,8 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3521814978005295761}
-  m_LocalRotation: {x: -0.0718828, y: 0.92792445, z: 0.24863659, w: 0.26827025}
-  m_LocalPosition: {x: 0, y: 0, z: -3.8249102}
+  m_LocalRotation: {x: -0.24301662, y: -0.33234552, z: -0.08905171, w: 0.90695053}
+  m_LocalPosition: {x: 0, y: 0, z: -49.819836}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 522609713560179382}
@@ -111,7 +111,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.789719, y: -7.1996107}
+  m_AnchoredPosition: {x: 86.16969, y: -7.3350754}
   m_SizeDelta: {x: 1, y: 0.15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4767775598234721051

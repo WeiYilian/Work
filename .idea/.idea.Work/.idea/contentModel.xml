@@ -245,7 +245,6 @@
         <e p="Scripts" t="Include">
           <e p="AnimationScript" t="Include">
             <e p="Attacked.cs" t="Include" />
-            <e p="Dead.cs" t="Include" />
             <e p="EnemyAttack.cs" t="Include" />
             <e p="StopAgent.cs" t="Include" />
             <e p="StopMove.cs" t="Include" />
@@ -265,16 +264,12 @@
             <e p="CharacterController" t="Include">
               <e p="EnemyController" t="Include">
                 <e p="EnemyConcroller.cs" t="Include" />
-                <e p="EnemySpawn.cs" t="Include" />
                 <e p="Mage.cs" t="Include" />
                 <e p="Tool" t="Include">
+                  <e p="EnemySpawn.cs" t="Include" />
                   <e p="HealthBarUI.cs" t="Include" />
                   <e p="MageAttack.cs" t="Include" />
                 </e>
-              </e>
-              <e p="MessageController" t="Include">
-                <e p="Message.cs" t="Include" />
-                <e p="RockController.cs" t="Include" />
               </e>
               <e p="PlayerController" t="Include">
                 <e p="AttackController.cs" t="Include" />
@@ -283,6 +278,10 @@
                 <e p="MoveController.cs" t="Include" />
                 <e p="PlayerConctroller.cs" t="Include" />
               </e>
+            </e>
+            <e p="ObjectController" t="Include">
+              <e p="BoxController.cs" t="Include" />
+              <e p="RockController.cs" t="Include" />
             </e>
           </e>
           <e p="GameFacade.cs" t="Include" />
@@ -307,6 +306,7 @@
               <e p="InventoryManager.cs" t="Include" />
               <e p="ItemOnSlot.cs" t="Include" />
               <e p="Slot.cs" t="Include" />
+              <e p="UseItem.cs" t="Include" />
             </e>
             <e p="SkillManager" t="Include">
               <e p="Base" t="Include">
@@ -320,6 +320,7 @@
               </e>
             </e>
             <e p="TaskManager" t="Include">
+              <e p="Message.cs" t="Include" />
               <e p="Task.cs" t="Include" />
               <e p="TaskManager.cs" t="Include" />
             </e>
@@ -346,7 +347,6 @@
             <e p="Observer" t="Include">
               <e p="EvenCenter.cs" t="Include" />
             </e>
-            <e p="Singleton.cs" t="Include" />
           </e>
           <e p="UIPanel" t="Include">
             <e p="Base" t="Include">
@@ -361,12 +361,13 @@
               <e p="MainPanel.cs" t="Include" />
               <e p="NoticePanel.cs" t="Include" />
               <e p="OverPanel.cs" t="Include" />
+              <e p="PlayerTaskPanel.cs" t="Include" />
               <e p="RegisterPanel.cs" t="Include" />
               <e p="SetPanel.cs" t="Include" />
-              <e p="SettingPanel.cs" t="Include" />
               <e p="StartPanel.cs" t="Include" />
-              <e p="TaskPanel.cs" t="Include" />
+              <e p="TaskManagerPanel.cs" t="Include" />
               <e p="UserManagerPanel.cs" t="Include" />
+              <e p="UserMessagePanel.cs" t="Include" />
             </e>
             <e p="Managers" t="Include">
               <e p="ConcreteManager" t="Include">

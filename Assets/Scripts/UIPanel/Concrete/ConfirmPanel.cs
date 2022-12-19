@@ -25,8 +25,7 @@ public class ConfirmPanel : BasePanel
             AudioManager.Instance.PlayButtonAudio();
             //任务面板
             Pop();
-            TaskManager.Instance.Tasks[0].IsAcceptTask = true;
-            PanelManager.Push(new NoticePanel("任务接受成功！"));
+            //TODO:是否删除用户
         });
     }
 }

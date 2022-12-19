@@ -73,6 +73,12 @@ public class CharacterStats : MonoBehaviour
         get { if (characterData != null) return characterData.maxDamage;else return 0; }
         set { characterData.maxDamage = value; }
     }
+
+    public int AttributePoints
+    {
+        get { if (characterData != null) return characterData.attributePoints;else return 0; }
+        set { characterData.attributePoints = value; }
+    }
     
     #endregion
 
@@ -90,11 +96,14 @@ public class CharacterStats : MonoBehaviour
         if (defener.CompareTag("Player"))
         {
             PlayerConctroller.Instance.PlayerAttrib[7] = CurrentHealth.ToString();
-            PlayerConctroller.Instance.isHit = true;
-            if(isSkill) 
-                defener.GetComponentInChildren<Animator>().SetTrigger("Repelled");
-            else
-                defener.GetComponentInChildren<Animator>().SetTrigger("Hit");
+            if (!PlayerConctroller.Instance.isHit)
+            {
+                PlayerConctroller.Instance.isHit = true;
+                if(isSkill) 
+                    defener.GetComponentInChildren<Animator>().SetTrigger("Repelled");
+                else
+                    defener.GetComponentInChildren<Animator>().SetTrigger("Hit");
+            }
         }
         else
             defener.GetComponent<Animator>().SetTrigger("Hit");//播放敌人被打动画

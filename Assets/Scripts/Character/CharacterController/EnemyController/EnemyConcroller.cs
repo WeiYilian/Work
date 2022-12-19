@@ -1,20 +1,24 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEditor.Timeline.Actions;
 using UnityEngine;
 using UnityEngine.AI;
+using Debug = UnityEngine.Debug;
 using Random = UnityEngine.Random;
 
 
 public enum EnemyStates {GUARD, PATROL, CHASE ,DEAD }
+public enum EnemySort{MAGE,WARRIOR}
 [RequireComponent(typeof(NavMeshAgent))]//要求脚本挂载的物体上必须要有某个组件
 [RequireComponent(typeof(CharacterStats))]
 public class EnemyConcroller : MonoBehaviour,IEnemy,IPoolable
 {
     private EnemyStates enemyStates;
+    private EnemySort enemySort;
     private NavMeshAgent agent;
-    private Animator animator;
+    protected Animator animator;
     private new Collider collider;
     
     protected CharacterStats characterStats;
@@ -33,7 +37,7 @@ public class EnemyConcroller : MonoBehaviour,IEnemy,IPoolable
     [Header("Patrol State")] 
     public float patrolRange;//巡逻范围
     private Vector3 wayPoint;//随机巡逻点
-    protected Vector3 guardPos;//初始坐标
+    public Vector3 guardPos;//初始坐标
     private Quaternion guardRotation;//初始角度(初始面向方向)
     
     //bool配合动画
@@ -51,14 +55,25 @@ public class EnemyConcroller : MonoBehaviour,IEnemy,IPoolable
         collider = GetComponent<Collider>();
         
         speed = agent.speed;
-        guardPos = transform.position;
         guardRotation = transform.rotation;
         remainLookAtTime = lookAtTime;
     }
 
-    protected void Start()
+    private void Start()
     {
         EvenCenter.AddListener(EventNum.GAMEOVER,EndNotify);
+        
+        //判断怪物类型
+        if (transform.CompareTag("Mage"))
+            enemySort = EnemySort.MAGE;
+        else if (transform.CompareTag("Warrior"))
+            enemySort = EnemySort.WARRIOR;
+    }
+
+    protected void OnEnable()
+    {
+        guardPos = transform.position;
+        //判断是否为站桩怪
         if (isGuard)
         {
             enemyStates = EnemyStates.GUARD;
@@ -66,7 +81,7 @@ public class EnemyConcroller : MonoBehaviour,IEnemy,IPoolable
         else
         {
             enemyStates = EnemyStates.PATROL;
-            GetNewWayPoint();
+            wayPoint = transform.position;
         }
     }
 
@@ -77,17 +92,19 @@ public class EnemyConcroller : MonoBehaviour,IEnemy,IPoolable
 
     private void Update()
     {
+        if (playerDead || isSpawn || GameLoop.Instance.isTimeOut) return;
+        
         if (characterStats.CurrentHealth == 0)
-        {
             isDead = true;
-        }
-            
-        if (!playerDead && !isSpawn)
-        {
-            SwitchStates();
-            SwitchAnimation();
-            lastAttackTime -= Time.deltaTime;
-        }
+        
+        if (animator.GetCurrentAnimatorStateInfo(2).IsName("Damage") ||
+            animator.GetCurrentAnimatorStateInfo(2).IsName("Dizzy"))
+            return;
+
+        SwitchStates();
+        SwitchAnimation();
+        lastAttackTime -= Time.deltaTime;
+        
     }
 
     void SwitchAnimation()
@@ -138,8 +155,7 @@ public class EnemyConcroller : MonoBehaviour,IEnemy,IPoolable
                 break;
             case EnemyStates.PATROL://巡逻模式的敌人
                 isChase = false;
-                agent.speed = speed * 0.8f;
-                
+                agent.speed = speed;
                 //判断是否到了随机巡逻点
                 if (Vector3.Distance(wayPoint,transform.position) <= agent.stoppingDistance)
                 {
@@ -200,30 +216,21 @@ public class EnemyConcroller : MonoBehaviour,IEnemy,IPoolable
                 
                 break;
             case EnemyStates.DEAD://死亡模式
+                if(collider.enabled)
+                    Invoke(nameof(EnemyDie), 2f);
                 collider.enabled = false;//关闭collider
                 agent.radius = 0;
-                Invoke(nameof(EnemyDie), 2f);
                 break;
         }
     }
 
-    void Attack()
+    protected virtual void Attack()
     {
-        if (animator.GetCurrentAnimatorStateInfo(2).IsName("Damage") ||
-            animator.GetCurrentAnimatorStateInfo(2).IsName("Dizzy"))
-            return;
         if (TargetInSkillRange())
-        {
-            //技能攻击动画
-            animator.SetTrigger("Skill");
-            Debug.Log("技能攻击动画被触发");
-        }
+            animator.SetTrigger("Skill");//技能攻击动画
         else if (TargetInAttackRange())
-        {
-            //近身攻击动画
-            animator.SetTrigger("Attack");
-            Debug.Log("普通攻击动画被触发");
-        }
+            animator.SetTrigger("Attack");//近身攻击动画
+
     }
 
     //检测敌人sightRadius内是否有Player
@@ -245,7 +252,7 @@ public class EnemyConcroller : MonoBehaviour,IEnemy,IPoolable
     }
 
     //判断是否进入基础攻击距离
-    bool TargetInAttackRange()
+    protected bool TargetInAttackRange()
     {
         if (AttackTarget != null)
             return Vector3.Distance(AttackTarget.transform.position, transform.position) <=
@@ -255,7 +262,7 @@ public class EnemyConcroller : MonoBehaviour,IEnemy,IPoolable
     }
     
     //判断是否进入技能攻击距离
-    bool TargetInSkillRange()
+    protected bool TargetInSkillRange()
     {
         if (AttackTarget != null)
             return Vector3.Distance(AttackTarget.transform.position, transform.position) <=
@@ -305,11 +312,6 @@ public class EnemyConcroller : MonoBehaviour,IEnemy,IPoolable
         }
     }
 
-    public virtual void EnemyDie()
-    {
-        ObjectPool.Instance.Remove("warrior",gameObject);
-    }
-
     #endregion
     
     
@@ -334,6 +336,34 @@ public class EnemyConcroller : MonoBehaviour,IEnemy,IPoolable
         Gizmos.DrawWireSphere(transform.position, sightRadius);
     }
 
+    public void EnemyDie()
+    {
+        switch (enemySort)
+        {
+            //TODO:写的方法太笨，后续有时间可以优化一下
+            case EnemySort.MAGE:
+                if (Random.value <= 0.5f)
+                    ObjectPool.Instance.Get("RestoreDrug");
+                ObjectPool.Instance.Remove("Mage",gameObject);
+                if (TaskManager.Instance.Tasks[2].IsAcceptTask)
+                    TaskManager.Instance.Tasks[2].TaskCompletion++;
+                if (TaskManager.Instance.Tasks[4].IsAcceptTask)
+                    TaskManager.Instance.Tasks[4].TaskCompletion++;
+                break;
+            case EnemySort.WARRIOR:
+                if (Random.value <= 0.3f)
+                    ObjectPool.Instance.Get("RestoreDrug");
+                ObjectPool.Instance.Remove("warrior",gameObject);
+                if (TaskManager.Instance.Tasks[1].IsAcceptTask)
+                    TaskManager.Instance.Tasks[1].TaskCompletion++;
+                if (TaskManager.Instance.Tasks[3].IsAcceptTask)
+                    TaskManager.Instance.Tasks[3].TaskCompletion++;
+                break;
+            default:
+                break;
+        }
+    }
+    
     public void Dispose()
     {
         gameObject.SetActive(false);

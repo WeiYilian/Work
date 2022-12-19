@@ -27,9 +27,9 @@ public class InventoryManager
     public InventoryManager()
     {
         slots = new List<GameObject>();
-        slotGird = PanelManager.Instance.CharacterPanel().slotGird;
-        itemInfromation = PanelManager.Instance.CharacterPanel().itemInfromation;
     }
+    
+    
     
     public void UpdateItemInfo(string itemDescription)
     {
@@ -51,7 +51,7 @@ public class InventoryManager
 
         for (int i = 0; i < PlayerConctroller.Instance.myBag.itemList.Count; i++)
         {
-            slots.Add(GameFacade.Instance.LoadGameObject("Slot"));
+            slots.Add(GameObject.Instantiate(GameFacade.Instance.LoadGameObject("Slot")));
             slots[i].transform.SetParent(slotGird.transform);
             slots[i].GetComponent<Slot>().SetupSlot(PlayerConctroller.Instance.myBag.itemList[i]);
         }

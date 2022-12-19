@@ -90,11 +90,11 @@ public class PanelManager
       return null;
    }
 
-   public CharacterPanel CharacterPanel()
-   {
-      if (stackPanel.Peek().UIType.Name == "CharacterPanel")
-         return stackPanel.Peek() as CharacterPanel;
-      else
-         return null;
-   }
+   // public CharacterPanel CharacterPanel()
+   // {
+   //    if (stackPanel.Peek().UIType.Name == "CharacterPanel")
+   //       return stackPanel.Peek() as CharacterPanel;
+   //    else
+   //       return null;
+   // }
 }

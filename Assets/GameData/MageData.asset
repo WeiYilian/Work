@@ -20,8 +20,8 @@ MonoBehaviour:
   attackRange: 7
   skillRange: 4
   coolDown: 7
-  minDamage: 4
-  maxDamage: 7
+  minDamage: 10
+  maxDamage: 15
   criticalMultiplier: 2
   criticalChance: 0.2
   currentLevel: 0
@@ -29,3 +29,4 @@ MonoBehaviour:
   baseExp: 0
   currentExp: 0
   levelBuff: 0
+  attributePoints: 0

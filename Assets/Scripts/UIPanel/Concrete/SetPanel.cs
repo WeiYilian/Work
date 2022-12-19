@@ -35,10 +35,10 @@ public class SetPanel : BasePanel
 #endif
         });
         
-        UITool.GetOrAddComponentInChildren<Button>("Setting").onClick.AddListener(() =>
+        UITool.GetOrAddComponentInChildren<Button>("UserMessagePanel").onClick.AddListener(() =>
         {
             AudioManager.Instance.PlayButtonAudio();
-            Push(new SettingPanel());
+            Push(new UserMessagePanel());
         });
     }
 

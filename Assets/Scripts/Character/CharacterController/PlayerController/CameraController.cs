@@ -33,7 +33,7 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (PlayerConctroller.Instance.isTimeOut) return;
+        if (GameLoop.Instance.isTimeOut) return;
         
         UpdateRotation();
         UpdatePosition();

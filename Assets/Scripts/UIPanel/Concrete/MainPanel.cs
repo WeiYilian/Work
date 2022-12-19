@@ -24,6 +24,7 @@ public class MainPanel : BasePanel
     public Image skill1;
     public Image skill2;
     public Image skill3;
+    public GameObject QuickUse;
 
     private bool openBag;
 
@@ -44,13 +45,25 @@ public class MainPanel : BasePanel
 
         if (Input.GetKeyDown(KeyCode.P))
         {
-            Push(new TaskPanel());
+            Push(new PlayerTaskPanel());
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Push(new SetPanel());
         }
+    }
+
+    public override void OnPause()
+    {
+        base.OnPause();
+        GameLoop.Instance.isTimeOut = true;
+    }
+
+    public override void OnResume()
+    {
+        base.OnResume();
+        GameLoop.Instance.isTimeOut = false;
     }
 
     public override void OnExit()
@@ -67,11 +80,12 @@ public class MainPanel : BasePanel
         exp = mainPanel.transform.Find("Header/Left/Bg/Exp").GetComponent<Image>();
         hpText = mainPanel.transform.Find("Header/Left/Bg/HP/Text").GetComponent<Text>();
         expText = mainPanel.transform.Find("Header/Left/Bg/Exp/Text").GetComponent<Text>();
-        skill1 = mainPanel.transform.Find("Content/SkillPanel/skillOne/Image/skill1").GetComponent<Image>();
-        skill2 = mainPanel.transform.Find("Content/SkillPanel/skillTwo/Image/skill2").GetComponent<Image>();
-        skill3 = mainPanel.transform.Find("Content/SkillPanel/skillThree/Image/skill3").GetComponent<Image>();
+        skill1 = mainPanel.transform.Find("Bottom/SkillPanel/skillOne/Image/skill1").GetComponent<Image>();
+        skill2 = mainPanel.transform.Find("Bottom/SkillPanel/skillTwo/Image/skill2").GetComponent<Image>();
+        skill3 = mainPanel.transform.Find("Bottom/SkillPanel/skillThree/Image/skill3").GetComponent<Image>();
+        GameLoop.Instance.isTimeOut = false;
     }
-    
+
     private void ShowEndPanel()
     {
         if(!GameObject.Find("Canvas/OverPanel"))

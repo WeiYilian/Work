@@ -44,6 +44,8 @@ public class CharacterData_SO : ScriptableObject
     //每升一级需要提升的数据百分比（Buff）
     public float levelBuff;
 
+    public int attributePoints;
+
     public float LevelMultiplier
     {
         get { return 1 + levelBuff;/*获得当前等级所需要获得的总的提升比例*/ }
@@ -80,10 +82,10 @@ public class CharacterData_SO : ScriptableObject
         baseExp += baseExp;//每一级所需要的经验翻倍
         currentExp = 0;//经验值清零
         PlayerConctroller.Instance.PlayerAttrib[6] = currentExp.ToString();
-        
+
+        attributePoints++;//属性点增加
+
         maxHealth = (int) (maxHealth * LevelMultiplier/*可以换成LevelBuff,就是以当前总生命值的比例提升*/);//每升一级，提升最大血量
         currentHealth = maxHealth;//恢复满血
-        
-        Debug.Log("LEVEL UP!" +currentLevel+ "Max Health:" + maxHealth);
     }
 }

@@ -1,12 +1,26 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
+using Object = UnityEngine.Object;
 
-public class ItemOnDrag : MonoBehaviour,IBeginDragHandler,IDragHandler,IEndDragHandler
+public class ItemOnDrag : MonoBehaviour,IBeginDragHandler,IDragHandler,IEndDragHandler, IPointerClickHandler
 {
+    public static Action<Image> quickUseDrug;
+    
     private Transform originalParent;
     
+    public UnityEvent<PointerEventData> rightClick;
+
+    private void Start()
+    {
+        rightClick.AddListener(new UnityAction<PointerEventData>(ButtonRightClick));
+    }
+
+    //开始拖动时的事件
     public void OnBeginDrag(PointerEventData eventData)
     {
         //获取原来的格子位置
@@ -19,12 +33,14 @@ public class ItemOnDrag : MonoBehaviour,IBeginDragHandler,IDragHandler,IEndDragH
         GetComponent<CanvasGroup>().blocksRaycasts = false;
     }
 
+    //拖动过程中的事件
     public void OnDrag(PointerEventData eventData)
     {
         //物体的位置等于鼠标的位置
         transform.position = eventData.position;
     }
 
+    //拖动结束时的事件
     public void OnEndDrag(PointerEventData eventData)
     {
         //如果返回的信息名字为Item Image，表示有物品，需要交换
@@ -54,5 +70,19 @@ public class ItemOnDrag : MonoBehaviour,IBeginDragHandler,IDragHandler,IEndDragH
         transform.SetParent(originalParent);
         transform.position = originalParent.position;
         GetComponent<CanvasGroup>().blocksRaycasts = true;
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        //如果是右键点击button就触发事件
+        if (eventData.button == PointerEventData.InputButton.Right)
+            rightClick.Invoke(eventData);
+    }
+    
+    //点击右键触发的事件
+    private void ButtonRightClick(PointerEventData eventData)
+    {
+        GameObject go = ObjectPool.Instance.Get("UsePanel", transform.parent.parent.parent);
+        go.transform.position = eventData.position;
     }
 }

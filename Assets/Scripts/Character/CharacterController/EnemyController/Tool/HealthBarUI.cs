@@ -34,17 +34,15 @@ public class HealthBarUI : MonoBehaviour
     private void OnEnable()
     {
         cam = Camera.main;
-
-        foreach (Canvas canvas in FindObjectsOfType<Canvas>()/*获得所有Canvas组件*/)
+        
+        if (barPoint.GetComponent<Canvas>().renderMode == RenderMode.WorldSpace && barPoint.transform.childCount == 0)/*判断Canvas的模式是否是WorldSpace模式（世界模式）*/
         {
-            if (canvas.renderMode == RenderMode.WorldSpace && barPoint.transform.childCount == 0)/*判断Canvas的模式是否是WorldSpace模式（世界模式）*/
-            {
-                UIbar = ObjectPool.Instance.Get("Health",canvas.transform);
-                UIbar.transform.position = barPoint.transform.position;
-                healthSlider = UIbar.transform.GetChild(0).GetComponent<Image>();
-                UIbar.gameObject.SetActive(alwayVisible);
-            }
+            UIbar = ObjectPool.Instance.Get("Health",barPoint.transform);
+            UIbar.transform.position = barPoint.transform.position;
+            healthSlider = UIbar.transform.GetChild(0).GetComponent<Image>();
+            UIbar.gameObject.SetActive(alwayVisible);
         }
+        
     }
 
     /// <summary>

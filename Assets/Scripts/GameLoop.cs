@@ -13,6 +13,9 @@ using UnityEngine.UIElements;
 public class GameLoop : MonoBehaviour
 {
     public static GameLoop Instance { get; private set; }
+    
+    //判断是否暂停
+    [HideInInspector] public bool isTimeOut;
 
     private void Awake()
     {
@@ -29,7 +32,7 @@ public class GameLoop : MonoBehaviour
 
     private void Start()
     {
-        //SceneStateController.Instance.SetState(new StartScene(),false);
+        SceneStateController.Instance.SetState(new StartScene(),false);
     }
 
     private void Update()

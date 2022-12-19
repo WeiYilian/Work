@@ -59,6 +59,7 @@ public class DialoguePanel : BasePanel
         }
     }
 
+    // ReSharper disable Unity.PerformanceAnalysis
     private Message getMassage()
     {
         if (index < messageList.Count)
@@ -68,7 +69,7 @@ public class DialoguePanel : BasePanel
         else
         {
             Pop();
-            //TODO:弹出任务面板
+            Push(new TaskManagerPanel());
         }
 
         return null;

@@ -15,12 +15,8 @@ public class StartScene : SceneState
         if (SceneManager.GetActiveScene().name != "Start"/*如果当前的场景名不为sceneName*/)
         {
             SceneManager.LoadScene("Start");//加载名为sceneName的场景
-            PanelManager.Instance.Push(new StartPanel());
         }
-        else
-        {
-            PanelManager.Instance.Push(new StartPanel());
-        }
+        PanelManager.Instance.Push(new StartPanel());
     }
 
     public override void StateEnd()

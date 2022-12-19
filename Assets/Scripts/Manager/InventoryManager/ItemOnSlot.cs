@@ -13,7 +13,7 @@ public class ItemOnSlot : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             AddNewItem();
-            Destroy(gameObject);
+            ObjectPool.Instance.Remove(transform.name,gameObject);
         }
     }
 

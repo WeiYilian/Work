@@ -20,12 +20,13 @@ MonoBehaviour:
   attackRange: 1.5
   skillRange: 0
   coolDown: 0
-  minDamage: 8
-  maxDamage: 10
+  minDamage: 4
+  maxDamage: 6
   criticalMultiplier: 2
   criticalChance: 0.2
   currentLevel: 1
   maxLevel: 10
   baseExp: 50
-  currentExp: 30
+  currentExp: 0
   levelBuff: 0.1
+  attributePoints: 0

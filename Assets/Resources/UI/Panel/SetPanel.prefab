@@ -367,7 +367,7 @@ GameObject:
   - component: {fileID: 3372273986705049514}
   - component: {fileID: 3452484144770398850}
   m_Layer: 5
-  m_Name: Setting
+  m_Name: UserMessagePanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -953,7 +953,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u8BBE\u7F6E\n"
+  m_Text: "\u73A9\u5BB6\u4FE1\u606F"
 --- !u!1 &8016495956479834539
 GameObject:
   m_ObjectHideFlags: 0
