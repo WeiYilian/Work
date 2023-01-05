@@ -33,4 +33,15 @@ public class TaskManager
             //在此添加后续任务
         };
     }
+
+    public Task FindTask(int index)
+    {
+        foreach (var task in Tasks)
+        {
+            if (index == task.Index)
+                return task;
+        }
+
+        return null;
+    }
 }

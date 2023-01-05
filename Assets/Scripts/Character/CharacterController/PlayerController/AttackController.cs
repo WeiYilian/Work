@@ -190,7 +190,7 @@ public class AttackController
            
             if (enemy.GetComponent<IEnemy>() != null && PlayerConctroller.Instance.transform.IsFacingTarget(enemy.transform)/*扩展方法*/)
             {
-                AudioManager.Instance.PlayAudio(2,"Attack1");
+                AudioManager.Instance.PlayAudio(2,"Attack1",1);
                 var targetStats = enemy.GetComponent<CharacterStats>();
                 targetStats.TakeDamage(characterStats, targetStats);
             }

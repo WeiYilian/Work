@@ -7,6 +7,7 @@ public class ItemOnSlot : MonoBehaviour
 {
     public BagItem thisItem;
     public Inventory PlayerInventory;
+    
 
     private void OnTriggerEnter(Collider other)
     {
@@ -37,4 +38,6 @@ public class ItemOnSlot : MonoBehaviour
             thisItem.itemHeld += 1;
         }
     }
+    
+   
 }

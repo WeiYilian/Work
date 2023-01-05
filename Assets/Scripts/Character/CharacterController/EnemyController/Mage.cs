@@ -12,36 +12,37 @@ public class Mage : EnemyConcroller
     
     public int maxWarriorNumber = 3;
     
-    public float SpawnWarriorOdd = 0.3f;
+    public float spawnWarriorOdd = 0.3f;
 
     protected override void Attack()
     {
         if (TargetInAttackRange())
         {
-            if(Random.value >= SpawnWarriorOdd)
-                animator.SetTrigger("Skill");//法球攻击
-            else
+            if(Random.value <= spawnWarriorOdd && warriorNumber <= maxWarriorNumber)
                 animator.SetTrigger("Attack");//召唤骷髅
+            else
+                animator.SetTrigger("Skill");//法球攻击
         }
         
     }
 
     public override void Hit()
     {
-        GameObject MageSkill = ObjectPool.Instance.Get("MageSkill",transform);
-        MageSkill.transform.position = attackPoint.transform.position;
-        MageSkill.GetComponent<MageAttack>().attackTarget = AttackTarget;
+        GameObject mageSkill = ObjectPool.Instance.Get("MageSkill");
+        mageSkill.transform.position = attackPoint.transform.position;
+        mageSkill.GetComponent<MageAttack>().attackTarget = AttackTarget;
     }
 
     public override void KickOff()
     {
-        if (warriorNumber >= maxWarriorNumber) return;
-        GameObject MageAttack = ObjectPool.Instance.Get("MageAttack");
-        MageAttack.transform.position = RandomSpawnPoint();
-        GameObject Warrior = ObjectPool.Instance.Get("Warrior");
-        Warrior.transform.position = MageAttack.transform.position;
-        Warrior.GetComponent<EnemyConcroller>().isSpawn = true;
-        StartCoroutine(SpawnWarrior(Warrior,MageAttack));
+        GameObject mageAttack = ObjectPool.Instance.Get("MageAttack",transform.parent);
+        AudioManager.Instance.PlayAudio(4,"Summon");
+        Vector3 spawnPo = RandomSpawnPoint();
+        mageAttack.transform.position = spawnPo;
+
+        GameObject warrior = ObjectPool.Instance.Get("Warrior",transform.parent);
+        warrior.transform.position = spawnPo;
+        StartCoroutine(SpawnWarrior(warrior,mageAttack));
         warriorNumber++;
     }
 
@@ -68,11 +69,12 @@ public class Mage : EnemyConcroller
     }
 
     // ReSharper disable Unity.PerformanceAnalysis
-    IEnumerator SpawnWarrior(GameObject Warrior,GameObject MageAttack)
+    IEnumerator SpawnWarrior(GameObject warrior,GameObject mageAttack)
     {
-        yield return new WaitForSeconds(5);
-        ObjectPool.Instance.Remove("MageAttack",MageAttack);
-        Warrior.GetComponent<EnemyConcroller>().isSpawn = false;
-        Warrior.GetComponent<Collider>().enabled = true;
+        warrior.GetComponent<EnemyConcroller>().isSpawn = true;
+        yield return new WaitForSeconds(3);
+        ObjectPool.Instance.Remove("MageAttack",mageAttack);
+        warrior.GetComponent<EnemyConcroller>().isSpawn = false;
+        warrior.GetComponent<Collider>().enabled = true;
     }
 }

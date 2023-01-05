@@ -1,8 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Diagnostics;
-using UnityEditor.Timeline.Actions;
 using UnityEngine;
 using UnityEngine.AI;
 using Debug = UnityEngine.Debug;
@@ -340,10 +335,12 @@ public class EnemyConcroller : MonoBehaviour,IEnemy,IPoolable
     {
         switch (enemySort)
         {
-            //TODO:写的方法太笨，后续有时间可以优化一下
             case EnemySort.MAGE:
-                if (Random.value <= 0.5f)
-                    ObjectPool.Instance.Get("RestoreDrug");
+                if (Random.value <= 0.8f)
+                {
+                    GameObject yao = ObjectPool.Instance.Get("RestoreDrug");
+                    yao.transform.position = transform.position;
+                }
                 ObjectPool.Instance.Remove("Mage",gameObject);
                 if (TaskManager.Instance.Tasks[2].IsAcceptTask)
                     TaskManager.Instance.Tasks[2].TaskCompletion++;
@@ -351,8 +348,11 @@ public class EnemyConcroller : MonoBehaviour,IEnemy,IPoolable
                     TaskManager.Instance.Tasks[4].TaskCompletion++;
                 break;
             case EnemySort.WARRIOR:
-                if (Random.value <= 0.3f)
-                    ObjectPool.Instance.Get("RestoreDrug");
+                if (Random.value <= 0.5f)
+                {
+                    GameObject yao = ObjectPool.Instance.Get("RestoreDrug");
+                    yao.transform.position = transform.position;
+                }
                 ObjectPool.Instance.Remove("warrior",gameObject);
                 if (TaskManager.Instance.Tasks[1].IsAcceptTask)
                     TaskManager.Instance.Tasks[1].TaskCompletion++;
@@ -361,17 +361,17 @@ public class EnemyConcroller : MonoBehaviour,IEnemy,IPoolable
                 break;
             default:
                 break;
-        }
+        } 
     }
     
     public void Dispose()
     {
+        collider.enabled = false;
         gameObject.SetActive(false);
     }
 
     public void Init()
     {
-        characterStats.CurrentHealth = characterStats.MaxHealth;
         gameObject.SetActive(true);
     }
 }

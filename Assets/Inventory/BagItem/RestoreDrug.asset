@@ -17,3 +17,4 @@ MonoBehaviour:
   itemHeld: 1
   itemInfo: "\u53EF\u4EE5\u6062\u590D50\u70B9\u751F\u547D\u503C"
   equip: 0
+  useable: 1

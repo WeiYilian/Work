@@ -12,11 +12,11 @@ public class RockController : MonoBehaviour
     {
         if (other.CompareTag("Player") && Input.GetKeyDown(KeyCode.F) && !GameLoop.Instance.isTimeOut)
         {
-            isFirst = false;
+            //isFirst = false;
             if (isFirst)
             {
                 PanelManager.Instance.Push(new DialoguePanel());
-                //isFirst = false;
+                isFirst = false;
             }
             else
                 PanelManager.Instance.Push(new TaskManagerPanel());

@@ -249,16 +249,12 @@
             <e p="StopAgent.cs" t="Include" />
             <e p="StopMove.cs" t="Include" />
           </e>
-          <e p="AssetFactory" t="Include">
-            <e p="IAssetFactory.cs" t="Include" />
-            <e p="ResourceAssetFactory.cs" t="Include" />
-            <e p="ResourceAssetProxy.cs" t="Include" />
-          </e>
           <e p="Character" t="Include">
             <e p="Character Stats" t="Include">
-              <e p="CharacterStats.cs" t="Include" />
+              <e p="ExtensionMethod.cs" t="Include" />
               <e p="ScriptableObject" t="Include">
                 <e p="CharacterData_SO.cs" t="Include" />
+                <e p="CharacterStats.cs" t="Include" />
               </e>
             </e>
             <e p="CharacterController" t="Include">
@@ -268,6 +264,7 @@
                 <e p="Tool" t="Include">
                   <e p="EnemySpawn.cs" t="Include" />
                   <e p="HealthBarUI.cs" t="Include" />
+                  <e p="IEnemy.cs" t="Include" />
                   <e p="MageAttack.cs" t="Include" />
                 </e>
               </e>
@@ -287,13 +284,6 @@
           <e p="GameFacade.cs" t="Include" />
           <e p="GameLoop.cs" t="Include" />
           <e p="Manager" t="Include">
-            <e p="AudioManager" t="Include">
-              <e p="AudioManager.cs" t="Include" />
-              <e p="AudioObjectPool.cs" t="Include" />
-            </e>
-            <e p="DataManager" t="Include">
-              <e p="DataManager.cs" t="Include" />
-            </e>
             <e p="InventoryManager" t="Include">
               <e p="Base" t="Include">
                 <e p="BagItem.cs" t="Include" />
@@ -307,6 +297,17 @@
               <e p="ItemOnSlot.cs" t="Include" />
               <e p="Slot.cs" t="Include" />
               <e p="UseItem.cs" t="Include" />
+            </e>
+            <e p="SceneStateManager" t="Include">
+              <e p="Base" t="Include">
+                <e p="SceneState.cs" t="Include" />
+              </e>
+              <e p="Concrete" t="Include">
+                <e p="LoadScene.cs" t="Include" />
+                <e p="MainScene.cs" t="Include" />
+                <e p="StartScene.cs" t="Include" />
+              </e>
+              <e p="SceneStateController.cs" t="Include" />
             </e>
             <e p="SkillManager" t="Include">
               <e p="Base" t="Include">
@@ -325,20 +326,19 @@
               <e p="TaskManager.cs" t="Include" />
             </e>
           </e>
-          <e p="SceneState" t="Include">
-            <e p="Base" t="Include">
-              <e p="SceneState.cs" t="Include" />
-            </e>
-            <e p="Concrete" t="Include">
-              <e p="LoadScene.cs" t="Include" />
-              <e p="MainScene.cs" t="Include" />
-              <e p="StartScene.cs" t="Include" />
-            </e>
-            <e p="SceneStateController.cs" t="Include" />
-          </e>
           <e p="Tool" t="Include">
-            <e p="ExtensionMethod.cs" t="Include" />
-            <e p="IEnemy.cs" t="Include" />
+            <e p="AssetFactory" t="Include">
+              <e p="IAssetFactory.cs" t="Include" />
+              <e p="ResourceAssetFactory.cs" t="Include" />
+              <e p="ResourceAssetProxy.cs" t="Include" />
+            </e>
+            <e p="AudioManager" t="Include">
+              <e p="AudioManager.cs" t="Include" />
+              <e p="AudioObjectPool.cs" t="Include" />
+            </e>
+            <e p="DataManager" t="Include">
+              <e p="DataManager.cs" t="Include" />
+            </e>
             <e p="ObjectPool" t="Include">
               <e p="IPoolable.cs" t="Include" />
               <e p="ObjectPool.cs" t="Include" />

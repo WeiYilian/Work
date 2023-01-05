@@ -1448,7 +1448,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 334d2e3841ae72944a88048f303392bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sightRadius: 7
+  sightRadius: 10
   isGuard: 1
   isSpawn: 0
   lookAtTime: 3
@@ -1456,6 +1456,7 @@ MonoBehaviour:
   guardPos: {x: 0, y: 0, z: 0}
   attackPoint: {fileID: 1297215123}
   maxWarriorNumber: 3
+  spawnWarriorOdd: 0.3
 --- !u!114 &146097871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2289,7 +2290,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8833243486352525513
 RectTransform:
   m_ObjectHideFlags: 0

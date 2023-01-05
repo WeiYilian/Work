@@ -87,7 +87,6 @@ public class ObjectPool : MonoBehaviour
             }
             else// 如果池子中没有物体，直接新建一个物体
             {
-                
                 tmp = GameFacade.Instance.LoadGameObject(type);
                 return Instantiate(tmp,parent);
             }
@@ -138,6 +137,6 @@ public class ObjectPool : MonoBehaviour
             }
         }
         else
-            GameObject.Destroy(obj);
+            Destroy(obj);
     }
 }

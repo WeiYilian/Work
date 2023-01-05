@@ -17,13 +17,13 @@ MonoBehaviour:
   baseDefence: 3
   currentDefence: 3
   killPoint: 20
-  attackRange: 1.5
-  skillRange: 1
+  attackRange: 2
+  skillRange: 1.5
   coolDown: 3
   minDamage: 4
   maxDamage: 7
   criticalMultiplier: 2
-  criticalChance: 0.2
+  criticalChance: 0.4
   currentLevel: 0
   maxLevel: 0
   baseExp: 0

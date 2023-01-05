@@ -30,7 +30,7 @@ public class RegisterPanel : BasePanel
             }
             else if (username == "" || password == "" || age == "" || gender == "")
             {
-                Push((new NoticePanel("请填写完信息！！")));
+                Push((new NoticePanel("请填写完整信息！！")));
             }
             else
             {

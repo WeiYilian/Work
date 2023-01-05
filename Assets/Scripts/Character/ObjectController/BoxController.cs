@@ -33,6 +33,7 @@ public class BoxController : MonoBehaviour
             isOpen = true;
             animator.SetTrigger("Open");
             boxOpen.Play();
+            AudioManager.Instance.PlayAudio(4,"OpenBox");
             boxTop.transform.localRotation = Quaternion.Euler(-240,0,0);
             AddNewItem();
             TaskManager.Instance.Tasks[0].TaskCompletion++;

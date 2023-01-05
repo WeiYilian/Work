@@ -9,12 +9,14 @@ public class UserMessagePanel : BasePanel
     
     public UserMessagePanel():base(new UIType(path)){}
 
-    private string username;
-    private string password;
-    private string age;
+    private InputField username;
+    private InputField password;
+    private InputField age;
 
     public override void OnEnter()
     {
+        Init();
+        
         UITool.GetOrAddComponentInChildren<Button>("BtnExit").onClick.AddListener(Pop);
         
         UITool.GetOrAddComponentInChildren<Button>("BtnConfirm").onClick.AddListener(() =>
@@ -28,17 +30,25 @@ public class UserMessagePanel : BasePanel
 
     private void BtnConfirm()
     {
-        GameObject settingPanel = GameObject.Find("Canvas/SettingPanel");
-        Debug.Log(settingPanel);
-        Debug.Log(settingPanel.transform.Find("Content/UserName/InputField"));
-        username = settingPanel.transform.Find("Content/UserName/InputField/Text").GetComponent<Text>().text;
-        password = settingPanel.transform.Find("Content/Password/InputField/Text").GetComponent<Text>().text;
-        age = settingPanel.transform.Find("Content/Age/InputField/Text").GetComponent<Text>().text;
         if (username != null)
-            PlayerConctroller.Instance.PlayerAttrib[1] = username;
+            PlayerConctroller.Instance.PlayerAttrib[1] = username.text;
         if (password != null)
-            PlayerConctroller.Instance.PlayerAttrib[2] = password;
+            PlayerConctroller.Instance.PlayerAttrib[2] = password.text;
         if (age != null)
-            PlayerConctroller.Instance.PlayerAttrib[3] = age;
+            PlayerConctroller.Instance.PlayerAttrib[3] = age.text;
+    }
+
+    // ReSharper disable Unity.PerformanceAnalysis
+    private void Init()
+    {
+        GameObject settingPanel = GameObject.Find("Canvas/UserMessagePanel");
+        
+        username = settingPanel.transform.Find("Content/UserName/InputField").GetComponent<InputField>();
+        password = settingPanel.transform.Find("Content/Password/InputField").GetComponent<InputField>();
+        age = settingPanel.transform.Find("Content/Age/InputField").GetComponent<InputField>();
+        
+        username.text = PlayerConctroller.Instance.PlayerAttrib[1];
+        password.text = PlayerConctroller.Instance.PlayerAttrib[2];
+        age.text = PlayerConctroller.Instance.PlayerAttrib[3];
     }
 }

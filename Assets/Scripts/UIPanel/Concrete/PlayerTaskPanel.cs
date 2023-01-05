@@ -41,14 +41,19 @@ public class PlayerTaskPanel : BasePanel
         {
             if (tasks[index].TaskCompletion >= tasks[index].TaskAim)
             {
-                if(tasks[index].Index == 1)
+                if (tasks[index].Index == 1)
+                {
+                    AudioManager.Instance.PlayAudio(5,"胜利音效");
                     PanelManager.Instance.Push(new OverPanel("游戏胜利"));
+                }
                 else
                 {
                     PlayerConctroller.Instance.characterStats.characterData.UpdateExp(tasks[index].TaskReward);
-                    TaskManager.Instance.Tasks.Remove(tasks[index]);
+                    if (TaskManager.Instance.FindTask(tasks[index].Index) != null)
+                        TaskManager.Instance.FindTask(tasks[index].Index).IsFinish = true;
+                    //TaskManager.Instance.Tasks.Remove(tasks[index]);
                     tasks.Remove(tasks[index]);
-                    
+
                     Pop();
                 }
             }
@@ -83,7 +88,7 @@ public class PlayerTaskPanel : BasePanel
         Login = GameObject.Find("Canvas").transform.Find("PlayerTaskPanel/Login");
         foreach (var task in TaskManager.Instance.Tasks)
         {
-            if (task.IsAcceptTask)
+            if (task.IsAcceptTask && !task.IsFinish)
             {
                 tasks.Add(task);
             }

@@ -17,4 +17,6 @@ public class Task
     public int TaskAim { get; set; }
 
     public bool IsAcceptTask;
+
+    public bool IsFinish;
 }

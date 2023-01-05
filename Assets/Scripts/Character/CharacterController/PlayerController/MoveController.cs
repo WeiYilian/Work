@@ -130,14 +130,24 @@ public class MoveController
         animationMove = Vector3.forward * (curX * speed) + Vector3.right * (curY * speed);
     }
 
+    // ReSharper disable Unity.PerformanceAnalysis
     /// <summary>
-    /// 播放动画
+    /// 播放动画与声音
     /// </summary>
-    /// <param name="moveDirection"></param>
-    public void SwitchAnimation(Vector3 moveDirection)
+    /// <param name="aniMove"></param>
+    public void SwitchAnimation(Vector3 aniMove)
     {
-        animator.SetFloat("Walk", moveDirection.x);
-        animator.SetFloat("Turn", moveDirection.z);
+        if (aniMove != Vector3.zero)
+        {
+            if (isRun)
+                AudioManager.Instance.PlayMoveAudio(5, "Run");
+            else
+                AudioManager.Instance.PlayMoveAudio(5, "Walk");
+        }
+        else
+            AudioManager.Instance.StopAudio(5);
+        animator.SetFloat("Walk", aniMove.x);
+        animator.SetFloat("Turn", aniMove.z);
     }
 
     #endregion

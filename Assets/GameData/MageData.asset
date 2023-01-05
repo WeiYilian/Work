@@ -12,17 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00cdfd95ae9343c41b9f1930ba66e8b5, type: 3}
   m_Name: MageData
   m_EditorClassIdentifier: 
-  maxHealth: 30
-  currentHealth: 30
+  maxHealth: 100
+  currentHealth: 100
   baseDefence: 2
   currentDefence: 2
   killPoint: 30
-  attackRange: 7
+  attackRange: 8
   skillRange: 4
   coolDown: 7
   minDamage: 10
   maxDamage: 15
-  criticalMultiplier: 2
+  criticalMultiplier: 3
   criticalChance: 0.2
   currentLevel: 0
   maxLevel: 0

@@ -47,9 +47,9 @@ public class TaskManagerPanel : BasePanel
 
         foreach (var task in TaskManager.Instance.Tasks)
         {
-            if (!task.IsAcceptTask)
+            if (!task.IsAcceptTask && !task.IsFinish)
             {
-                if((task.Index == 4 && TaskManager.Instance.Tasks.Find(t => t.Index == 2) != null) || (task.Index == 5 && TaskManager.Instance.Tasks.Find(t => t.Index == 3) != null))
+                if((task.Index == 4 && !TaskManager.Instance.Tasks[1].IsFinish) || (task.Index == 5 && !TaskManager.Instance.Tasks[2].IsFinish))
                     return;
                 GameObject obj = GameObject.Instantiate(Task,TaskPanel.transform,true);
                 obj.transform.Find("TaskName").GetComponent<Text>().text = task.TaskName;

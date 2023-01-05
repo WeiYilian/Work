@@ -69,6 +69,8 @@ public class PlayerConctroller : MonoBehaviour
 
     public void Update()
     {
+        attribController.SuperviserNumber();
+        
         if (GameLoop.Instance.isTimeOut) return;
         
         if (characterStats.CurrentHealth == 0)
@@ -78,7 +80,7 @@ public class PlayerConctroller : MonoBehaviour
         }
         moveController.PlayerAction();
         attackController.Attack();
-        attribController.SuperviserNumber();
+        
     }
 
     private void Init()
@@ -107,6 +109,7 @@ public class PlayerConctroller : MonoBehaviour
     public void PlayerDeath()
     {
         isDeath = true;
+        AudioManager.Instance.PlayAudio(5,"失败音效");
         if(!animator.GetCurrentAnimatorStateInfo(4).IsName("Death"))
             animator.SetBool("Death",isDeath);
         EvenCenter.BroadCast(EventNum.GAMEOVER);

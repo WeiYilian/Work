@@ -17,9 +17,9 @@ public class ItemOnDrag : MonoBehaviour,IBeginDragHandler,IDragHandler,IEndDragH
 
     private void Start()
     {
-        rightClick.AddListener(new UnityAction<PointerEventData>(ButtonRightClick));
+        rightClick.AddListener(ButtonRightClick);
     }
-
+    
     //开始拖动时的事件
     public void OnBeginDrag(PointerEventData eventData)
     {
@@ -72,6 +72,7 @@ public class ItemOnDrag : MonoBehaviour,IBeginDragHandler,IDragHandler,IEndDragH
         GetComponent<CanvasGroup>().blocksRaycasts = true;
     }
 
+    
     public void OnPointerClick(PointerEventData eventData)
     {
         //如果是右键点击button就触发事件
@@ -84,5 +85,6 @@ public class ItemOnDrag : MonoBehaviour,IBeginDragHandler,IDragHandler,IEndDragH
     {
         GameObject go = ObjectPool.Instance.Get("UsePanel", transform.parent.parent.parent);
         go.transform.position = eventData.position;
+        go.GetComponent<UseItem>().Useitem = transform.parent.GetComponent<Slot>().slotItem;
     }
 }
