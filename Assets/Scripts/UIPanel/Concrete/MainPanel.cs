@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class MainPanel : BasePanel
 {
-    private static readonly string path = "UI/Panel/MainPanel";
+    private static readonly string path = "MainPanel";
     
     public MainPanel():base(new UIType(path)){}
 

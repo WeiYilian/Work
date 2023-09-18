@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class LoginPanel : BasePanel
 {
-    private static readonly string path = "UI/Panel/LoginPanel";
+    private static readonly string path = "LoginPanel";
 
     private string username;
 

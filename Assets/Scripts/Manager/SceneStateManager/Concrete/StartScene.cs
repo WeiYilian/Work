@@ -12,6 +12,8 @@ public class StartScene : SceneState
 
     public override void StateStart()
     {
+        AudioManager.Instance.PlayBGMAudio("Start");
+        
         if (SceneManager.GetActiveScene().name != "Start"/*如果当前的场景名不为sceneName*/)
         {
             SceneManager.LoadScene("Start");//加载名为sceneName的场景

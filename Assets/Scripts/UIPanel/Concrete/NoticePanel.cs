@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class NoticePanel : BasePanel
 {
-    private static readonly string path = "UI/Panel/NoticePanel";
+    private static readonly string path = "NoticePanel";
 
     private string message;
     public NoticePanel(string message) : base(new UIType(path))

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class UserManagerPanel : BasePanel
 {
-    private static readonly string path = "UI/Panel/UserManagerPanel";
+    private static readonly string path = "UserManagerPanel";
     
     public UserManagerPanel():base(new UIType(path)){}
 

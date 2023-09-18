@@ -10,46 +10,59 @@ public class ResourceAssetProxy : IAssetFactory
     private Dictionary<string, GameObject> GOSDic = new Dictionary<string, GameObject>();
     private Dictionary<string, AudioClip> AudioClipDic = new Dictionary<string, AudioClip>();
     private Dictionary<string, Sprite> SpriteDic = new Dictionary<string, Sprite>();
-    
 
-    public GameObject LoadGameObject(string name)
+    public ResourceAssetProxy()
     {
-        if (GOSDic.ContainsKey(name))
+        if (ResourceAssetFactory.ABDic.Count==0)
         {
-            return GOSDic[name];
+            AssetBundle manifestAB = AssetBundle.LoadFromFile(Application.streamingAssetsPath +  "/AssetBundles");
+            AssetBundleManifest manifest = manifestAB.LoadAsset<AssetBundleManifest>("AssetBundleManifest");
+            foreach (string ABName in manifest.GetAllAssetBundles())
+            {
+                AssetBundle ab = AssetBundle.LoadFromFile(Application.streamingAssetsPath +"/"+ ABName);
+                ResourceAssetFactory.ABDic.Add(ABName, ab);
+            }
+        }
+    }
+
+    public GameObject LoadGameObject(string resName, string filePath)
+    {
+        if (GOSDic.ContainsKey(resName))
+        {
+            return GOSDic[resName];
         }
         else
         {
-            GameObject asset = assetFactory.LoadAsset(assetFactory.GOSPath + name) as GameObject;
-            GOSDic.Add(name, asset);
+            GameObject asset = assetFactory.LoadAsset(resName, filePath) as GameObject;
+            GOSDic.Add(resName, asset);
             return asset;
         }
     }
 
-    public AudioClip loadAudioClip(string name)
+    public AudioClip loadAudioClip(string resName, string filePath)
     {
-        if (AudioClipDic.ContainsKey(name))
+        if (AudioClipDic.ContainsKey(resName))
         {
-            return AudioClipDic[name];
+            return AudioClipDic[resName];
         }
         else
         {
-            AudioClip asset = assetFactory.loadAudioClip(assetFactory.AudioClipPath + name);
-            AudioClipDic.Add(name, asset);
+            AudioClip asset = assetFactory.LoadAsset(resName, filePath) as AudioClip;
+            AudioClipDic.Add(resName, asset);
             return asset;
         }
     }
 
-    public Sprite LoadSprite(string name)
+    public Sprite LoadSprite(string resName, string filePath)
     {
-        if (SpriteDic.ContainsKey(name))
+        if (SpriteDic.ContainsKey(resName))
         {
-            return SpriteDic[name];
+            return SpriteDic[resName];
         }
         else
         {
-            Sprite asset = assetFactory.LoadSprite(assetFactory.SpritePath + name);
-            SpriteDic.Add(name, asset);
+            Sprite asset = assetFactory.LoadAsset(resName, filePath) as Sprite;
+            SpriteDic.Add(resName, asset);
             return asset;
         }
     }

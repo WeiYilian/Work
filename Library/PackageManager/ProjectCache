@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638053936453080989
-    m_Hash: 2359342236
+      ticks: 638305517798750757
+    m_Hash: 2561828265
   m_LockFileStatus:
     m_FilePath: D:/learn/Unity/11111/HomeWork/Work/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638054821589818897
-    m_Hash: 3170569793
+      ticks: 638305517799230490
+    m_Hash: 3189830935
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -51,6 +51,79 @@ m_PackageAssets:
       - 2d
       - sprite
       - sprite editor window
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.cn
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 0
+      documentationUrl: 
+      hasRepository: 0
+      repository:
+        type: 
+        url: 
+        revision: 
+        path: 
+    - packageId: com.unity.assetbundlebrowser@https://github.com/Unity-Technologies/AssetBundles-Browser.git
+      testable: 0
+      isDirectDependency: 1
+      version: 1.7.0
+      source: 5
+      resolvedPath: D:\learn\Unity\11111\HomeWork\Work\Library\PackageCache\com.unity.assetbundlebrowser@ad2a81ec30
+      assetPath: Packages/com.unity.assetbundlebrowser
+      name: com.unity.assetbundlebrowser
+      displayName: Asset Bundle Browser
+      author:
+        name: 
+        email: 
+        url: 
+      category: Asset Bundles
+      type: 
+      description: 'The Asset Bundle Browser tool makes it possible to inspect the
+        content of built AssetBundles.  It also has basic functionality to view and
+        edit the configuration of AssetBundles and to launch builds.
+
+
+        Use
+        this tool as an alternative to selecting assets and setting their asset bundle
+        manually in the inspector. Installing it will create a new menu item in Window
+        > AssetBundle Browser.
+
+
+        Note: For new projects consider using the
+        Addressables package instead.'
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.1.4
+        - 1.2.0
+        - 1.3.0
+        - 1.5.0
+        - 1.6.0
+        - 1.7.0
+        compatible:
+        - 1.1.4
+        - 1.2.0
+        - 1.3.0
+        - 1.5.0
+        - 1.6.0
+        - 1.7.0
+        verified: 
+      dependencies: []
+      resolvedDependencies: []
+      keywords:
+      - asset
+      - bundle
+      - bundles
+      - assetbundles
       registry:
         id: main
         name: 
@@ -157,7 +230,13 @@ m_PackageAssets:
         - 2.9.1
         - 2.9.2
         - 2.9.4
+        - 2.9.5
+        - 2.9.7
         - 3.0.0-pre.3
+        - 3.0.0-pre.4
+        - 3.0.0-pre.5
+        - 3.0.0-pre.6
+        - 3.0.0-pre.7
         compatible:
         - 2.5.0
         - 2.6.0-preview.2
@@ -201,6 +280,8 @@ m_PackageAssets:
         - 2.9.1
         - 2.9.2
         - 2.9.4
+        - 2.9.5
+        - 2.9.7
         verified: 2.6.17
       dependencies: []
       resolvedDependencies: []
@@ -329,9 +410,16 @@ m_PackageAssets:
         - 2.0.0-preview.20
         - 2.0.0-preview.21
         - 2.0.0-preview.22
+        - 2.0.0
+        - 2.0.1
+        - 2.0.3
+        - 2.0.4
+        - 2.0.5
+        - 2.0.7
         - 2.1.0-preview.3
         - 2.1.0-preview.5
         - 2.1.0-preview.6
+        - 2.1.0
         compatible:
         - 1.15.18
         - 1.17.0
@@ -346,6 +434,11 @@ m_PackageAssets:
         - 2.0.0-preview.20
         - 2.0.0-preview.21
         - 2.0.0-preview.22
+        - 2.0.0
+        - 2.0.1
+        - 2.0.3
+        - 2.0.4
+        - 2.0.5
         - 2.1.0-preview.3
         - 2.1.0-preview.5
         - 2.1.0-preview.6
@@ -446,6 +539,12 @@ m_PackageAssets:
         - 3.0.14
         - 3.0.15
         - 3.0.16
+        - 3.0.17
+        - 3.0.18
+        - 3.0.20
+        - 3.0.21
+        - 3.0.22
+        - 3.0.24
         compatible:
         - 1.0.2
         - 1.0.6
@@ -479,6 +578,12 @@ m_PackageAssets:
         - 3.0.14
         - 3.0.15
         - 3.0.16
+        - 3.0.17
+        - 3.0.18
+        - 3.0.20
+        - 3.0.21
+        - 3.0.22
+        - 3.0.24
         verified: 2.0.7
       dependencies:
       - name: com.unity.test-framework
@@ -554,6 +659,10 @@ m_PackageAssets:
         - 2.0.14
         - 2.0.15
         - 2.0.16
+        - 2.0.17
+        - 2.0.18
+        - 2.0.20
+        - 2.0.21
         compatible:
         - 1.0.2
         - 1.0.3
@@ -574,7 +683,11 @@ m_PackageAssets:
         - 2.0.14
         - 2.0.15
         - 2.0.16
-        verified: 2.0.16
+        - 2.0.17
+        - 2.0.18
+        - 2.0.20
+        - 2.0.21
+        verified: 2.0.21
       dependencies:
       - name: com.unity.test-framework
         version: 1.1.9
@@ -756,6 +869,13 @@ m_PackageAssets:
         - 1.20.1
         - 1.20.2
         - 1.21.0
+        - 1.21.1
+        - 1.21.2
+        - 1.21.3
+        - 1.21.5
+        - 1.21.7
+        - 1.21.8
+        - 1.21.9
         compatible:
         - 0.0.5-preview
         - 0.0.6-preview
@@ -809,6 +929,13 @@ m_PackageAssets:
         - 1.20.1
         - 1.20.2
         - 1.21.0
+        - 1.21.1
+        - 1.21.2
+        - 1.21.3
+        - 1.21.5
+        - 1.21.7
+        - 1.21.8
+        - 1.21.9
         verified: 1.20.2
       dependencies: []
       resolvedDependencies: []
@@ -1062,6 +1189,13 @@ m_PackageAssets:
         - 1.1.33
         - 1.3.0
         - 1.3.1
+        - 1.3.2
+        - 1.3.3
+        - 1.3.4
+        - 1.3.5
+        - 1.3.7
+        - 1.3.8
+        - 1.3.9
         - 2.0.1-exp.1
         - 2.0.1-exp.2
         - 2.0.1-pre.12
@@ -1071,6 +1205,13 @@ m_PackageAssets:
         - 1.1.33
         - 1.3.0
         - 1.3.1
+        - 1.3.2
+        - 1.3.3
+        - 1.3.4
+        - 1.3.5
+        - 1.3.7
+        - 1.3.8
+        - 1.3.9
         - 2.0.1-exp.1
         - 2.0.1-exp.2
         - 2.0.1-pre.12
@@ -1236,12 +1377,17 @@ m_PackageAssets:
         - 3.2.0-pre.1
         - 3.2.0-pre.2
         - 3.2.0-pre.3
+        - 3.2.0-pre.4
+        - 3.2.0-pre.5
         - 4.0.0-pre.1
+        - 4.0.0-pre.2
         compatible:
         - 3.0.6
         - 3.2.0-pre.1
         - 3.2.0-pre.2
         - 3.2.0-pre.3
+        - 3.2.0-pre.4
+        - 3.2.0-pre.5
         verified: 3.0.6
       dependencies:
       - name: com.unity.ugui
@@ -1368,12 +1514,21 @@ m_PackageAssets:
         - 1.6.2
         - 1.6.3
         - 1.6.4
+        - 1.6.5
         - 1.7.0-pre.1
         - 1.7.0-pre.2
         - 1.7.0
         - 1.7.1
         - 1.7.2
+        - 1.7.3
+        - 1.7.4
+        - 1.7.5
         - 1.8.0
+        - 1.8.1
+        - 1.8.2
+        - 1.8.3
+        - 1.8.4
+        - 1.8.5
         compatible:
         - 1.4.8
         - 1.5.0-pre.2
@@ -1398,12 +1553,21 @@ m_PackageAssets:
         - 1.6.2
         - 1.6.3
         - 1.6.4
+        - 1.6.5
         - 1.7.0-pre.1
         - 1.7.0-pre.2
         - 1.7.0
         - 1.7.1
         - 1.7.2
+        - 1.7.3
+        - 1.7.4
+        - 1.7.5
         - 1.8.0
+        - 1.8.1
+        - 1.8.2
+        - 1.8.3
+        - 1.8.4
+        - 1.8.5
         verified: 1.4.8
       dependencies:
       - name: com.unity.modules.director
@@ -1474,6 +1638,8 @@ m_PackageAssets:
       versions:
         all:
         - 1.0.0
+        - 3.0.0-exp.1
+        - 3.0.0-exp.3
         compatible:
         - 1.0.0
         verified: 1.0.0
@@ -3355,6 +3521,8 @@ m_PackageAssets:
         - 1.0.6
         - 2.0.2
         - 2.0.3
+        - 2.0.4
+        - 2.0.5
         compatible:
         - 0.1.5-preview
         - 0.1.6-preview
@@ -3364,6 +3532,8 @@ m_PackageAssets:
         - 1.0.6
         - 2.0.2
         - 2.0.3
+        - 2.0.4
+        - 2.0.5
         verified: 1.0.6
       dependencies: []
       resolvedDependencies: []
@@ -3680,6 +3850,13 @@ m_PackageAssets:
         - 1.4.3
         - 1.5.2
         - 1.6.0
+        - 1.7.0
+        - 1.7.1
+        - 1.8.1
+        - 1.8.2
+        - 1.9.0
+        - 1.10.1
+        - 1.11.0
         compatible:
         - 1.0.1
         - 1.1.0-pre.7
@@ -3698,6 +3875,13 @@ m_PackageAssets:
         - 1.4.3
         - 1.5.2
         - 1.6.0
+        - 1.7.0
+        - 1.7.1
+        - 1.8.1
+        - 1.8.2
+        - 1.9.0
+        - 1.10.1
+        - 1.11.0
         verified: 1.4.3
       dependencies:
       - name: com.unity.modules.unitywebrequest

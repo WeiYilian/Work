@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CharacterPanel : BasePanel
 {
-    private static readonly string path = "UI/Panel/CharacterPanel";
+    private static readonly string path = "CharacterPanel";
 
     public CharacterPanel() : base(new UIType(path)) { }
 

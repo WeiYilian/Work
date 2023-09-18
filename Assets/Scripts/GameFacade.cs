@@ -34,7 +34,7 @@ public class GameFacade : MonoBehaviour
         }
         else
             Destroy(gameObject);
-        
+
         assetFactory = new ResourceAssetProxy();
     }
 
@@ -47,9 +47,19 @@ public class GameFacade : MonoBehaviour
     /// </summary>
     /// <param name="name"></param>
     /// <returns></returns>
-    public GameObject LoadGameObject(string name)
+    public GameObject LoadGameObject(string resName)
     {
-        return assetFactory.LoadGameObject(name);
+        return assetFactory.LoadGameObject(resName,"object.ab");
+    }
+
+    /// <summary>
+    /// 获得ui面板
+    /// </summary>
+    /// <param name="resName"></param>
+    /// <returns></returns>
+    public GameObject LoadUIPanel(string resName)
+    {
+        return assetFactory.LoadGameObject(resName,"ui.ab");
     }
 
     /// <summary>
@@ -57,14 +67,20 @@ public class GameFacade : MonoBehaviour
     /// </summary>
     /// <param name="name"></param>
     /// <returns></returns>
-    public AudioClip LoadAudioClip(string name)
+    public AudioClip LoadAudioClip(string resName)
     {
-        return assetFactory.loadAudioClip(name);
+        return assetFactory.loadAudioClip(resName,"music.ab");
     }
     
-    public Sprite LoadSprite(string name)
+    /// <summary>
+    /// 获得图片
+    /// </summary>
+    /// <param name="resName"></param>
+    /// <param name="filePath"></param>
+    /// <returns></returns>
+    public Sprite LoadSprite(string resName)
     {
-        return assetFactory.LoadSprite(name);
+        return assetFactory.LoadSprite(resName,"sprite.ab");
     }
 
     #endregion

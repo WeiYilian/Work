@@ -70,7 +70,7 @@ public class AudioManager : MonoBehaviour
  
     //背景音乐
     private AudioSource bgAudioSource;
- 
+
     //声音对象池
     private AudioObjectPool audioObjectPool;
  
@@ -98,8 +98,8 @@ public class AudioManager : MonoBehaviour
     {
         audioList = new List<AudioClip>()
         {
-            GameFacade.Instance.LoadAudioClip("bg/Start"),//0，Start场景bgm
-            GameFacade.Instance.LoadAudioClip("bg/Loading"),//1，Load场景bgm
+            GameFacade.Instance.LoadAudioClip("Start"),//0，Start场景bgm
+            GameFacade.Instance.LoadAudioClip("Loading"),//1，Load场景bgm
             GameFacade.Instance.LoadAudioClip("Attack1"),//2，攻击1声音
             GameFacade.Instance.LoadAudioClip("Attack2"),//3，攻击2声音
             GameFacade.Instance.LoadAudioClip("Button"),//6，按钮声音
@@ -115,6 +115,24 @@ public class AudioManager : MonoBehaviour
         };
     }
 
+    //停止播放所有声音
+    public void StopMusic(GameObject Switch)
+    {
+        isMute = !isMute;
+        if(!isMute)
+        {
+            Switch.transform.GetChild(0).gameObject.SetActive(true);
+            Switch.transform.GetChild(1).gameObject.SetActive(false);
+            ResumeAudio(0);
+        }
+        if(isMute)
+        {
+            Switch.transform.GetChild(0).gameObject.SetActive(false);
+            Switch.transform.GetChild(1).gameObject.SetActive(true);
+            AudioPause(0);
+        }
+    }
+    
     /// <summary>
     /// 音频播放
     /// </summary>
@@ -134,7 +152,17 @@ public class AudioManager : MonoBehaviour
         AudioSource audioSource = transform.GetChild(index).GetComponent<AudioSource>();
         audioSource.UnPause();
     }
- 
+
+    /// <summary>
+    /// 暂停播放
+    /// </summary>
+    /// <param name="index"></param>
+    public void AudioPause(int index)
+    {
+        AudioSource audioSource = transform.GetChild(index).GetComponent<AudioSource>();
+        audioSource.Pause();
+    }
+    
     /// <summary>
     /// 停止播放声音
     /// </summary>
@@ -153,6 +181,7 @@ public class AudioManager : MonoBehaviour
     public void PlayBGMAudio(string audioNme)
     {
         AudioClip audioClip;
+        
         if (audioDic.TryGetValue(audioNme, out audioClip))
         {
             bgAudioSource.gameObject.SetActive(true);

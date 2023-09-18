@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class ConfirmPanel : BasePanel
 {
-    private static readonly string path = "UI/Panel/ConfirmPanel";
+    private static readonly string path = "ConfirmPanel";
 
     private string message;
     public ConfirmPanel(string message) : base(new UIType(path))

@@ -1,0 +1,34 @@
+ManifestFileVersion: 0
+CRC: 2997307792
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7e8c997c0fc8bd8728d6806e89f8fc51
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- "Assets/Resources/music/\u5931\u8D25\u97F3\u6548.mp3"
+- Assets/Resources/music/bg/fight.mp3
+- Assets/Resources/music/Skill2.mp3
+- Assets/Resources/music/Walk.wav
+- Assets/Resources/music/Attack2.wav
+- Assets/Resources/music/Skill3.mp3
+- Assets/Resources/music/Hit.mp3
+- Assets/Resources/music/bg/Loading.mp3
+- Assets/Resources/music/OpenBox.mp3
+- Assets/Resources/music/Run.wav
+- Assets/Resources/music/Summon.mp3
+- Assets/Resources/music/Button.mp3
+- Assets/Resources/music/SwingEmpty.mp3
+- Assets/Resources/music/Attack1.wav
+- Assets/Resources/music/Summo0.mp3
+- "Assets/Resources/music/\u4E3B\u89D2\u4F24\u5BB3.mp3"
+- "Assets/Resources/music/\u80DC\u5229\u97F3\u6548.mp3"
+- Assets/Resources/music/bg/Start.mp3
+Dependencies: []

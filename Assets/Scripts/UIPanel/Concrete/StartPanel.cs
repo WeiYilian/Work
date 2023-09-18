@@ -8,27 +8,23 @@ using UnityEngine.UI;
 /// </summary>
 public class StartPanel : BasePanel
 {
-    private static readonly string path = "UI/Panel/StartPanel"; /*readonly：声明字段，表示声明的字段只能在声明时或同一个类的构造函数当中进行赋值*/
+    private static readonly string path = "StartPanel"; /*readonly：声明字段，表示声明的字段只能在声明时或同一个类的构造函数当中进行赋值*/
 
     public StartPanel() : base(new UIType(path)) { }
 
-    private bool isMute; 
-    
     public override void OnEnter()
     {
-        AudioManager.Instance.PlayBGMAudio("Start");
-        
-        UITool.GetOrAddComponentInChildren<Button>("BtnVoice").onClick.AddListener(() =>
-        {
-            isMute = !isMute;
-            if (!isMute)
-                GameObject.Find("StartPanel").transform.Find("BtnVoice").GetComponent<Image>().sprite =
-                    GameFacade.Instance.LoadSprite("audio_on");
-            else
-                GameObject.Find("StartPanel").transform.Find("BtnVoice").GetComponent<Image>().sprite =
-                    GameFacade.Instance.LoadSprite("audio_mute");
-            AudioManager.Instance.IsMute = isMute;
-        });
+        // UITool.GetOrAddComponentInChildren<Button>("BtnVoice").onClick.AddListener(() =>
+        // {
+        //     isMute = !isMute;
+        //     if (!isMute)
+        //         GameObject.Find("StartPanel").transform.Find("BtnVoice").GetComponent<Image>().sprite =
+        //             GameFacade.Instance.LoadSprite("audio_on");
+        //     else
+        //         GameObject.Find("StartPanel").transform.Find("BtnVoice").GetComponent<Image>().sprite =
+        //             GameFacade.Instance.LoadSprite("audio_mute");
+        //     AudioManager.Instance.IsMute = isMute;
+        // });
         
         UITool.GetOrAddComponentInChildren<Button>("BtnPlay").onClick.AddListener(() =>
         {

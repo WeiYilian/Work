@@ -1,0 +1,149 @@
+ManifestFileVersion: 0
+CRC: 2581929299
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e4f87d515d5892a849d5de99aefb79d2
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 3ed2c7c0f717255831f8f4b8fe982327
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5568bf7a260bc8449b68e76cda508188, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 759df6d170a17884ba540cb05233b2d1, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 50aca0d29b1485547959fde9021339e1, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 25533d1c18e1d6b4cbfb3633a0985543, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 334d2e3841ae72944a88048f303392bf, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 00cdfd95ae9343c41b9f1930ba66e8b5, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 88f7d26a97863c2498b304c2574e8808, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5f3c37199661be4419691444b405871d, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a79656d7232115b4291214ff48b065db, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 20a348fb5cdf3c046927e7719feb8823, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7d7e5bc3726558e45b1ab07588b51da5, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a72bddcae9cd2e04bae48da813ad9bfa, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 49318826e2746a941a7731601e3d8ca7, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9e1154694ee8cd845b3005b86e02669f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 28ff54e14777e6e4c8a48cfd53faefe4, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 135
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 195
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 221
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 223
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+- Class: 225
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.ArgumentCache
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentCallGroup
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentListenerMode
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.UnityEvent`1[UnityEngine.EventSystems.PointerEventData]
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.RectOffset
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.AnimationTriggers
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.Button/ButtonClickedEvent
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.ColorBlock
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.FontData
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.Navigation
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.SpriteState
+Assets:
+- Assets/Resources/GameObject/Sword_Slash_A.prefab
+- Assets/Resources/GameObject/Slot.prefab
+- Assets/Resources/GameObject/Warrior.prefab
+- Assets/Resources/GameObject/UPLevel.prefab
+- Assets/Resources/GameObject/RestoreDrug.prefab
+- Assets/Resources/GameObject/Account.prefab
+- Assets/Resources/GameObject/Sword_Slash_1.prefab
+- Assets/Resources/GameObject/MageSkill.prefab
+- Assets/Resources/GameObject/Sword_Slash_3.prefab
+- Assets/Resources/GameObject/Health.prefab
+- Assets/Resources/GameObject/Treat.prefab
+- Assets/Resources/GameObject/Mage.prefab
+- Assets/Resources/GameObject/MageAttack.prefab
+- Assets/Resources/GameObject/UsePanel.prefab
+- Assets/Resources/GameObject/BoxOpen.prefab
+- Assets/Resources/GameObject/Sword_Slash_2.prefab
+- Assets/Resources/GameObject/Task.prefab
+Dependencies: []

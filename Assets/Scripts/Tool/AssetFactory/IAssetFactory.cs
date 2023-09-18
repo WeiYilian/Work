@@ -6,10 +6,9 @@ using UnityEngine.UI;
 
 public interface IAssetFactory
 {
+    GameObject LoadGameObject(string resName, string filePath);
 
-    GameObject LoadGameObject(string name);
+    AudioClip loadAudioClip(string resName, string filePath); //音乐;
 
-    AudioClip loadAudioClip(string name); //音乐;
-
-    Sprite LoadSprite(string name);//图片
+    Sprite LoadSprite(string resName, string filePath);//图片
 }

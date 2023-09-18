@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class TaskManagerPanel : BasePanel
 {
-    private static readonly string path = "UI/Panel/TaskManagerPanel";/*readonly：声明字段，表示声明的字段只能在声明时或同一个类的构造函数当中进行赋值*/
+    private static readonly string path = "TaskManagerPanel";/*readonly：声明字段，表示声明的字段只能在声明时或同一个类的构造函数当中进行赋值*/
 
     public TaskManagerPanel() : base(new UIType(path)) { }
 

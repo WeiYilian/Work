@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class DialoguePanel : BasePanel
 {
-    private static readonly string path = "UI/Panel/DialoguePanel";
+    private static readonly string path = "DialoguePanel";
 
     public DialoguePanel() : base(new UIType(path)) { }
     

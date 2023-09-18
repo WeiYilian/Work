@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerTaskPanel : BasePanel
 {
-    private static readonly string path = "UI/Panel/PlayerTaskPanel";
+    private static readonly string path = "PlayerTaskPanel";
     
     public PlayerTaskPanel():base(new UIType(path)){}
 

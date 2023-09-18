@@ -1,0 +1,135 @@
+ManifestFileVersion: 0
+CRC: 3293495685
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 50616ba334301ae86fb494e6bef6048f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ae941d744d9744b127b50b650f0c6ecb
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d199490a83bb2b844b9695cbf13b01ef, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: beb15159a8014e1498bf2c4901aff37d, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 759df6d170a17884ba540cb05233b2d1, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2a4db7a114972834c8e4117be1d82ba3, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2fafe2cfe61f6974895a912c3755e8f1, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a72bddcae9cd2e04bae48da813ad9bfa, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0463882013d86d743a342c956d474ff3, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0d0b652f32a2cc243917e4028fa0f046, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+- Class: 225
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.ArgumentCache
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentCallGroup
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentListenerMode
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.UnityEvent`1[UnityEngine.EventSystems.PointerEventData]
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.RectOffset
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.AnimationTriggers
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.Button/ButtonClickedEvent
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.ColorBlock
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.Dropdown/DropdownEvent
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.Dropdown/OptionData
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.Dropdown/OptionDataList
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.FontData
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.InputField/OnChangeEvent
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.InputField/SubmitEvent
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.Navigation
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.ScrollRect/ScrollRectEvent
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.Scrollbar/ScrollEvent
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.Slider/SliderEvent
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.SpriteState
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.Toggle/ToggleEvent
+Assets:
+- Assets/Resources/UI/Panel/LoginPanel.prefab
+- Assets/Resources/UI/Panel/NoticePanel.prefab
+- Assets/Resources/UI/Panel/RegisterPanel.prefab
+- Assets/Resources/UI/Panel/UserManagerPanel.prefab
+- Assets/Resources/UI/Panel/PlayerTaskPanel.prefab
+- Assets/Resources/UI/Panel/UserMessagePanel.prefab
+- Assets/Resources/UI/Panel/DialoguePanel.prefab
+- Assets/Resources/UI/Panel/MainPanel.prefab
+- Assets/Resources/UI/Panel/CharacterPanel.prefab
+- Assets/Resources/UI/Panel/SetPanel.prefab
+- Assets/Resources/UI/Panel/StartPanel.prefab
+- Assets/Resources/UI/Panel/OverPanel.prefab
+- Assets/Resources/UI/Panel/LevelPanel.prefab
+- Assets/Resources/UI/Panel/ConfirmPanel.prefab
+- Assets/Resources/UI/Panel/TaskManagerPanel.prefab
+Dependencies:
+- D:/learn/Unity/11111/HomeWork/Work/AssetBundles/object.ab
+- D:/learn/Unity/11111/HomeWork/Work/AssetBundles/sprite.ab

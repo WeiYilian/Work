@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class OverPanel : BasePanel
 {
-    private static readonly string path = "UI/Panel/OverPanel";
+    private static readonly string path = "OverPanel";
 
     private string message;
 
