@@ -13,7 +13,8 @@ public class CharacterStats : MonoBehaviour
 
     [HideInInspector]//虽然是public的，但是在inspector窗口中屏蔽了
     public bool isCritical;
-     private void OnEnable()
+
+    private void OnEnable()
     {
         if (templateData != null)
             characterData = Instantiate(templateData);
@@ -32,7 +33,19 @@ public class CharacterStats : MonoBehaviour
         get { if (characterData != null) return characterData.currentHealth;else return 0; }
         set { characterData.currentHealth = value; }
     }
-    
+
+    public float MaxMana
+    {
+        get { if (characterData != null) return characterData.maxMana;else return 0; }
+        set { characterData.maxMana = value; }
+    }
+
+    public float CurrentMana
+    {
+        get { if (characterData != null) return characterData.currentMana;else return 0; }
+        set { characterData.currentMana = value; }
+    }
+
     public int BaseDefence
     {
         get { if (characterData != null) return characterData.baseDefence;else return 0; }
@@ -79,7 +92,20 @@ public class CharacterStats : MonoBehaviour
         get { if (characterData != null) return characterData.attributePoints;else return 0; }
         set { characterData.attributePoints = value; }
     }
+
+    public int WeaponLevel
+    {
+        get { if (characterData != null) return characterData.weaponLevel;else return 0; }
+        set { characterData.weaponLevel = value; }
+    }
+
+    public int Money
+    {
+        get { if (characterData != null) return characterData.money;else return 0; }
+        set { characterData.money = value; }
+    }
     
+
     #endregion
 
     #region Character Combat
@@ -91,14 +117,16 @@ public class CharacterStats : MonoBehaviour
     /// <param name="defener"></param>
     public void TakeDamage(CharacterStats attacker, CharacterStats defener, bool isSkill = false)
     {
+        PlayerConctroller playerConctroller = MainSceneManager.Instance.PlayerConctroller;
+        
         int damage = Mathf.Max(attacker.CurrentDamage() - defener.CurrentDefence, 0);
         CurrentHealth = Mathf.Max(CurrentHealth - damage, 0);
         if (defener.CompareTag("Player"))
         {
-            PlayerConctroller.Instance.PlayerAttrib[7] = CurrentHealth.ToString();
-            if (!PlayerConctroller.Instance.isHit)
+            playerConctroller.PlayerAttrib[7] = CurrentHealth.ToString();
+            if (!playerConctroller.isHit)
             {
-                PlayerConctroller.Instance.isHit = true;
+                playerConctroller.isHit = true;
                 if(isSkill) 
                     defener.GetComponentInChildren<Animator>().SetTrigger("Repelled");
                 else
@@ -116,6 +144,12 @@ public class CharacterStats : MonoBehaviour
         
     }
 
+    /// <summary>
+    /// 被攻击计算收到的伤害
+    /// </summary>
+    /// <param name="attacker"></param>
+    /// <param name="defener"></param>
+    /// <param name="Multiple"></param>
     public void SkillTakeDamage(CharacterStats attacker, CharacterStats defener,int Multiple)
     {
         int damage = Mathf.Max(attacker.CurrentDamage() * Multiple - defener.CurrentDefence, 0);
@@ -140,7 +174,7 @@ public class CharacterStats : MonoBehaviour
 
         //经验update
         if(CurrentHealth <= 0)
-            PlayerConctroller.Instance.characterStats.characterData.UpdateExp(characterData.killPoint);
+            MainSceneManager.Instance.PlayerConctroller.characterStats.characterData.UpdateExp(characterData.killPoint);
     }
 
     /// <summary>
@@ -149,7 +183,17 @@ public class CharacterStats : MonoBehaviour
     /// <returns></returns>
     private int CurrentDamage()
     {
-        float coreDamage = UnityEngine.Random.Range(characterData.minDamage, characterData.maxDamage);
+        int minDamage = characterData.minDamage;
+        int maxDamage = characterData.maxDamage;
+
+        //增加武器伤害
+        if (CompareTag("Player"))
+        {
+            minDamage = minDamage + characterData.weaponLevel;
+            maxDamage = maxDamage + characterData.weaponLevel;
+        }
+        
+        float coreDamage = UnityEngine.Random.Range(minDamage, maxDamage);
 
         if (isCritical)
         {

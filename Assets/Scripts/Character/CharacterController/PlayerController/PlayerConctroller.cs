@@ -8,7 +8,7 @@ using UnityEngine.Windows.WebCam;
 [RequireComponent(typeof(CharacterController))]
 public class PlayerConctroller : MonoBehaviour
 {
-    public static PlayerConctroller Instance;
+    //public static PlayerConctroller Instance;
     
     [HideInInspector] public CharacterController characterController;
 
@@ -16,10 +16,13 @@ public class PlayerConctroller : MonoBehaviour
 
     [HideInInspector] public CharacterStats characterStats;
     
-    //摄像机的位置
-    [HideInInspector] public CameraController photographer;
-    //摄像机跟随的位置
-    [HideInInspector] public Transform followingTarget;
+    // //摄像机的位置
+    // [HideInInspector] public CameraController photographer;
+    // //摄像机跟随的位置
+    // [HideInInspector] public Transform followingTarget;
+
+    [HideInInspector] public Camera MainCamera;
+    
     //背包
     public Inventory myBag;
 
@@ -28,8 +31,6 @@ public class PlayerConctroller : MonoBehaviour
     private MoveController moveController;
 
     private AttackController attackController;
-
-    private AttribController attribController;
 
     private string playerName;
 
@@ -58,8 +59,20 @@ public class PlayerConctroller : MonoBehaviour
 
     private void Awake()
     {
-        if(Instance == null)
-            Instance = this;
+        MainCamera = Camera.main;
+
+        MainSceneManager.Instance.PlayerConctroller = this;
+        
+        characterController = GetComponent<CharacterController>();
+        animator = GetComponent<Animator>();
+        characterStats = GetComponent<CharacterStats>();
+        // photographer = GameObject.Find("photograther").GetComponent<CameraController>();
+        // followingTarget = transform.GetChild(3);
+
+        PanelManager = PanelManager.Instance;
+        moveController = new MoveController();
+        attackController = new AttackController();
+        
     }
 
     private void Start()
@@ -69,9 +82,7 @@ public class PlayerConctroller : MonoBehaviour
 
     public void Update()
     {
-        attribController.SuperviserNumber();
-        
-        if (GameLoop.Instance.isTimeOut) return;
+        if (MainSceneManager.Instance.isTimeOut) return;
         
         if (characterStats.CurrentHealth == 0)
         {
@@ -85,24 +96,18 @@ public class PlayerConctroller : MonoBehaviour
 
     private void Init()
     {
-        PlayerName = PlayerPrefs.GetString("Player");
+        GameFacade.Instance.PlayerName = "11";
+        PlayerName = GameFacade.Instance.PlayerName;
         PlayerAttrib = DataManager.SelectUser(PlayerName);
-
-        characterController = GetComponent<CharacterController>();
-        animator = GetComponent<Animator>();
-        characterStats = GetComponent<CharacterStats>();
-        photographer = GameObject.Find("photograther").GetComponent<CameraController>();
-        followingTarget = transform.GetChild(3);
         
-        PanelManager = PanelManager.Instance;
-        moveController = new MoveController();
-        attackController = new AttackController();
-        attribController = new AttribController();
-
         //将数据库中的数据装入游戏中
-        characterStats.CurrentHealth = Convert.ToSingle(playerAttrib[7]);
-        characterStats.CurrentExp = Convert.ToSingle(playerAttrib[6]);
         characterStats.CurrentLevel = Convert.ToInt32(playerAttrib[5]);
+        characterStats.CurrentExp = Convert.ToInt32(playerAttrib[6]);
+        characterStats.CurrentHealth = Convert.ToInt32(playerAttrib[7]);
+        characterStats.CurrentMana = Convert.ToInt32(playerAttrib[8]);
+        characterStats.Money = Convert.ToInt32(playerAttrib[9]);
+        
+        
     }
 
     // ReSharper disable Unity.PerformanceAnalysis

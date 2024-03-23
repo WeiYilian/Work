@@ -48,7 +48,7 @@ public class PlayerTaskPanel : BasePanel
                 }
                 else
                 {
-                    PlayerConctroller.Instance.characterStats.characterData.UpdateExp(tasks[index].TaskReward);
+                    playerConctroller.characterStats.characterData.UpdateExp(tasks[index].TaskReward);
                     if (TaskManager.Instance.FindTask(tasks[index].Index) != null)
                         TaskManager.Instance.FindTask(tasks[index].Index).IsFinish = true;
                     //TaskManager.Instance.Tasks.Remove(tasks[index]);

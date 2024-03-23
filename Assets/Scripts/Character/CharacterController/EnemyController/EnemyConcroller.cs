@@ -87,7 +87,7 @@ public class EnemyConcroller : MonoBehaviour,IEnemy,IPoolable
 
     private void Update()
     {
-        if (playerDead || isSpawn || GameLoop.Instance.isTimeOut) return;
+        if (playerDead || isSpawn || MainSceneManager.Instance.isTimeOut) return;
         
         if (characterStats.CurrentHealth == 0)
             isDead = true;

@@ -9,22 +9,22 @@ public class MoveController
 
     private CharacterController characterController;
    
-    private CameraController photographer;
+    //private CameraController photographer;
     
-    private Transform followingTarget;
+    //private Transform followingTarget;
     
     private PlayerConctroller PlayerConctroller;
     
     public MoveController()
     {
-        PlayerConctroller = PlayerConctroller.Instance;
+        PlayerConctroller = MainSceneManager.Instance.PlayerConctroller;
         
         characterController = PlayerConctroller.characterController;
         animator = PlayerConctroller.animator;
-        photographer = PlayerConctroller.photographer;
-        followingTarget = PlayerConctroller.followingTarget;
-        
-        photographer.InitCamera(followingTarget);
+        // photographer = PlayerConctroller.photographer;
+        // followingTarget = PlayerConctroller.followingTarget;
+        //
+        // photographer.InitCamera(followingTarget);
     }
     
     
@@ -34,7 +34,7 @@ public class MoveController
     //基本速度
     private float speed;
     //行走的速度
-    private float mWlkSpeed = 2f; 
+    private float mWlkSpeed = 1.5f; 
     //奔跑时的速度
     private float mRunSpeed = 4f;
     //设置翻滚的速度
@@ -121,13 +121,15 @@ public class MoveController
     /// </summary>
     void BaseMove()
     {
-        float curX = PlayerConctroller.canMove ? Input.GetAxis("Vertical") : 0;
-        float curY = PlayerConctroller.canMove ? Input.GetAxis("Horizontal") : 0;
-        rot = Quaternion.Euler(0,photographer.Yaw,0);
-        moveDirection = rot * Vector3.forward * curX + rot * Vector3.right * curY;
+        float CurZ = PlayerConctroller.canMove ? Input.GetAxis("Vertical") : 0;
+        float CurX = PlayerConctroller.canMove ? Input.GetAxis("Horizontal") : 0;
+        moveDirection = new Vector3(CurX, 0, CurZ);
+        rot = Quaternion.Euler(0,PlayerConctroller.MainCamera.transform.rotation.eulerAngles.y,0);
+        moveDirection = rot * moveDirection;
         if(moveDirection != Vector3.zero || PlayerConctroller.isAttack)
-            PlayerConctroller.transform.rotation = Quaternion.Slerp(PlayerConctroller.transform.rotation, rot, rotateSpeed * Time.deltaTime);//顺滑转向
-        animationMove = Vector3.forward * (curX * speed) + Vector3.right * (curY * speed);
+            PlayerConctroller.transform.rotation = 
+                Quaternion.Slerp(PlayerConctroller.transform.rotation, rot, rotateSpeed * Time.deltaTime);//顺滑转向
+        animationMove = Vector3.forward * (CurZ * speed) + Vector3.right * (CurX * speed);
     }
 
     // ReSharper disable Unity.PerformanceAnalysis

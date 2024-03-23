@@ -29,7 +29,7 @@ public class ObjectPool : MonoBehaviour
     public Dictionary<string, Queue<GameObject>> Pool = new Dictionary<string, Queue<GameObject>>(); 
     
     // 池子要存储的物体
-    public GameObject Object;
+    [HideInInspector] public GameObject Object;
     // 内存区（队列）
     public Queue<GameObject> enemyPool = new Queue<GameObject>();
     // 池子的初始容量
@@ -48,7 +48,7 @@ public class ObjectPool : MonoBehaviour
         for (int i = 0; i < defaultCount; i++)
         {
             if (parent == null)
-                parent = GameObject.Find("GameObject").transform;
+                parent = GameObject.Find("GameObjectPool").transform;
             GameObject go = Instantiate(obj,parent);
             // 将生成的对象入队
             if (Pool.TryGetValue(type,out Queue<GameObject> queue))

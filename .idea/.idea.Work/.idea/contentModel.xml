@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\888\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\888\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Work.1135726996.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Lenovo\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Lenovo\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Work.1135726996.00" t="ExcludeRecursive" />
     <e p="D:\learn\Unity\11111\HomeWork\Work" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Asset Package" t="Include">
-          <e p="Polytope Studio" t="Include">
-            <e p="Lowpoly Medieval Characters" t="Include">
-              <e p="Sources" t="Include">
-                <e p="Shaders" t="Include">
-                  <e p="PT_Medieval_Armors_Shader_PBR.shader" t="Include" />
-                  <e p="PT_Medieval_Armors_Shader_Toon.shader" t="Include" />
+          <e p="NPC" t="Include">
+            <e p="Orkassasin" t="Include">
+              <e p="Material" t="Include">
+                <e p="Standard_Two_Sided .shader" t="Include" />
+              </e>
+            </e>
+            <e p="Polytope Studio" t="Include">
+              <e p="Lowpoly Medieval Characters" t="Include">
+                <e p="Sources" t="Include">
+                  <e p="Shaders" t="Include">
+                    <e p="PT_Medieval_Armors_Shader_PBR.shader" t="Include" />
+                    <e p="PT_Medieval_Armors_Shader_Toon.shader" t="Include" />
+                  </e>
                 </e>
               </e>
             </e>
@@ -207,6 +214,11 @@
                 </e>
               </e>
             </e>
+            <e p="Frank_Mage" t="Include">
+              <e p="Documentation" t="Include">
+                <e p="Frank_Mage_Motion_List.txt" t="Include" />
+              </e>
+            </e>
           </e>
           <e p="场景" t="Include">
             <e p="Top Down - Fantasy Forest" t="Include">
@@ -270,7 +282,6 @@
               </e>
               <e p="PlayerController" t="Include">
                 <e p="AttackController.cs" t="Include" />
-                <e p="AttribController.cs" t="Include" />
                 <e p="CameraController.cs" t="Include" />
                 <e p="MoveController.cs" t="Include" />
                 <e p="PlayerConctroller.cs" t="Include" />
@@ -278,7 +289,7 @@
             </e>
             <e p="ObjectController" t="Include">
               <e p="BoxController.cs" t="Include" />
-              <e p="RockController.cs" t="Include" />
+              <e p="TriggerStayController.cs" t="Include" />
             </e>
           </e>
           <e p="GameFacade.cs" t="Include" />
@@ -298,6 +309,7 @@
               <e p="Slot.cs" t="Include" />
               <e p="UseItem.cs" t="Include" />
             </e>
+            <e p="MainSceneManager.cs" t="Include" />
             <e p="SceneStateManager" t="Include">
               <e p="Base" t="Include">
                 <e p="SceneState.cs" t="Include" />
@@ -357,6 +369,7 @@
               <e p="CharacterPanel.cs" t="Include" />
               <e p="ConfirmPanel.cs" t="Include" />
               <e p="DialoguePanel.cs" t="Include" />
+              <e p="EnhancedPanel.cs" t="Include" />
               <e p="LoginPanel.cs" t="Include" />
               <e p="MainPanel.cs" t="Include" />
               <e p="NoticePanel.cs" t="Include" />

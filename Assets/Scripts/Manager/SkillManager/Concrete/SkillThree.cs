@@ -14,7 +14,7 @@ public class SkillThree :BaseSkill
     {
         GameObject go = ObjectPool.Instance.Get("Sword_Slash_3");
         go.transform.position = EmitPoint.transform.position + Vector3.up * 0.5f;
-        go.transform.rotation = PlayerConctroller.Instance.characterController.transform.rotation;
+        go.transform.rotation = playerConctroller.characterController.transform.rotation;
         ObjectPool.Instance.Remove("Sword_Slash_3",go,1f);
         
         AudioManager.Instance.PlayAudio(2,"Skill3");

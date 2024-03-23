@@ -22,7 +22,7 @@ public class UserMessagePanel : BasePanel
         UITool.GetOrAddComponentInChildren<Button>("BtnConfirm").onClick.AddListener(() =>
         {
             BtnConfirm();
-            DataManager.UpdataUserMessage(PlayerConctroller.Instance.PlayerAttrib);
+            DataManager.UpdataUserMessage(playerConctroller.PlayerAttrib);
             Pop();
             Push(new NoticePanel("修改完成"));
         });
@@ -31,11 +31,11 @@ public class UserMessagePanel : BasePanel
     private void BtnConfirm()
     {
         if (username != null)
-            PlayerConctroller.Instance.PlayerAttrib[1] = username.text;
+            playerConctroller.PlayerAttrib[1] = username.text;
         if (password != null)
-            PlayerConctroller.Instance.PlayerAttrib[2] = password.text;
+            playerConctroller.PlayerAttrib[2] = password.text;
         if (age != null)
-            PlayerConctroller.Instance.PlayerAttrib[3] = age.text;
+            playerConctroller.PlayerAttrib[3] = age.text;
     }
 
     // ReSharper disable Unity.PerformanceAnalysis
@@ -47,8 +47,8 @@ public class UserMessagePanel : BasePanel
         password = settingPanel.transform.Find("Content/Password/InputField").GetComponent<InputField>();
         age = settingPanel.transform.Find("Content/Age/InputField").GetComponent<InputField>();
         
-        username.text = PlayerConctroller.Instance.PlayerAttrib[1];
-        password.text = PlayerConctroller.Instance.PlayerAttrib[2];
-        age.text = PlayerConctroller.Instance.PlayerAttrib[3];
+        username.text = playerConctroller.PlayerAttrib[1];
+        password.text = playerConctroller.PlayerAttrib[2];
+        age.text = playerConctroller.PlayerAttrib[3];
     }
 }

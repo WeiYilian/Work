@@ -83,11 +83,13 @@ public class PanelManager
          return stackPanel.Peek();
    }
 
+   public MainPanel mainPanel;
+
    public MainPanel MainPanel()
    {
-      if (stackPanel.Peek().UIType.Name == "MainPanel")
+      if (mainPanel == null && stackPanel.Peek().UIType.Name == "MainPanel")
          return stackPanel.Peek() as MainPanel;
-      return null;
+      return mainPanel;
    }
 
    // public CharacterPanel CharacterPanel()

@@ -42,7 +42,8 @@ public class LoginPanel : BasePanel
             if (isLogin)
             {
                 Debug.Log("进入下一个场景");
-                PlayerPrefs.SetString("Player",username);
+                //PlayerPrefs.SetString("Player",username);
+                GameFacade.Instance.PlayerName = username;
                 SceneStateController.Instance.SetState(new MainScene());
             }
             else

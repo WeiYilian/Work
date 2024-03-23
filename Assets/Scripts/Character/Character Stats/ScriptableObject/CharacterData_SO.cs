@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 [CreateAssetMenu(fileName = "New Data", menuName = "Character Stats/Data")]
 public class CharacterData_SO : ScriptableObject
@@ -9,6 +11,10 @@ public class CharacterData_SO : ScriptableObject
     public float maxHealth;
 
     public float currentHealth;
+
+    public float maxMana;
+
+    public float currentMana;
     
     public int baseDefence;
 
@@ -45,6 +51,11 @@ public class CharacterData_SO : ScriptableObject
     public float levelBuff;
 
     public int attributePoints;
+    
+    //武器等级
+    public int weaponLevel;
+
+    public int money;
 
     public float LevelMultiplier
     {
@@ -59,7 +70,7 @@ public class CharacterData_SO : ScriptableObject
     {
         currentExp += point;
         
-        PlayerConctroller.Instance.PlayerAttrib[6] = currentExp.ToString();
+        MainSceneManager.Instance.PlayerConctroller.PlayerAttrib[6] = currentExp.ToString();
         
         if (currentExp >= baseExp)
             LeveUp();
@@ -70,22 +81,24 @@ public class CharacterData_SO : ScriptableObject
     /// </summary>
     private void LeveUp()
     {
-        GameObject go = ObjectPool.Instance.Get("UPLevel", PlayerConctroller.Instance.transform);
-        go.transform.position = PlayerConctroller.Instance.transform.position;
+        GameObject go = ObjectPool.Instance.Get("UPLevel", MainSceneManager.Instance.PlayerConctroller.transform);
+        go.transform.position = MainSceneManager.Instance.PlayerConctroller.transform.position;
         ObjectPool.Instance.Remove("UPLevel",go,1);
 
-        PlayerConctroller.Instance.PlayerAttrib[5] = currentLevel.ToString();
+        MainSceneManager.Instance.PlayerConctroller.PlayerAttrib[5] = currentLevel.ToString();
 
         //所有想要提升的数据方法都可以写到这里
         currentLevel = Mathf.Clamp(currentLevel + 1, 0, maxLevel);//限制等级不能超过最大等级
         
         baseExp += baseExp;//每一级所需要的经验翻倍
         currentExp = 0;//经验值清零
-        PlayerConctroller.Instance.PlayerAttrib[6] = currentExp.ToString();
+        MainSceneManager.Instance.PlayerConctroller.PlayerAttrib[6] = currentExp.ToString();
 
         attributePoints++;//属性点增加
 
         maxHealth = (int) (maxHealth * LevelMultiplier/*可以换成LevelBuff,就是以当前总生命值的比例提升*/);//每升一级，提升最大血量
         currentHealth = maxHealth;//恢复满血
+        maxMana = (int) (maxMana * LevelMultiplier);
+        currentMana = maxMana;//恢复满蓝
     }
 }

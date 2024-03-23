@@ -13,7 +13,7 @@ public class SkillTwo : BaseSkill
     {
         GameObject go = ObjectPool.Instance.Get("Sword_Slash_2");
         go.transform.position = EmitPoint.transform.position;
-        go.transform.rotation = PlayerConctroller.Instance.characterController.transform.rotation;
+        go.transform.rotation = playerConctroller.characterController.transform.rotation;
         go.GetComponentInChildren<ParticleSystem>().Play();
         ObjectPool.Instance.Remove("Sword_Slash_2",go,1f); 
         

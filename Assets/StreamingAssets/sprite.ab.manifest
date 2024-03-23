@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 991896835
+CRC: 2081776919
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: cecb51d976922e9193fe6a45a5a3c2d8
+    Hash: 5212ad18d98d1cd8dbc989975db86077
   TypeTreeHash:
     serializedVersion: 2
     Hash: 12da798fbf3a6c0c342cc56cb1a6efdf
@@ -15,6 +15,6 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/Resources/Sprite/audio_on.png
-- Assets/Resources/Sprite/audio_mute.png
+- Assets/Prefabs/Sprite/audio_on.png
+- Assets/Prefabs/Sprite/audio_mute.png
 Dependencies: []

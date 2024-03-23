@@ -26,7 +26,7 @@ public class GameFacade : MonoBehaviour
     private void Awake()
     {
         var find = GameObject.Find("GameLoop");
-
+        
         if (find == this.gameObject)
         {
             Instance = this;
@@ -34,14 +34,11 @@ public class GameFacade : MonoBehaviour
         }
         else
             Destroy(gameObject);
-
+        
         assetFactory = new ResourceAssetProxy();
     }
 
     #region 加载资源
-
-    
-
     /// <summary>
     /// 获得游戏物体
     /// </summary>
@@ -84,5 +81,5 @@ public class GameFacade : MonoBehaviour
     }
 
     #endregion
-    
+
 }

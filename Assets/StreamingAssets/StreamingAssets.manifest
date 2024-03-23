@@ -1,18 +1,18 @@
 ManifestFileVersion: 0
-CRC: 2466088657
+CRC: 1218691422
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
+      Name: music.ab
+      Dependencies: {}
+    Info_1:
       Name: ui.ab
       Dependencies:
         Dependency_0: object.ab
         Dependency_1: sprite.ab
-    Info_1:
+    Info_2:
       Name: object.ab
       Dependencies: {}
-    Info_2:
-      Name: sprite.ab
-      Dependencies: {}
     Info_3:
-      Name: music.ab
+      Name: sprite.ab
       Dependencies: {}

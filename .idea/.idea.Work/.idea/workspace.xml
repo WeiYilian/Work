@@ -1,210 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b775748c-78e5-4a6e-a39a-082beed9becd" name="默认的" comment="结束">
-      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets/AssetBundles" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets/AssetBundles.manifest" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets/AssetBundles.manifest.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets/AssetBundles.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets/StreamingAssets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets/StreamingAssets.manifest" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets/StreamingAssets.manifest.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets/StreamingAssets.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets/music.ab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets/music.ab.manifest" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets/music.ab.manifest.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets/music.ab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets/object.ab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets/object.ab.manifest" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets/object.ab.manifest.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets/object.ab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets/sprite.ab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets/sprite.ab.manifest" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets/sprite.ab.manifest.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets/sprite.ab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets/ui.ab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets/ui.ab.manifest" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets/ui.ab.manifest.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets/ui.ab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Work/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Work/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Work/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Work/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Work/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Work/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Animators/Box.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Animators/Box.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Package/TreasureChest/Materials/TreasureChest.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Package/TreasureChest/Materials/TreasureChest.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Package/TreasureChest/Textures/chest_01_1001_AlbedoTransparency.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Package/TreasureChest/Textures/chest_01_1001_AlbedoTransparency.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Package/TreasureChest/Textures/chest_01_1001_Normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Package/TreasureChest/Textures/chest_01_1001_Normal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Package/UI/Freeui/ZOSMA/Main/Back/Background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Package/UI/Freeui/ZOSMA/Main/Back/Background.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/GameObject/Account.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GameObject/Account.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/GameObject/BoxOpen.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GameObject/BoxOpen.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/GameObject/Health.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GameObject/Health.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/GameObject/Mage.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GameObject/Mage.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/GameObject/MageAttack.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GameObject/MageAttack.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/GameObject/MageSkill.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GameObject/MageSkill.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/GameObject/RestoreDrug.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GameObject/RestoreDrug.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/GameObject/Slot.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GameObject/Slot.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/GameObject/Sword_Slash_1.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GameObject/Sword_Slash_1.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/GameObject/Sword_Slash_2.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GameObject/Sword_Slash_2.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/GameObject/Sword_Slash_3.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GameObject/Sword_Slash_3.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/GameObject/Sword_Slash_A.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GameObject/Sword_Slash_A.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/GameObject/Task.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GameObject/Task.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/GameObject/Treat.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GameObject/Treat.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/GameObject/UPLevel.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GameObject/UPLevel.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/GameObject/UsePanel.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GameObject/UsePanel.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/GameObject/Warrior.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GameObject/Warrior.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprite/audio_mute.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprite/audio_mute.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprite/audio_on.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprite/audio_on.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Panel/CharacterPanel.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UI/Panel/CharacterPanel.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Panel/ConfirmPanel.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UI/Panel/ConfirmPanel.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Panel/DialoguePanel.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UI/Panel/DialoguePanel.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Panel/LevelPanel.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UI/Panel/LevelPanel.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Panel/LoginPanel.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UI/Panel/LoginPanel.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Panel/MainPanel.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UI/Panel/MainPanel.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Panel/NoticePanel.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UI/Panel/NoticePanel.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Panel/OverPanel.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UI/Panel/OverPanel.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Panel/PlayerTaskPanel.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UI/Panel/PlayerTaskPanel.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Panel/RegisterPanel.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UI/Panel/RegisterPanel.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Panel/SetPanel.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UI/Panel/SetPanel.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Panel/StartPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UI/Panel/StartPanel.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Panel/StartPanel.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UI/Panel/StartPanel.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Panel/TaskManagerPanel.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UI/Panel/TaskManagerPanel.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Panel/UserManagerPanel.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UI/Panel/UserManagerPanel.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/UI/Panel/UserMessagePanel.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/UI/Panel/UserMessagePanel.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/music/Attack1.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/music/Attack1.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/music/Attack2.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/music/Attack2.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/music/Button.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/music/Button.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/music/Hit.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/music/Hit.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/music/OpenBox.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/music/OpenBox.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/music/Run.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/music/Run.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/music/Skill2.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/music/Skill2.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/music/Skill3.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/music/Skill3.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/music/Summo0.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/music/Summo0.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/music/Summon.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/music/Summon.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/music/SwingEmpty.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/music/SwingEmpty.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/music/Walk.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/music/Walk.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/music/bg/Loading.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/music/bg/Loading.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/music/bg/Start.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/music/bg/Start.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/music/bg/fight.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/music/bg/fight.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/music/主角伤害.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/music/主角伤害.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/music/失败音效.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/music/失败音效.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/music/胜利音效.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/music/胜利音效.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Start.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Start.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameFacade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameFacade.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/SceneStateManager/Concrete/StartScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/SceneStateManager/Concrete/StartScene.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tool/AssetFactory/IAssetFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tool/AssetFactory/IAssetFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tool/AssetFactory/ResourceAssetFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tool/AssetFactory/ResourceAssetFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tool/AssetFactory/ResourceAssetProxy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tool/AssetFactory/ResourceAssetProxy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tool/AudioManager/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tool/AudioManager/AudioManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Base/UIType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Base/UIType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/CharacterPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/CharacterPanel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/ConfirmPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/ConfirmPanel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/DialoguePanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/DialoguePanel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/LoginPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/LoginPanel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/MainPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/MainPanel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/NoticePanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/NoticePanel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/OverPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/OverPanel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/PlayerTaskPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/PlayerTaskPanel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/RegisterPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/RegisterPanel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/SetPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/SetPanel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/StartPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/StartPanel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/TaskManagerPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/TaskManagerPanel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/UserManagerPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/UserManagerPanel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/UserMessagePanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/UserMessagePanel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Managers/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Managers/UIManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/02/02fb56134416259c3980e03bd2196bb8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/0c/0c4fee8d3b2ad358bc93cf63bda2b92f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/0e/0ed1214b678c58493decdf5095d1c88a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/11/11b6118263d12e6cf9f0b6d430902360" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/11/11ff03251eba31435908dfbe75050e85" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/1b/1b9a84b0eef2d733ff967a585fd08d3a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/1d/1d3afb3da98c2b7f6cd83c0c513f1122" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/27/27b24daec0603f983edb224167d10cce" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/28/28f45182677ad26c1ef2d2dc374353b5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/35/357b179d746c367395fed49aebafd9b0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/3a/3a1e82cf1d60c98a9c8f30e2304ec148" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/3a/3ad4c483a69023637b982a23a9c6fc30" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/3c/3c8046044b2d8627c7583e22426fedce" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/40/4096b4a2f397658d854ee142344c2a63" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/45/45c7e0cab3764390b58497d8a2ef9473" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/54/54e3f9b40ae57aaf05ab7cfc146571ba" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/55/5506e726b8070ba6558bcf1b069c7200" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/57/577742bb454598dbff60f25edcf38b65" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/5d/5d80528e8ee233271a0261994906fa9a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/63/6372a6109c5111467c43aa45c8be8aa9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/66/6639a5ad9e9ca3b91d8302e785aaddcd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/6b/6b11932c0d7c4305bbccb980150c1373" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/6c/6cab0d75d3c2b711b27ae1bd957d6c13" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/71/715314c23d8a399097400a364a0b23c7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/73/73439bf11977309486332fbf5040b681" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/73/734e07ebdc1fd2719fb0e0b69f7f6e57" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/73/736e4ce8a0786a579945f932f8b2174e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/76/766b6261cbda7eb690a9e342b25416a4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/7e/7e4598c6dd8b029883f60563d9c95549" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/84/8430f730d05a5384014b50bd1796f856" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/87/87258447dd150e32cb6448a29f2825f2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/88/8888d3cd50c7b80782764df140ab076a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/88/88f4e3538aa485a58be94403178b0f06" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/8b/8b3d9a43275890da2b4259dd32be0d60" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/8f/8f3e99280d69ac5a369e8cabc1dfda68" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/97/971537f0b6f7b21a9dbc8d40db3ec065" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/a0/a01b1560d18774703378b9955239db55" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/a0/a0d5033fedf4affb30ee4220994c9031" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/a1/a17f3e793b149cab48e6c051bac1061c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/a4/a45f2680077cdd710928dd66f33464db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/a4/a485f0597ea9473523f47414186c636a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/a7/a7c02364be80495b846cca61523d370a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/a9/a92eed121e2be68694516f561155101a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/a9/a9e0e2ee320279a363be6e6519fa61ff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ac/ac75950c04400b3bb670e5bc71a8b482" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ae/aead17a67978152541945178d6546ff7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/af/af73f35a0349dd1cd88183c63762e287" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/bb/bb4cc79eabfa6ae649d8f0195c595041" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/be/bed371248fa2c476070b66f9d24dec65" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c5/c52ad7b0877876d4cfa1516b36dc2c66" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c5/c52b0f8c67958f6d97b7891b34c698b2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ce/ce56884beac42416378ae79a310cb0ed" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/cf/cfa5bf7750c9ed6d2458979715fc63b9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d6/d67427f1ff1026a70efd3eccaabf606f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d8/d883c9e59dd336b12db54317bf3e59df" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e0/e0025306e2b2b3395c8905d5e3281d7a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e0/e030b0a61c9bfd6db7242972b27939e1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e4/e4cbe353d6cf662d14ccd410efb6f645" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e9/e9f6f64c1d7f1ec6bf259b3cc4d90710" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ef/ef8c6d0e9ff08b8252b944ca692d139a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/f7/f7befb897952f390c325b0393c56da39" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/fa/fa53b7b9643b232dd17fdde1a80261b0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/fa/faa63db227cceef3db97efe6151e8c62" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageManager/ProjectCache" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PackageManager/ProjectCache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageManager/ProjectCache.md5" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PackageManager/ProjectCache.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/6a/6a7409ee100d96929aa76c59c7fef79b.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/6a/6a7409ee100d96929aa76c59c7fef79b.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/PrefabStageHierarchy/0f/0fb506f77a0d20e7c4a4da4d34d71949.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/PrefabStageHierarchy/0f/0fb506f77a0d20e7c4a4da4d34d71949.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/PrefabStageHierarchy/e3/e338700581408444c76e91b676382dd7.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/PrefabStageHierarchy/e3/e338700581408444c76e91b676382dd7.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/22/22e3f2576cd710fa34cb49267296e923.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/22/22e3f2576cd710fa34cb49267296e923.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/86/86b85e6e88a96c84d4c68e42dd058f94.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/86/86b85e6e88a96c84d4c68e42dd058f94.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/UIElements/EditorWindows/UnityEditor.PackageManager.UI.PackageManagerWindow.pref" beforeDir="false" afterPath="$PROJECT_DIR$/Library/UIElements/EditorWindows/UnityEditor.PackageManager.UI.PackageManagerWindow.pref" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/expandedItems" beforeDir="false" afterPath="$PROJECT_DIR$/Library/expandedItems" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.AssemblyReference.cache" afterDir="false" />
-    </list>
+    <list default="true" id="b775748c-78e5-4a6e-a39a-082beed9becd" name="默认的" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -216,113 +13,106 @@
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/NoticePanel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/PlayerController/AttribController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/44B4B453-1FCC-40DC-92DC-39BCBD88DCCE/42/8c77efdc/CharacterController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/InventoryManager/UseItem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/Character Stats/ScriptableObject/CharacterStats.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/PlayerController/PlayerConctroller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/Character Stats/ScriptableObject/CharacterData_SO.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/ObjectController/RockController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/DataManager/DataManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/TaskManager/Task.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/RegisterPanel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/TaskManagerPanel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/InventoryManager/InventoryManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/UserManagerPanel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/ObjectPool/IPoolable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../HotUpdate/BigJobs/Assets/Scripts/SummonBar.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/PlayerController/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/EnemyController/Tool/HealthBarUI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/TaskManager/Message.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/LoginPanel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/CharacterPanel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimationScript/StopMove.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2E0A4813-4CC8-4502-8FB1-1656FDC79D23/80/97296536/Random.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2E0A4813-4CC8-4502-8FB1-1656FDC79D23/0e/9e996174/Time.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../HomeWork 1/Assets/Codes/RobotPlayer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/Character Stats/ScriptableObject/CharacterStats.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/InventoryManager/UseItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/OverPanel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E81851A0-DC73-4A79-AFA9-F5B7273162BE/59/ede50f62/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/AssetFactory/IAssetFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/RegisterPanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/ObjectController/TriggerStayController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/CharacterPanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/LoginPanel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/ObjectController/BoxController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/UserManagerPanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/DataManager/DataManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/DialoguePanel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/TaskManager/TaskManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2E0A4813-4CC8-4502-8FB1-1656FDC79D23/a7/516c2079/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E81851A0-DC73-4A79-AFA9-F5B7273162BE/9f/edec4736/Queue.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2E0A4813-4CC8-4502-8FB1-1656FDC79D23/34/c05fcc4e/Object.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/AssetFactory/ResourceAssetFactory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/AssetFactory/ResourceAssetProxy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/PlayerController/AttackController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/EnemyController/Tool/MageAttack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/EnemyController/Mage.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/Character Stats/ExtensionMethod.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/NoticePanel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/PlayerTaskPanel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/EnemyController/Tool/IEnemy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimationScript/StopAgent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/ConfirmPanel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/ObjectPool/ObjectPool.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/AudioManager/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../HotUpdate/BigJobs/Assets/Scripts/SummonBar.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/EnemyController/Tool/MageAttack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/EnemyController/Tool/EnemySpawn.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameLoop.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../Design Pattarn/unity/MyDemo3/Assets/Scripts/PlayerTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/MainPanel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/ObjectPool/Poolable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/EnemyController/Tool/HealthBarUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../HomeWork 1/Assets/Codes/RobotPlayer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/TaskManagerPanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/AssetFactory/ResourceAssetProxy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/ConfirmPanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/EnemyController/Tool/IEnemy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/AssetFactory/ResourceAssetFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../Design Pattarn/unity/MyDemo3/Assets/Scripts/PlayerTrigger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/AssetFactory/IAssetFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/AudioManager/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Managers/PanelManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2E0A4813-4CC8-4502-8FB1-1656FDC79D23/f8/02e3a272/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/PlayerController/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/PlayerController/AttackController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/MainSceneManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/TaskManager/Task.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/TaskManager/TaskManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/TaskManager/Message.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/PlayerController/PlayerConctroller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/Character Stats/ExtensionMethod.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameLoop.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/ObjectPool/ObjectPool.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/EnhancedPanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/ObjectPool/IPoolable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/ObjectPool/Poolable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimationScript/StopAgent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimationScript/StopMove.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Manager/InventoryManager/InventoryManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/EnemyController/EnemySpawn.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Character/Character Stats/ScriptableObject/CharacterData_SO.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Manager/InventoryManager/Base/BagItem.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Character/ObjectController/RockController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Character/Character Stats/CharacterStats.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Character/ObjectController/BoxController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Manager/InventoryManager/ItemOnSlot.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Manager/InventoryManager/Slot.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/EnemyController/Tool/EnemySpawn.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Manager/InventoryManager/Drag/ItemOnDrag.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Manager/TaskManager/Task.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Manager/TaskManager/TaskManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/SceneState/Concrete/MainScene.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/EnemyController/Tool/MageAttack.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Manager/AudioManager/AudioObjectPool.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Manager/InventoryManager/UseItem.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/PlayerController/PlayerConctroller.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/EnemyController/Mage.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/PlayerController/AttackController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Manager/AudioManager/AudioManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/PlayerController/MoveController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Manager/DataManager/DataManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/EnemyController/EnemyConcroller.cs" />
       <option value="$PROJECT_DIR$/Assets/AssetBundles-Browser/Tests/Editor/ABModelTests.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Manager/SceneStateManager/Concrete/LoadScene.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameLoop.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Manager/SceneStateManager/Concrete/StartScene.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Tool/AssetFactory/IAssetFactory.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Tool/AudioManager/AudioManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/ObjectPool/ObjectPool.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Managers/ConcreteManager/AccountManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Base/UIType.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameFacade.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Managers/UIManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Tool/AssetFactory/ResourceAssetProxy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/StartPanel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/CharacterPanel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/ConfirmPanel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/DialoguePanel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/LoginPanel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/MainPanel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/NoticePanel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/OverPanel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/PlayerTaskPanel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/RegisterPanel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/SetPanel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/TaskManagerPanel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/UserManagerPanel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/UserMessagePanel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Tool/AssetFactory/ResourceAssetFactory.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/LoginPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/TaskManagerPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Manager/SkillManager/Concrete/SkillFour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Manager/SkillManager/Concrete/SkillOne.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Manager/SkillManager/Concrete/SkillThree.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Manager/SkillManager/Concrete/SkillTwo.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/CharacterPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/PlayerTaskPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/SetPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/UserMessagePanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Base/BasePanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Manager/SkillManager/Base/BaseSkill.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Manager/InventoryManager/InventoryManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Manager/InventoryManager/UseItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/PlayerController/MoveController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AnimationScript/Attacked.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AnimationScript/StopMove.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameFacade.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Character/ObjectController/TriggerStayController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/PlayerController/CameraController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/EnemyController/EnemyConcroller.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Manager/SceneStateManager/Concrete/MainScene.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Character/Character Stats/ScriptableObject/CharacterStats.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Character/Character Stats/ScriptableObject/CharacterData_SO.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/PlayerController/AttribController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Managers/PanelManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Manager/MainSceneManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameLoop.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/PlayerController/PlayerConctroller.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/MainPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/PlayerController/AttackController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/ObjectPool/ObjectPool.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/DialoguePanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/EnhancedPanel.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2HZjwdHyCQfyqko8RaV0ymMn4sG" />
@@ -347,7 +137,8 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected=".NET Static Method.DatabasesManager.OpenConnection">
@@ -499,6 +290,40 @@
       <workItem from="1693669784310" duration="135000" />
       <workItem from="1694949419822" duration="10898000" />
       <workItem from="1695011292209" duration="2844000" />
+      <workItem from="1695014315426" duration="342000" />
+      <workItem from="1695046667364" duration="1911000" />
+      <workItem from="1695187851010" duration="815000" />
+      <workItem from="1695222667078" duration="417000" />
+      <workItem from="1695392967791" duration="5294000" />
+      <workItem from="1704725236566" duration="322000" />
+      <workItem from="1705379927333" duration="596000" />
+      <workItem from="1705410574486" duration="596000" />
+      <workItem from="1710739748055" duration="814000" />
+      <workItem from="1710748639596" duration="1680000" />
+      <workItem from="1710751693140" duration="792000" />
+      <workItem from="1710754392194" duration="1861000" />
+      <workItem from="1710763903322" duration="5000" />
+      <workItem from="1710816439748" duration="895000" />
+      <workItem from="1710818497927" duration="584000" />
+      <workItem from="1710819215118" duration="651000" />
+      <workItem from="1710831605414" duration="1721000" />
+      <workItem from="1710834367239" duration="16000" />
+      <workItem from="1710834728127" duration="2007000" />
+      <workItem from="1710839950410" duration="43000" />
+      <workItem from="1710840476386" duration="119000" />
+      <workItem from="1710840824634" duration="615000" />
+      <workItem from="1710841533593" duration="1193000" />
+      <workItem from="1710907535230" duration="37000" />
+      <workItem from="1710907699909" duration="15000" />
+      <workItem from="1710907743981" duration="611000" />
+      <workItem from="1710908381196" duration="159000" />
+      <workItem from="1710908597185" duration="676000" />
+      <workItem from="1710910644497" duration="9822000" />
+      <workItem from="1710940449813" duration="2747000" />
+      <workItem from="1710989808535" duration="12052000" />
+      <workItem from="1711076450121" duration="12748000" />
+      <workItem from="1711161471131" duration="982000" />
+      <workItem from="1711163173625" duration="577000" />
     </task>
     <task id="LOCAL-00001" summary="First submit">
       <created>1669188209138</created>
@@ -598,7 +423,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672884935106</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="加载资源方式的优化及整合">
+      <created>1695014398482</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1695014398482</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -632,6 +464,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/Assets/AssetBundles-Browser" />
+    </ignored-roots>
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="First submit" />
     <MESSAGE value="22" />
@@ -643,10 +478,16 @@
     <MESSAGE value="ObjectPool" />
     <MESSAGE value="2333" />
     <MESSAGE value="结束" />
-    <option name="LAST_COMMIT_MESSAGE" value="结束" />
+    <MESSAGE value="加载资源方式的优化及整合" />
+    <option name="LAST_COMMIT_MESSAGE" value="加载资源方式的优化及整合" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
+    <expand>
+      <path>
+        <item name="Work" type="b2602c69:ProjectViewProjectNode" />
+        <item name="Work" type="462c0819:PsiDirectoryNode" />
+      </path>
+    </expand>
     <select />
   </component>
 </project>

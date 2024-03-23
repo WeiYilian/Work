@@ -7,17 +7,45 @@ public class DialoguePanel : BasePanel
 {
     private static readonly string path = "DialoguePanel";
 
-    public DialoguePanel() : base(new UIType(path)) { }
+    public DialoguePanel(int index) : base(new UIType(path))
+    {
+        msgIndex = index;
+    }
     
     public Text nameText;//角色名字
     public Text contentText;//对话内容
-    private List<Message> messageList;//列表存放对话对象
+    Message msg;
+    private int msgIndex;
+    
+    private List<Message> messageList1 = new List<Message>()
+    {
+        new Message{CharacterName = "神石", Content = "勇士，我这有一些任务需要你去完成"},
+        new Message{CharacterName = playerConctroller.PlayerName, Content = "什么任务？"},
+        new Message{CharacterName = "神石", Content = "请看"}
+    };//列表存放对话对象
+    
+    private List<Message> messageList2 = new List<Message>()
+    {
+        new Message{CharacterName = "铁匠", Content = "勇士，我可以帮你强化武器"},
+        new Message{CharacterName = playerConctroller.PlayerName, Content = "看看"},
+        new Message{CharacterName = "铁匠", Content = "请看"}
+    };//列表存放对话对象
+
+    private List<Message> messageList3 = new List<Message>()
+    {
+        new Message{CharacterName = "商人", Content = "我可以提供一些物资，前提是你有足够的金币"},
+        new Message{CharacterName = playerConctroller.PlayerName, Content = "我可以看看你的商品吗"},
+        new Message{CharacterName = "商人", Content = "请看"}
+    };//列表存放对话对象
+
+    private List<Message> messagesList;
+    
     private int index = 0;//当前对话对象的索引
 
     public override void OnEnter()
     {
         Init();
-        Message msg = getMassage();//获取对象
+        
         if (msg != null)
         {
             nameText.text = msg.CharacterName;//显示的角色名字
@@ -35,22 +63,26 @@ public class DialoguePanel : BasePanel
     {
         nameText = UITool.GetOrAddComponentInChildren<Text>("Name");
         contentText = UITool.GetOrAddComponentInChildren<Text>("ContentText");
-        //创建列表存放对话对象
-        messageList = new List<Message>()
+        switch (msgIndex)
         {
-            new Message{CharacterName = "森林女神", Content = "帅哥，快来玩啊"},
-            new Message{CharacterName = PlayerConctroller.Instance.PlayerName, Content = "我是gay"},
-            new Message{CharacterName = "森林女神", Content = "我不介意的啊"},
-            new Message{CharacterName = PlayerConctroller.Instance.PlayerName, Content = "我介意"},
-            new Message{CharacterName = "森林女神", Content = "好吧……那你要不要看看任务？"}
-        };
+            case 1:
+                messagesList = messageList1;
+                break;
+            case 2:
+                messagesList = messageList2;
+                break;
+            case 3:
+                messagesList = messageList3;
+                break;
+        }
+        msg = getMassage(messagesList);
     }
 
     private void UpdateMessage()
     {
         if (Input.GetMouseButtonDown(0) && Input.anyKey)
         {
-            Message msg = getMassage();//获取对象
+            msg = getMassage(messagesList);
             if (msg != null)
             {
                 nameText.text = msg.CharacterName;//显示的角色名字
@@ -60,7 +92,7 @@ public class DialoguePanel : BasePanel
     }
 
     // ReSharper disable Unity.PerformanceAnalysis
-    private Message getMassage()
+    private Message getMassage(List<Message> messageList)
     {
         if (index < messageList.Count)
         {
@@ -69,7 +101,20 @@ public class DialoguePanel : BasePanel
         else
         {
             Pop();
-            Push(new TaskManagerPanel());
+            switch (msgIndex)
+            {
+                case 1:
+                    Push(new TaskManagerPanel());
+                    break;
+                case 2:
+                    Debug.Log("武器强化");
+                    Push(new EnhancedPanel());
+                    break;
+                case 3:
+                    Debug.Log("购买商品");
+                    break;
+            }
+            
         }
 
         return null;

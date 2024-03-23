@@ -11,7 +11,7 @@ public class SkillFour : BaseSkill
     {
         GameObject go = ObjectPool.Instance.Get("Sword_Slash_A");
         go.transform.position = EmitPoint.transform.position + Vector3.up * 0.5f;
-        go.transform.rotation = PlayerConctroller.Instance.characterController.transform.rotation;
+        go.transform.rotation = playerConctroller.characterController.transform.rotation;
         go.transform.Rotate(new Vector3(0,-90,0));
         ObjectPool.Instance.Remove("Sword_Slash_A",go,1f);
         

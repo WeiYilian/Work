@@ -20,6 +20,7 @@ public class InventoryManager
     }
     
     public List<GameObject> slots;
+    private PlayerConctroller playerConctroller;
     
     public GameObject slotGird;
     public Text itemInfromation;
@@ -27,6 +28,7 @@ public class InventoryManager
     public InventoryManager()
     {
         slots = new List<GameObject>();
+        playerConctroller = MainSceneManager.Instance.PlayerConctroller;
     }
     
     
@@ -49,11 +51,11 @@ public class InventoryManager
             slots.Clear();
         }
 
-        for (int i = 0; i < PlayerConctroller.Instance.myBag.itemList.Count; i++)
+        for (int i = 0; i < playerConctroller.myBag.itemList.Count; i++)
         {
             slots.Add(GameObject.Instantiate(GameFacade.Instance.LoadGameObject("Slot")));
             slots[i].transform.SetParent(slotGird.transform);
-            slots[i].GetComponent<Slot>().SetupSlot(PlayerConctroller.Instance.myBag.itemList[i]);
+            slots[i].GetComponent<Slot>().SetupSlot(playerConctroller.myBag.itemList[i]);
         }
     }
 }

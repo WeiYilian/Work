@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638305517798750757
-    m_Hash: 2561828265
+      ticks: 638465087144512684
+    m_Hash: 3166140781
   m_LockFileStatus:
     m_FilePath: D:/learn/Unity/11111/HomeWork/Work/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638305517799230490
-    m_Hash: 3189830935
+      ticks: 638465087145359243
+    m_Hash: 3232689975
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -37,7 +37,7 @@ m_PackageAssets:
       type: 
       description: Use Unity Sprite Editor Window to create and edit Sprite asset
         properties like pivot, borders and Physics shape
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -58,6 +58,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -70,6 +71,310 @@ m_PackageAssets:
         type: 
         url: 
         revision: 
+        path: 
+    - packageId: com.unity.addressables@1.18.19
+      testable: 0
+      isDirectDependency: 1
+      version: 1.18.19
+      source: 1
+      resolvedPath: D:\learn\Unity\11111\HomeWork\Work\Library\PackageCache\com.unity.addressables@1.18.19
+      assetPath: Packages/com.unity.addressables
+      name: com.unity.addressables
+      displayName: Addressables
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: 'The Addressable Asset System allows the developer to ask for
+        an asset via its address. Once an asset (e.g. a prefab) is marked "addressable",
+        it generates an address which can be called from anywhere. Wherever the asset
+        resides (local or remote), the system will locate it and its dependencies,
+        then return it.
+
+
+        Use ''Window->Asset Management->Addressables''
+        to begin working with the system.
+
+
+        Addressables use asynchronous
+        loading to support loading from any location with any collection of dependencies.
+        Whether you have been using direct references, traditional asset bundles,
+        or Resource folders, addressables provide a simpler way to make your game
+        more dynamic. Addressables simultaneously opens up the world of asset bundles
+        while managing all the complexity.
+
+
+        For usage samples, see github.com/Unity-Technologies/Addressables-Sample'
+      status: 0
+      errors: []
+      versions:
+        all:
+        - 0.0.8-preview
+        - 0.0.12-preview
+        - 0.0.15-preview
+        - 0.0.16-preview
+        - 0.0.18-preview
+        - 0.0.22-preview
+        - 0.0.26-preview
+        - 0.0.27-preview
+        - 0.1.2-preview
+        - 0.2.1-preview
+        - 0.2.2-preview
+        - 0.3.5-preview
+        - 0.4.6-preview
+        - 0.4.8-preview
+        - 0.5.2-preview
+        - 0.5.3-preview
+        - 0.6.6-preview
+        - 0.6.7-preview
+        - 0.6.8-preview
+        - 0.7.4-preview
+        - 0.7.5-preview
+        - 0.8.4-preview
+        - 0.8.6-preview
+        - 1.1.3-preview
+        - 1.1.4-preview
+        - 1.1.5
+        - 1.1.7
+        - 1.1.9
+        - 1.1.10
+        - 1.2.2
+        - 1.2.3
+        - 1.2.4
+        - 1.3.3
+        - 1.3.8
+        - 1.4.0
+        - 1.5.0
+        - 1.5.1
+        - 1.6.0
+        - 1.6.2
+        - 1.7.4
+        - 1.7.5
+        - 1.8.3
+        - 1.8.4
+        - 1.8.5
+        - 1.9.2
+        - 1.10.0
+        - 1.11.2
+        - 1.12.0
+        - 1.13.1
+        - 1.14.2
+        - 1.15.1
+        - 1.16.1
+        - 1.16.6
+        - 1.16.7
+        - 1.16.8
+        - 1.16.10
+        - 1.16.12
+        - 1.16.13
+        - 1.16.15
+        - 1.16.16
+        - 1.16.19
+        - 1.17.0-preview
+        - 1.17.2-preview
+        - 1.17.4-preview
+        - 1.17.5-preview
+        - 1.17.6-preview
+        - 1.17.13
+        - 1.17.15
+        - 1.17.17
+        - 1.18.2
+        - 1.18.4
+        - 1.18.9
+        - 1.18.11
+        - 1.18.13
+        - 1.18.15
+        - 1.18.16
+        - 1.18.19
+        - 1.19.4
+        - 1.19.6
+        - 1.19.9
+        - 1.19.11
+        - 1.19.13
+        - 1.19.14
+        - 1.19.15
+        - 1.19.17
+        - 1.19.18
+        - 1.19.19
+        - 1.20.0
+        - 1.20.3
+        - 1.20.5
+        - 1.21.1
+        - 1.21.2
+        - 1.21.3
+        - 1.21.8
+        - 1.21.9
+        - 1.21.10
+        - 1.21.12
+        - 1.21.14
+        - 1.21.15
+        - 1.21.17
+        - 1.21.18
+        - 1.21.19
+        - 1.21.20
+        - 2.0.3
+        - 2.0.4
+        - 2.0.6
+        - 2.0.8
+        compatible:
+        - 0.0.8-preview
+        - 0.0.12-preview
+        - 0.0.15-preview
+        - 0.0.16-preview
+        - 0.0.18-preview
+        - 0.0.22-preview
+        - 0.0.26-preview
+        - 0.0.27-preview
+        - 0.1.2-preview
+        - 0.2.1-preview
+        - 0.2.2-preview
+        - 0.3.5-preview
+        - 0.4.6-preview
+        - 0.4.8-preview
+        - 0.5.2-preview
+        - 0.5.3-preview
+        - 0.6.6-preview
+        - 0.6.7-preview
+        - 0.6.8-preview
+        - 0.7.4-preview
+        - 0.7.5-preview
+        - 0.8.4-preview
+        - 0.8.6-preview
+        - 1.1.3-preview
+        - 1.1.4-preview
+        - 1.1.5
+        - 1.1.7
+        - 1.1.9
+        - 1.1.10
+        - 1.2.2
+        - 1.2.3
+        - 1.2.4
+        - 1.3.3
+        - 1.3.8
+        - 1.4.0
+        - 1.5.0
+        - 1.5.1
+        - 1.6.0
+        - 1.6.2
+        - 1.7.4
+        - 1.7.5
+        - 1.8.3
+        - 1.8.4
+        - 1.8.5
+        - 1.9.2
+        - 1.10.0
+        - 1.11.2
+        - 1.12.0
+        - 1.13.1
+        - 1.14.2
+        - 1.15.1
+        - 1.16.1
+        - 1.16.6
+        - 1.16.7
+        - 1.16.8
+        - 1.16.10
+        - 1.16.12
+        - 1.16.13
+        - 1.16.15
+        - 1.16.16
+        - 1.16.19
+        - 1.17.0-preview
+        - 1.17.2-preview
+        - 1.17.4-preview
+        - 1.17.5-preview
+        - 1.17.6-preview
+        - 1.17.13
+        - 1.17.15
+        - 1.17.17
+        - 1.18.2
+        - 1.18.4
+        - 1.18.9
+        - 1.18.11
+        - 1.18.13
+        - 1.18.15
+        - 1.18.16
+        - 1.18.19
+        - 1.19.4
+        - 1.19.6
+        - 1.19.9
+        - 1.19.11
+        - 1.19.13
+        - 1.19.14
+        - 1.19.15
+        - 1.19.17
+        - 1.19.18
+        - 1.19.19
+        - 1.20.0
+        - 1.20.3
+        - 1.20.5
+        - 1.21.1
+        - 1.21.2
+        - 1.21.3
+        - 1.21.8
+        - 1.21.9
+        - 1.21.10
+        - 1.21.12
+        - 1.21.14
+        - 1.21.15
+        - 1.21.17
+        - 1.21.18
+        - 1.21.19
+        - 1.21.20
+        verified: 1.18.19
+      dependencies:
+      - name: com.unity.scriptablebuildpipeline
+        version: 1.19.2
+      - name: com.unity.modules.assetbundle
+        version: 1.0.0
+      - name: com.unity.modules.imageconversion
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
+        version: 1.0.0
+      - name: com.unity.modules.unitywebrequest
+        version: 1.0.0
+      - name: com.unity.modules.unitywebrequestassetbundle
+        version: 1.0.0
+      resolvedDependencies:
+      - name: com.unity.scriptablebuildpipeline
+        version: 1.20.2
+      - name: com.unity.modules.assetbundle
+        version: 1.0.0
+      - name: com.unity.modules.imageconversion
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
+        version: 1.0.0
+      - name: com.unity.modules.unitywebrequest
+        version: 1.0.0
+      - name: com.unity.modules.unitywebrequestassetbundle
+        version: 1.0.0
+      keywords:
+      - asset
+      - resources
+      - bundle
+      - bundles
+      - assetbundles
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.cn
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+        configSource: 0
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637704925920000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/Addressables.git
+        revision: eb086c67e6a325f887f087e89a7be9a364fcfe4d
         path: 
     - packageId: com.unity.assetbundlebrowser@https://github.com/Unity-Technologies/AssetBundles-Browser.git
       testable: 0
@@ -99,7 +404,7 @@ m_PackageAssets:
 
         Note: For new projects consider using the
         Addressables package instead.'
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -131,6 +436,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -163,7 +469,7 @@ m_PackageAssets:
         If you are upgrading from the Asset Store version of Cinemachine, delete
         the Cinemachine asset from your project BEFORE installing this version from
         the Package Manager."
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -232,11 +538,14 @@ m_PackageAssets:
         - 2.9.4
         - 2.9.5
         - 2.9.7
+        - 2.10.0
         - 3.0.0-pre.3
         - 3.0.0-pre.4
         - 3.0.0-pre.5
         - 3.0.0-pre.6
         - 3.0.0-pre.7
+        - 3.0.0-pre.8
+        - 3.0.1
         compatible:
         - 2.5.0
         - 2.6.0-preview.2
@@ -282,6 +591,7 @@ m_PackageAssets:
         - 2.9.4
         - 2.9.5
         - 2.9.7
+        - 2.10.0
         verified: 2.6.17
       dependencies: []
       resolvedDependencies: []
@@ -315,6 +625,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -328,12 +639,12 @@ m_PackageAssets:
         url: https://github.com/Unity-Technologies/com.unity.cinemachine.git
         revision: 57501b59e2a5755e26dc54181b2b097af0045a44
         path: 
-    - packageId: com.unity.collab-proxy@1.15.18
+    - packageId: com.unity.collab-proxy@2.0.4
       testable: 0
       isDirectDependency: 1
-      version: 1.15.18
+      version: 2.0.4
       source: 1
-      resolvedPath: D:\learn\Unity\11111\HomeWork\Work\Library\PackageCache\com.unity.collab-proxy@1.15.18
+      resolvedPath: D:\learn\Unity\11111\HomeWork\Work\Library\PackageCache\com.unity.collab-proxy@2.0.4
       assetPath: Packages/com.unity.collab-proxy
       name: com.unity.collab-proxy
       displayName: Version Control
@@ -343,11 +654,10 @@ m_PackageAssets:
         url: 
       category: Editor
       type: 
-      description: The Version Control package gives you the ability to use either
-        Collaborate or Plastic SCM for Unity (beta) in the Unity editor. To use Plastic
-        SCM for Unity (beta), a Plastic SCM subscription is required. Learn more
-        about how you can get started for free by visiting plasticscm.com.
-      status: 4
+      description: The package gives you the ability to use Unity Version Control
+        in the Unity editor. To use Unity Version Control, a subscription is required.
+        Learn more about how you can get started for free by visiting plasticscm.com.
+      status: 0
       errors: []
       versions:
         all:
@@ -420,37 +730,21 @@ m_PackageAssets:
         - 2.1.0-preview.5
         - 2.1.0-preview.6
         - 2.1.0
+        - 2.2.0
+        - 2.3.1
         compatible:
-        - 1.15.18
-        - 1.17.0
-        - 1.17.1
-        - 1.17.2
-        - 1.17.6
-        - 1.17.7
-        - 2.0.0-preview.6
-        - 2.0.0-preview.8
-        - 2.0.0-preview.15
-        - 2.0.0-preview.17
-        - 2.0.0-preview.20
-        - 2.0.0-preview.21
-        - 2.0.0-preview.22
-        - 2.0.0
-        - 2.0.1
-        - 2.0.3
         - 2.0.4
         - 2.0.5
+        - 2.0.7
         - 2.1.0-preview.3
         - 2.1.0-preview.5
         - 2.1.0-preview.6
-        verified: 1.15.18
-      dependencies:
-      - name: com.unity.services.core
-        version: 1.0.1
-      resolvedDependencies:
-      - name: com.unity.services.core
-        version: 1.0.1
-      - name: com.unity.modules.unitywebrequest
-        version: 1.0.0
+        - 2.1.0
+        - 2.2.0
+        - 2.3.1
+        verified: 2.0.7
+      dependencies: []
+      resolvedDependencies: []
       keywords:
       - backup
       - cloud
@@ -458,6 +752,7 @@ m_PackageAssets:
       - collaborate
       - collaboration
       - control
+      - devops
       - plastic
       - plasticscm
       - source
@@ -472,25 +767,26 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637888962690000000
-      documentationUrl: 
+      datePublishedTicks: 638176024310000000
+      documentationUrl: https://docs.unity3d.com/Packages/com.unity.collab-proxy@2.0/manual/index.html
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git
-        revision: 611215dcd30048fa921b4be160048bad4022d65f
+        revision: dc15ef2ed609e8c19d0525a46c5bf7dd78df8432
         path: 
-    - packageId: com.unity.ide.rider@2.0.7
+    - packageId: com.unity.ide.rider@3.0.28
       testable: 0
       isDirectDependency: 1
-      version: 2.0.7
+      version: 3.0.28
       source: 1
-      resolvedPath: D:\learn\Unity\11111\HomeWork\Work\Library\PackageCache\com.unity.ide.rider@2.0.7
+      resolvedPath: D:\learn\Unity\11111\HomeWork\Work\Library\PackageCache\com.unity.ide.rider@3.0.28
       assetPath: Packages/com.unity.ide.rider
       name: com.unity.ide.rider
       displayName: JetBrains Rider Editor
@@ -503,7 +799,7 @@ m_PackageAssets:
       description: The JetBrains Rider Editor package provides an integration for
         using the JetBrains Rider IDE as a code editor for Unity. It adds support
         for generating .csproj files for code completion and auto-discovery of installations.
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -545,6 +841,10 @@ m_PackageAssets:
         - 3.0.21
         - 3.0.22
         - 3.0.24
+        - 3.0.25
+        - 3.0.26
+        - 3.0.27
+        - 3.0.28
         compatible:
         - 1.0.2
         - 1.0.6
@@ -584,19 +884,17 @@ m_PackageAssets:
         - 3.0.21
         - 3.0.22
         - 3.0.24
-        verified: 2.0.7
+        - 3.0.25
+        - 3.0.26
+        - 3.0.27
+        - 3.0.28
+        verified: 3.0.28
       dependencies:
-      - name: com.unity.test-framework
-        version: 1.1.1
-      resolvedDependencies:
-      - name: com.unity.test-framework
-        version: 1.1.31
       - name: com.unity.ext.nunit
         version: 1.0.6
-      - name: com.unity.modules.imgui
-        version: 1.0.0
-      - name: com.unity.modules.jsonserialize
-        version: 1.0.0
+      resolvedDependencies:
+      - name: com.unity.ext.nunit
+        version: 1.0.6
       keywords: []
       registry:
         id: main
@@ -605,25 +903,26 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637334461080000000
-      documentationUrl: 
+      datePublishedTicks: 638447139880000000
+      documentationUrl: https://docs.unity3d.com/Packages/com.unity.ide.rider@3.0/manual/index.html
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.rider.git
-        revision: abb44f053e9a41d2e00e149e32a19bcec76e98b4
+        revision: f4880c72477e9bbd7321c0dbda4428fa10d916df
         path: 
-    - packageId: com.unity.ide.visualstudio@2.0.15
+    - packageId: com.unity.ide.visualstudio@2.0.18
       testable: 0
       isDirectDependency: 1
-      version: 2.0.15
+      version: 2.0.18
       source: 1
-      resolvedPath: D:\learn\Unity\11111\HomeWork\Work\Library\PackageCache\com.unity.ide.visualstudio@2.0.15
+      resolvedPath: D:\learn\Unity\11111\HomeWork\Work\Library\PackageCache\com.unity.ide.visualstudio@2.0.18
       assetPath: Packages/com.unity.ide.visualstudio
       name: com.unity.ide.visualstudio
       displayName: Visual Studio Editor
@@ -636,7 +935,7 @@ m_PackageAssets:
       description: Code editor integration for supporting Visual Studio as code editor
         for unity. Adds support for generating csproj files for intellisense purposes,
         auto discovery of installations, etc.
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -663,6 +962,7 @@ m_PackageAssets:
         - 2.0.18
         - 2.0.20
         - 2.0.21
+        - 2.0.22
         compatible:
         - 1.0.2
         - 1.0.3
@@ -687,13 +987,14 @@ m_PackageAssets:
         - 2.0.18
         - 2.0.20
         - 2.0.21
-        verified: 2.0.21
+        - 2.0.22
+        verified: 2.0.22
       dependencies:
       - name: com.unity.test-framework
         version: 1.1.9
       resolvedDependencies:
       - name: com.unity.test-framework
-        version: 1.1.31
+        version: 1.1.33
       - name: com.unity.ext.nunit
         version: 1.0.6
       - name: com.unity.modules.imgui
@@ -708,18 +1009,19 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637841884840000000
-      documentationUrl: 
+      datePublishedTicks: 638173205920000000
+      documentationUrl: https://docs.unity3d.com/Packages/com.unity.ide.visualstudio@2.0/manual/index.html
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git
-        revision: ca1ece42f5a2c5484ba15a15bb975ccc1f6a1a3c
+        revision: 9d3c07127cbe1916b8abbfd18f71fb8d9df8008c
         path: 
     - packageId: com.unity.ide.vscode@1.2.5
       testable: 0
@@ -739,7 +1041,7 @@ m_PackageAssets:
       description: Code editor integration for supporting Visual Studio Code as code
         editor for unity. Adds support for generating csproj files for intellisense
         purposes, auto discovery of installations, etc.
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -781,6 +1083,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -813,7 +1116,7 @@ m_PackageAssets:
         to C#.  Use the pre-defined build flows, or create your own using the divided
         up APIs.  This system improves build time, fixes incremental build, and provides
         greater flexibility.
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -876,6 +1179,13 @@ m_PackageAssets:
         - 1.21.7
         - 1.21.8
         - 1.21.9
+        - 1.21.20
+        - 1.21.21
+        - 1.21.22
+        - 2.0.1
+        - 2.0.2
+        - 2.1.0
+        - 2.1.2
         compatible:
         - 0.0.5-preview
         - 0.0.6-preview
@@ -936,6 +1246,13 @@ m_PackageAssets:
         - 1.21.7
         - 1.21.8
         - 1.21.9
+        - 1.21.20
+        - 1.21.21
+        - 1.21.22
+        - 2.0.1
+        - 2.0.2
+        - 2.1.0
+        - 2.1.2
         verified: 1.20.2
       dependencies: []
       resolvedDependencies: []
@@ -953,6 +1270,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -966,12 +1284,12 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/Addressables.git
         revision: 748a8aa21f06acfb00681afc0b8a69dadf5ef532
         path: 
-    - packageId: com.unity.shadergraph@10.9.0
+    - packageId: com.unity.shadergraph@10.10.1
       testable: 0
       isDirectDependency: 1
-      version: 10.9.0
+      version: 10.10.1
       source: 1
-      resolvedPath: D:\learn\Unity\11111\HomeWork\Work\Library\PackageCache\com.unity.shadergraph@10.9.0
+      resolvedPath: D:\learn\Unity\11111\HomeWork\Work\Library\PackageCache\com.unity.shadergraph@10.10.1
       assetPath: Packages/com.unity.shadergraph
       name: com.unity.shadergraph
       displayName: Shader Graph
@@ -986,7 +1304,7 @@ m_PackageAssets:
         writing code. Specific render pipelines can implement specific graph features.
         Currently, both the High Definition Rendering Pipeline and the Universal
         Rendering Pipeline support Shader Graph.
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -1088,18 +1406,16 @@ m_PackageAssets:
         - 10.10.0
         - 10.10.1
         compatible:
-        - 10.9.0
-        - 10.10.0
         - 10.10.1
-        verified: 10.9.0
+        verified: 10.10.1
       dependencies:
       - name: com.unity.render-pipelines.core
-        version: 10.9.0
+        version: 10.10.1
       - name: com.unity.searcher
         version: 4.3.2
       resolvedDependencies:
       - name: com.unity.render-pipelines.core
-        version: 10.9.0
+        version: 10.10.1
       - name: com.unity.ugui
         version: 1.0.0
       - name: com.unity.modules.ui
@@ -1120,25 +1436,26 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637853737050000000
+      datePublishedTicks: 638012630530000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.com/Unity-Technologies/Graphics.git
-        revision: 5a193e907cafca7b2fa290618e18c3f28a3b451b
+        revision: 625fae22af5330cedb9096076d8504e74c3c3ea5
         path: 
-    - packageId: com.unity.test-framework@1.1.31
+    - packageId: com.unity.test-framework@1.1.33
       testable: 0
       isDirectDependency: 1
-      version: 1.1.31
+      version: 1.1.33
       source: 1
-      resolvedPath: D:\learn\Unity\11111\HomeWork\Work\Library\PackageCache\com.unity.test-framework@1.1.31
+      resolvedPath: D:\learn\Unity\11111\HomeWork\Work\Library\PackageCache\com.unity.test-framework@1.1.33
       assetPath: Packages/com.unity.test-framework
       name: com.unity.test-framework
       displayName: Test Framework
@@ -1149,7 +1466,7 @@ m_PackageAssets:
       category: Unity Test Framework
       type: 
       description: Test framework for running Edit mode and Play mode tests in Unity.
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -1196,12 +1513,14 @@ m_PackageAssets:
         - 1.3.7
         - 1.3.8
         - 1.3.9
+        - 1.4.0
+        - 1.4.1
+        - 1.4.3
         - 2.0.1-exp.1
         - 2.0.1-exp.2
         - 2.0.1-pre.12
         - 2.0.1-pre.18
         compatible:
-        - 1.1.31
         - 1.1.33
         - 1.3.0
         - 1.3.1
@@ -1212,6 +1531,9 @@ m_PackageAssets:
         - 1.3.7
         - 1.3.8
         - 1.3.9
+        - 1.4.0
+        - 1.4.1
+        - 1.4.3
         - 2.0.1-exp.1
         - 2.0.1-exp.2
         - 2.0.1-pre.12
@@ -1241,18 +1563,19 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637804266210000000
+      datePublishedTicks: 637938212700000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.com/Unity-Technologies/com.unity.test-framework.git
-        revision: 438b0defc147c9be5c969ca79ff03a722b4590ed
+        revision: 34a4d423d64926635eb36d3bb86276179cc186e1
         path: 
     - packageId: com.unity.textmeshpro@3.0.6
       testable: 0
@@ -1290,7 +1613,7 @@ m_PackageAssets:
         performance. Since the geometry created by TextMeshPro uses two triangles
         per character just like Unity''s text components, this improved visual quality
         and flexibility comes at no additional performance cost.'
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -1374,21 +1697,33 @@ m_PackageAssets:
         - 3.0.4
         - 3.0.5
         - 3.0.6
+        - 3.0.7
+        - 3.0.8
         - 3.2.0-pre.1
         - 3.2.0-pre.2
         - 3.2.0-pre.3
         - 3.2.0-pre.4
         - 3.2.0-pre.5
+        - 3.2.0-pre.6
+        - 3.2.0-pre.7
+        - 3.2.0-pre.8
+        - 3.2.0-pre.9
         - 4.0.0-pre.1
         - 4.0.0-pre.2
         compatible:
         - 3.0.6
+        - 3.0.7
+        - 3.0.8
         - 3.2.0-pre.1
         - 3.2.0-pre.2
         - 3.2.0-pre.3
         - 3.2.0-pre.4
         - 3.2.0-pre.5
-        verified: 3.0.6
+        - 3.2.0-pre.6
+        - 3.2.0-pre.7
+        - 3.2.0-pre.8
+        - 3.2.0-pre.9
+        verified: 3.0.8
       dependencies:
       - name: com.unity.ugui
         version: 1.0.0
@@ -1412,6 +1747,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -1442,7 +1778,7 @@ m_PackageAssets:
       type: 
       description: Use Unity Timeline to create cinematic content, game-play sequences,
         audio sequences, and complex particle effects.
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -1523,12 +1859,14 @@ m_PackageAssets:
         - 1.7.3
         - 1.7.4
         - 1.7.5
+        - 1.7.6
         - 1.8.0
         - 1.8.1
         - 1.8.2
         - 1.8.3
         - 1.8.4
         - 1.8.5
+        - 1.8.6
         compatible:
         - 1.4.8
         - 1.5.0-pre.2
@@ -1562,12 +1900,14 @@ m_PackageAssets:
         - 1.7.3
         - 1.7.4
         - 1.7.5
+        - 1.7.6
         - 1.8.0
         - 1.8.1
         - 1.8.2
         - 1.8.3
         - 1.8.4
         - 1.8.5
+        - 1.8.6
         verified: 1.4.8
       dependencies:
       - name: com.unity.modules.director
@@ -1600,6 +1940,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -1633,7 +1974,7 @@ m_PackageAssets:
         and the Game View to arrange, position, and style user interfaces. \u200B
         You cannot use Unity UI to create or change user interfaces in the Unity
         Editor."
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -1665,6 +2006,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -1695,7 +2037,7 @@ m_PackageAssets:
       type: module
       description: 'The AI module implements the path finding features in Unity.
         Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.AIModule.html'
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -1713,6 +2055,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -1743,7 +2086,7 @@ m_PackageAssets:
       type: module
       description: 'AndroidJNI module allows you to call Java code. Scripting API:
         https://docs.unity3d.com/ScriptReference/UnityEngine.AndroidJNIModule.html'
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -1761,6 +2104,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -1791,7 +2135,7 @@ m_PackageAssets:
       type: module
       description: 'The Animation module implements Unity''s animation system. Scripting
         API: https://docs.unity3d.com/ScriptReference/UnityEngine.AnimationModule.html'
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -1809,6 +2153,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -1839,7 +2184,7 @@ m_PackageAssets:
       type: module
       description: 'The AssetBundle module implements the AssetBundle class and related
         APIs to load data from AssetBundles. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.AssetBundleModule.html'
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -1857,6 +2202,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -1887,7 +2233,7 @@ m_PackageAssets:
       type: module
       description: 'The Audio module implements Unity''s audio system. Scripting
         API: https://docs.unity3d.com/ScriptReference/UnityEngine.AudioModule.html'
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -1905,6 +2251,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -1935,7 +2282,7 @@ m_PackageAssets:
       type: module
       description: 'The AutoStreaming module implements the resource auto-streaming
         feature in Unity. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.AutoStreamingModule.html'
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -1977,6 +2324,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -2007,7 +2355,7 @@ m_PackageAssets:
       type: module
       description: 'The Cloth module implements cloth physics simulation through
         the Cloth component. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.ClothModule.html'
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -2029,6 +2377,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -2059,7 +2408,7 @@ m_PackageAssets:
       type: module
       description: 'The Director module implements the PlayableDirector class. Scripting
         API: https://docs.unity3d.com/ScriptReference/UnityEngine.DirectorModule.html'
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -2085,6 +2434,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -2116,7 +2466,7 @@ m_PackageAssets:
       description: 'The ImageConversion module implements the ImageConversion class
         which provides helper methods to convert images from and to PNG, JPEG or
         EXR formats. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.ImageConversionModule.html'
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -2134,6 +2484,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -2164,7 +2515,7 @@ m_PackageAssets:
       type: module
       description: 'The IMGUI module provides Unity''s immediate mode GUI solution
         for creating in-game and editor user interfaces. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.IMGUIModule.html'
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -2182,6 +2533,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -2212,7 +2564,7 @@ m_PackageAssets:
       type: module
       description: 'The JSONSerialize module provides the JsonUtility class which
         lets you serialize Unity Objects to JSON format. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.JSONSerializeModule.html'
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -2230,6 +2582,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -2260,7 +2613,7 @@ m_PackageAssets:
       type: module
       description: 'The ParticleSystem module implements Unity''s Particle System.
         Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.ParticleSystemModule.html'
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -2278,6 +2631,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -2308,7 +2662,7 @@ m_PackageAssets:
       type: module
       description: 'The Physics module implements 3D physics in Unity. Scripting
         API: https://docs.unity3d.com/ScriptReference/UnityEngine.PhysicsModule.html'
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -2326,6 +2680,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -2356,7 +2711,7 @@ m_PackageAssets:
       type: module
       description: 'The Physics2d module implements 2D physics in Unity. Scripting
         API: https://docs.unity3d.com/ScriptReference/UnityEngine.Physics2DModule.html'
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -2374,6 +2729,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -2404,7 +2760,7 @@ m_PackageAssets:
       type: module
       description: 'The ScreenCapture module provides functionality to take screen
         shots using the ScreenCapture class. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.ScreenCaptureModule.html'
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -2426,6 +2782,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -2456,7 +2813,7 @@ m_PackageAssets:
       type: module
       description: 'The Terrain module implements Unity''s Terrain rendering engine
         available through the Terrain component. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.TerrainModule.html'
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -2474,6 +2831,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -2504,7 +2862,7 @@ m_PackageAssets:
       type: module
       description: 'The TerrainPhysics module connects the Terrain and Physics modules
         by implementing the TerrainCollider component. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.TerrainPhysicsModule.html'
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -2530,6 +2888,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -2560,7 +2919,7 @@ m_PackageAssets:
       type: module
       description: 'The Tilemap module implements the Tilemap class. Scripting API:
         https://docs.unity3d.com/ScriptReference/UnityEngine.TilemapModule.html'
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -2582,6 +2941,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -2612,7 +2972,7 @@ m_PackageAssets:
       type: module
       description: 'The UI module implements basic components required for Unity''s
         UI system Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UIModule.html'
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -2630,6 +2990,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -2660,7 +3021,7 @@ m_PackageAssets:
       type: module
       description: 'The UIElements module implements the UIElements retained mode
         UI framework. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UIElementsModule.html'
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -2694,6 +3055,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -2724,7 +3086,7 @@ m_PackageAssets:
       type: module
       description: 'The Umbra module implements Unity''s occlusion culling system.
         Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UmbraModule.html'
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -2742,6 +3104,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -2772,7 +3135,7 @@ m_PackageAssets:
       type: module
       description: 'The UnityAnalytics module implements APIs required to use Unity
         Analytics. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityAnalyticsModule.html'
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -2798,6 +3161,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -2828,7 +3192,7 @@ m_PackageAssets:
       type: module
       description: 'The UnityWebRequest module lets you communicate with http services.
         Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityWebRequestModule.html'
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -2846,6 +3210,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -2876,7 +3241,7 @@ m_PackageAssets:
       type: module
       description: 'The UnityWebRequestAssetBundle module provides the DownloadHandlerAssetBundle
         class to use UnityWebRequest to download Asset Bundles. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityWebRequestAssetBundleModule.html'
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -2902,6 +3267,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -2932,7 +3298,7 @@ m_PackageAssets:
       type: module
       description: 'The UnityWebRequestAudio module provides the DownloadHandlerAudioClip
         class to use UnityWebRequest to download AudioClips. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityWebRequestAudioModule.html'
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -2958,6 +3324,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -2988,7 +3355,7 @@ m_PackageAssets:
       type: module
       description: 'The UnityWebRequestTexture module provides the DownloadHandlerTexture
         class to use UnityWebRequest to download Textures. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityWebRequestTextureModule.html'
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -3014,6 +3381,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -3044,7 +3412,7 @@ m_PackageAssets:
       type: module
       description: 'The UnityWebRequestWWW module implements the legacy WWW lets
         you communicate with http services. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityWebRequestWWWModule.html'
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -3086,6 +3454,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -3116,7 +3485,7 @@ m_PackageAssets:
       type: module
       description: 'The Vehicles module implements vehicle physics simulation through
         the WheelCollider component. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.VehiclesModule.html'
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -3138,6 +3507,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -3168,7 +3538,7 @@ m_PackageAssets:
       type: module
       description: 'The Video module lets you play back video files in your content.
         Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.VideoModule.html'
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -3198,6 +3568,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -3228,7 +3599,7 @@ m_PackageAssets:
       type: module
       description: 'The VR module implements support for virtual reality devices
         in Unity. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.VRModule.html'
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -3260,6 +3631,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -3290,7 +3662,7 @@ m_PackageAssets:
       type: module
       description: 'The Wind module implements the WindZone component which can affect
         terrain rendering and particle simulations. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.WindModule.html'
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -3308,6 +3680,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -3338,7 +3711,7 @@ m_PackageAssets:
       type: module
       description: 'The XR module contains the VR and AR related platform support
         functionality. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.XRModule.html'
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -3368,6 +3741,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -3398,7 +3772,7 @@ m_PackageAssets:
       type: module
       description: 'The Subsystem module contains the definitions and runtime support
         for general subsystems in Unity. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.SubsystemsModule.html'
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -3420,6 +3794,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -3449,7 +3824,7 @@ m_PackageAssets:
       category: 
       type: module
       description: 
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -3479,6 +3854,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -3509,7 +3885,7 @@ m_PackageAssets:
       type: 
       description: Custom version of the nunit package build to work with Unity.
         Used by the Unity Test Framework.
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -3548,6 +3924,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -3561,12 +3938,12 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ext.nunit.git
         revision: 29ea4d6504a5f58fb3a6934db839aa80ae6d9d88
         path: 
-    - packageId: com.unity.render-pipelines.core@10.9.0
+    - packageId: com.unity.render-pipelines.core@10.10.1
       testable: 0
       isDirectDependency: 0
-      version: 10.9.0
+      version: 10.10.1
       source: 1
-      resolvedPath: D:\learn\Unity\11111\HomeWork\Work\Library\PackageCache\com.unity.render-pipelines.core@10.9.0
+      resolvedPath: D:\learn\Unity\11111\HomeWork\Work\Library\PackageCache\com.unity.render-pipelines.core@10.10.1
       assetPath: Packages/com.unity.render-pipelines.core
       name: com.unity.render-pipelines.core
       displayName: Core RP Library
@@ -3583,7 +3960,7 @@ m_PackageAssets:
         by the High Definition Render Pipeline (HDRP) and Universal Render Pipeline
         (URP). If you are creating a custom SRP from scratch or customizing a prebuilt
         SRP, using SRP Core will save you time.
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -3686,10 +4063,8 @@ m_PackageAssets:
         - 10.10.0
         - 10.10.1
         compatible:
-        - 10.9.0
-        - 10.10.0
         - 10.10.1
-        verified: 10.9.0
+        verified: 10.10.1
       dependencies:
       - name: com.unity.ugui
         version: 1.0.0
@@ -3716,18 +4091,19 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637853736930000000
+      datePublishedTicks: 638012630510000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.com/Unity-Technologies/Graphics.git
-        revision: 5a193e907cafca7b2fa290618e18c3f28a3b451b
+        revision: 625fae22af5330cedb9096076d8504e74c3c3ea5
         path: 
     - packageId: com.unity.searcher@4.3.2
       testable: 0
@@ -3746,7 +4122,7 @@ m_PackageAssets:
       type: 
       description: General search window for use in the Editor. First target use
         is for GraphView node search.
-      status: 4
+      status: 0
       errors: []
       versions:
         all:
@@ -3796,6 +4172,7 @@ m_PackageAssets:
         scopes: []
         isDefault: 1
         capabilities: 7
+        configSource: 0
       hasRegistry: 1
       hideInEditor: 1
       entitlements:
@@ -3809,108 +4186,7 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.searcher.git
         revision: 798bfb84c8f09f7788a3a88c3c16d72c50451530
         path: 
-    - packageId: com.unity.services.core@1.0.1
-      testable: 0
-      isDirectDependency: 0
-      version: 1.0.1
-      source: 1
-      resolvedPath: D:\learn\Unity\11111\HomeWork\Work\Library\PackageCache\com.unity.services.core@1.0.1
-      assetPath: Packages/com.unity.services.core
-      name: com.unity.services.core
-      displayName: Services Core
-      author:
-        name: 
-        email: 
-        url: 
-      category: 
-      type: 
-      description: 'This package defines common components used by multiple Game
-        Service packages.
-
-        These are standardized and aim to unify the overall
-        experience of working with Game Services packages.'
-      status: 4
-      errors: []
-      versions:
-        all:
-        - 1.0.1
-        - 1.1.0-pre.7
-        - 1.1.0-pre.8
-        - 1.1.0-pre.9
-        - 1.1.0-pre.10
-        - 1.1.0-pre.11
-        - 1.1.0-pre.41
-        - 1.1.0-pre.69
-        - 1.2.0
-        - 1.3.1
-        - 1.3.2
-        - 1.4.0
-        - 1.4.1
-        - 1.4.2
-        - 1.4.3
-        - 1.5.2
-        - 1.6.0
-        - 1.7.0
-        - 1.7.1
-        - 1.8.1
-        - 1.8.2
-        - 1.9.0
-        - 1.10.1
-        - 1.11.0
-        compatible:
-        - 1.0.1
-        - 1.1.0-pre.7
-        - 1.1.0-pre.8
-        - 1.1.0-pre.9
-        - 1.1.0-pre.10
-        - 1.1.0-pre.11
-        - 1.1.0-pre.41
-        - 1.1.0-pre.69
-        - 1.2.0
-        - 1.3.1
-        - 1.3.2
-        - 1.4.0
-        - 1.4.1
-        - 1.4.2
-        - 1.4.3
-        - 1.5.2
-        - 1.6.0
-        - 1.7.0
-        - 1.7.1
-        - 1.8.1
-        - 1.8.2
-        - 1.9.0
-        - 1.10.1
-        - 1.11.0
-        verified: 1.4.3
-      dependencies:
-      - name: com.unity.modules.unitywebrequest
-        version: 1.0.0
-      resolvedDependencies:
-      - name: com.unity.modules.unitywebrequest
-        version: 1.0.0
-      keywords: []
-      registry:
-        id: main
-        name: 
-        url: https://packages.unity.cn
-        scopes: []
-        isDefault: 1
-        capabilities: 7
-      hasRegistry: 1
-      hideInEditor: 1
-      entitlements:
-        isAllowed: 1
-      isAssetStorePackage: 0
-      datePublishedTicks: 637604883250000000
-      documentationUrl: 
-      hasRepository: 1
-      repository:
-        type: git
-        url: https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git
-        revision: 4cd880d4fd5c60597629249bf4f324e4c8d7aa2e
-        path: 
   m_LocalPackages:
     m_LocalFileStatus: []
 m_ProjectPath: D:/learn/Unity/11111/HomeWork/Work/Packages
-m_EditorVersion: 2020.3.36f1c1 (f1b5774ca487)
+m_EditorVersion: 2020.3.48f1c1 (06fbdfbf16e3)

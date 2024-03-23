@@ -15,10 +15,13 @@ public abstract class BasePanel
     public PanelManager PanelManager { get; private set; }
     //UI管理器
     public UIManager UIManager { get; private set; }
+
+    public static PlayerConctroller playerConctroller;
     
     public BasePanel(UIType uIType)
     {
         UIType = uIType;
+        playerConctroller = MainSceneManager.Instance.PlayerConctroller;
     }
     //初始化UITool
     public void Initialize(UITool tool)

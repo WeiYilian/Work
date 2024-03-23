@@ -15,7 +15,7 @@ public class SetPanel : BasePanel
         
         UITool.GetOrAddComponentInChildren<Button>("Archive").onClick.AddListener(() =>
         {
-            DataManager.UpdataUserMessage(PlayerConctroller.Instance.PlayerAttrib);
+            DataManager.UpdataUserMessage(playerConctroller.PlayerAttrib);
             Push(new NoticePanel("保存成功"));
         });
         

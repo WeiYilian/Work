@@ -13,23 +13,24 @@ public class AttackController
 
     private CharacterStats characterStats;
 
-    private PlayerConctroller PlayerConctroller;
+    private PlayerConctroller playerConctroller;
     
     public AttackController()
     {
-        PlayerConctroller = PlayerConctroller.Instance;
+        playerConctroller = MainSceneManager.Instance.PlayerConctroller;
         
-        animator = PlayerConctroller.animator;
-        characterStats = PlayerConctroller.characterStats;
+        animator = playerConctroller.animator;
+        characterStats = playerConctroller.characterStats;
         Skills = new List<BaseSkill>();
+        
         MainPanel.PlayerInit += Init;
     }
 
     public void Init()
     {
-        Skills.Add(new SkillOne(PlayerConctroller.PanelManager.MainPanel().skill1));
-        Skills.Add(new SkillTwo(PlayerConctroller.PanelManager.MainPanel().skill2));
-        Skills.Add(new SkillThree(PlayerConctroller.PanelManager.MainPanel().skill3));
+        Skills.Add(new SkillOne(playerConctroller.PanelManager.MainPanel().skill1));
+        Skills.Add(new SkillTwo(playerConctroller.PanelManager.MainPanel().skill2));
+        Skills.Add(new SkillThree(playerConctroller.PanelManager.MainPanel().skill3));
         Skills.Add(new SkillFour());
     }
 
@@ -63,7 +64,7 @@ public class AttackController
     public void Attack()
     {
         //动作被打断
-        if (PlayerConctroller.isHit)
+        if (playerConctroller.isHit)
         {
             comboStep = 0;
             return;
@@ -81,9 +82,9 @@ public class AttackController
     /// </summary>
     public void NormalAttack()
     {
-        if (Input.GetMouseButtonDown(0) && !PlayerConctroller.isAttack && !animator.GetCurrentAnimatorStateInfo(0).IsName("jump"))
+        if (Input.GetMouseButtonDown(0) && !playerConctroller.isAttack && !animator.GetCurrentAnimatorStateInfo(0).IsName("jump"))
         {
-            PlayerConctroller.isAttack = true;
+            playerConctroller.isAttack = true;
             //连击次数递增
             comboStep++;
             if (comboStep > 4)
@@ -92,7 +93,7 @@ public class AttackController
             animator.SetTrigger("Attack");
             animator.SetInteger("ComboStep",comboStep);
         }
-        else if (Input.GetMouseButtonDown(0) && !PlayerConctroller.isAttack && animator.GetCurrentAnimatorStateInfo(0).IsName("jump"))
+        else if (Input.GetMouseButtonDown(0) && !playerConctroller.isAttack && animator.GetCurrentAnimatorStateInfo(0).IsName("jump"))
         {
             animator.SetTrigger("JumpAttack");
         }
@@ -118,21 +119,21 @@ public class AttackController
     /// </summary>
     public void SkillTrigger()
     {
-        if (Input.GetKeyUp(KeyCode.Q) && !PlayerConctroller.isAttack && !Skills[0].IsCooling)
+        if (Input.GetKeyUp(KeyCode.Q) && !playerConctroller.isAttack && !Skills[0].IsCooling)
         {
-            PlayerConctroller.isAttack = true;
+            playerConctroller.isAttack = true;
             Skills[0].Image.fillAmount = 1;
             animator.SetTrigger("SkillOne");
         }
-        if (Input.GetKeyUp(KeyCode.E) && !PlayerConctroller.isAttack && !Skills[1].IsCooling)
+        if (Input.GetKeyUp(KeyCode.E) && !playerConctroller.isAttack && !Skills[1].IsCooling)
         {
-            PlayerConctroller.isAttack = true;
+            playerConctroller.isAttack = true;
             Skills[1].Image.fillAmount = 1;
             animator.SetTrigger("SkillTwo");
         }
-        if (Input.GetKeyUp(KeyCode.R) && !PlayerConctroller.isAttack && !Skills[2].IsCooling)
+        if (Input.GetKeyUp(KeyCode.R) && !playerConctroller.isAttack && !Skills[2].IsCooling)
         {
-            PlayerConctroller.isAttack = true;
+            playerConctroller.isAttack = true;
             Skills[2].Image.fillAmount = 1;
             animator.SetTrigger("SkillThree");
         }
@@ -145,8 +146,6 @@ public class AttackController
     /// <summary>
     /// 发出技能后冷却
     /// </summary>
-    /// <param name="skill"></param>
-    /// <param name="cd"></param>
     /// <param name="index"></param>
     /// <param name="cdTime"></param>
     public void CdDecline(int index,ref float cdTime)
@@ -183,12 +182,12 @@ public class AttackController
     /// </summary>
     public void Hit()
     {
-        var colliders = Physics.OverlapSphere(PlayerConctroller.Instance.transform.position, characterStats.characterData.attackRange);
+        var colliders = Physics.OverlapSphere(playerConctroller.transform.position, characterStats.characterData.attackRange);
 
         foreach (var enemy in colliders)
         {
            
-            if (enemy.GetComponent<IEnemy>() != null && PlayerConctroller.Instance.transform.IsFacingTarget(enemy.transform)/*扩展方法*/)
+            if (enemy.GetComponent<IEnemy>() != null && playerConctroller.transform.IsFacingTarget(enemy.transform)/*扩展方法*/)
             {
                 AudioManager.Instance.PlayAudio(2,"Attack1",1);
                 var targetStats = enemy.GetComponent<CharacterStats>();
@@ -204,7 +203,7 @@ public class AttackController
     /// </summary>
     public void AttackOver()
     {
-        PlayerConctroller.isAttack = false;
+        playerConctroller.isAttack = false;
     }
 
 

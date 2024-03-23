@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 2581929299
+CRC: 1106436067
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: e4f87d515d5892a849d5de99aefb79d2
+    Hash: da72b6c6234d19e5cdca4f9e0d47431f
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 3ed2c7c0f717255831f8f4b8fe982327
+    Hash: 17238562a7d05b8ce8ccb5b143bb52f4
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -50,6 +50,16 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: 50aca0d29b1485547959fde9021339e1, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: 7d7e5bc3726558e45b1ab07588b51da5, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a72bddcae9cd2e04bae48da813ad9bfa, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 49318826e2746a941a7731601e3d8ca7, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9e1154694ee8cd845b3005b86e02669f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: 25533d1c18e1d6b4cbfb3633a0985543, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 334d2e3841ae72944a88048f303392bf, type: 3}
@@ -66,17 +76,7 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: 20a348fb5cdf3c046927e7719feb8823, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: 7d7e5bc3726558e45b1ab07588b51da5, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: a72bddcae9cd2e04bae48da813ad9bfa, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 49318826e2746a941a7731601e3d8ca7, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 9e1154694ee8cd845b3005b86e02669f, type: 3}
-- Class: 114
   Script: {fileID: 11500000, guid: 28ff54e14777e6e4c8a48cfd53faefe4, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
 - Class: 115
   Script: {instanceID: 0}
 - Class: 128
@@ -129,21 +129,21 @@ SerializeReferenceClassIdentifiers:
 - AssemblyName: UnityEngine.UI
   ClassName: UnityEngine.UI.SpriteState
 Assets:
-- Assets/Resources/GameObject/Sword_Slash_A.prefab
-- Assets/Resources/GameObject/Slot.prefab
-- Assets/Resources/GameObject/Warrior.prefab
-- Assets/Resources/GameObject/UPLevel.prefab
-- Assets/Resources/GameObject/RestoreDrug.prefab
-- Assets/Resources/GameObject/Account.prefab
-- Assets/Resources/GameObject/Sword_Slash_1.prefab
-- Assets/Resources/GameObject/MageSkill.prefab
-- Assets/Resources/GameObject/Sword_Slash_3.prefab
-- Assets/Resources/GameObject/Health.prefab
-- Assets/Resources/GameObject/Treat.prefab
-- Assets/Resources/GameObject/Mage.prefab
-- Assets/Resources/GameObject/MageAttack.prefab
-- Assets/Resources/GameObject/UsePanel.prefab
-- Assets/Resources/GameObject/BoxOpen.prefab
-- Assets/Resources/GameObject/Sword_Slash_2.prefab
-- Assets/Resources/GameObject/Task.prefab
+- Assets/Prefabs/GameObject/Sword_Slash_A.prefab
+- Assets/Prefabs/GameObject/Slot.prefab
+- Assets/Prefabs/GameObject/Warrior.prefab
+- Assets/Prefabs/GameObject/UPLevel.prefab
+- Assets/Prefabs/GameObject/RestoreDrug.prefab
+- Assets/Prefabs/GameObject/Account.prefab
+- Assets/Prefabs/GameObject/Sword_Slash_1.prefab
+- Assets/Prefabs/GameObject/MageSkill.prefab
+- Assets/Prefabs/GameObject/Sword_Slash_3.prefab
+- Assets/Prefabs/GameObject/Health.prefab
+- Assets/Prefabs/GameObject/Treat.prefab
+- Assets/Prefabs/GameObject/Mage.prefab
+- Assets/Prefabs/GameObject/MageAttack.prefab
+- Assets/Prefabs/GameObject/UsePanel.prefab
+- Assets/Prefabs/GameObject/BoxOpen.prefab
+- Assets/Prefabs/GameObject/Sword_Slash_2.prefab
+- Assets/Prefabs/GameObject/Task.prefab
 Dependencies: []

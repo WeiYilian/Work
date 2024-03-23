@@ -75,15 +75,15 @@ public class CharacterPanel : BasePanel
 
     private void init()
     {
-        characterStats = PlayerConctroller.Instance.characterStats;
+        characterStats = playerConctroller.characterStats;
         GameObject CharacterPanel = GameObject.Find("Canvas/CharacterPanel");
         //背包
         InventoryManager.Instance.slotGird = CharacterPanel.transform.Find("Center/Right/ItemView/Viewport/ItemList").gameObject;
         Text itemInfromation = CharacterPanel.transform.Find("Center/Right/Footer").GetComponentInChildren<Text>();
         InventoryManager.Instance.itemInfromation = itemInfromation;
         //基本属性
-        CharacterPanel.transform.Find("Center/Left/Top/Level/Text").GetComponent<Text>().text = PlayerConctroller.Instance.PlayerAttrib[5];
-        CharacterPanel.transform.Find("Center/Left/Top/name/Text").GetComponent<Text>().text = PlayerConctroller.Instance.PlayerAttrib[1];
+        CharacterPanel.transform.Find("Center/Left/Top/Level/Text").GetComponent<Text>().text = playerConctroller.PlayerAttrib[5];
+        CharacterPanel.transform.Find("Center/Left/Top/name/Text").GetComponent<Text>().text = playerConctroller.PlayerAttrib[1];
 
         damage = CharacterPanel.transform.Find("Center/Left/Button/Damage/InputField/Text").GetComponent<Text>();
         damage.text = characterStats.characterData.minDamage + "~" + characterStats.characterData.maxDamage;

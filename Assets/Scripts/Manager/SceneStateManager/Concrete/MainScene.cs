@@ -20,6 +20,7 @@ public class MainScene : SceneState
             SceneManager.LoadScene("Main");//加载名为sceneName的场景
         }
         PanelManager.Instance.Push(new MainPanel());
+        
         Init();
     }
 
@@ -30,8 +31,9 @@ public class MainScene : SceneState
 
     public void Init()
     {
+        Debug.Log(ObjectPool.Instance);
+        Debug.Log(GameFacade.Instance.LoadGameObject("Health"));
         ObjectPool.Instance.Init("Health",GameFacade.Instance.LoadGameObject("Health"),10);
-
         ObjectPool.Instance.Init("Sword_Slash_A",GameFacade.Instance.LoadGameObject("Sword_Slash_A"),1);
         ObjectPool.Instance.Init("Sword_Slash_1",GameFacade.Instance.LoadGameObject("Sword_Slash_1"),1);
         ObjectPool.Instance.Init("Sword_Slash_2",GameFacade.Instance.LoadGameObject("Sword_Slash_2"),1);

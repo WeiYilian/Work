@@ -5,7 +5,9 @@ using UnityEngine.UI;
 
 public abstract class BaseSkill
 {
-    protected GameObject Player { get; set; }
+    protected GameObject Player { get; private set; }
+    
+    protected PlayerConctroller playerConctroller { get; private set; }
 
     public float SkillCd { get; protected set; }
     
@@ -21,7 +23,8 @@ public abstract class BaseSkill
 
     public BaseSkill(float skillCd,float skillRange,float skillAngle,Image image)
     {
-        Player = PlayerConctroller.Instance.gameObject;
+        playerConctroller = MainSceneManager.Instance.PlayerConctroller;
+        Player = playerConctroller.gameObject;
         SkillCd = skillCd;
         SkillRange = skillRange;
         SkillAngle = skillAngle;
