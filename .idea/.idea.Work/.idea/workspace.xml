@@ -85,7 +85,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Manager/SkillManager/Concrete/SkillOne.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Manager/SkillManager/Concrete/SkillThree.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Manager/SkillManager/Concrete/SkillTwo.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/CharacterPanel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/PlayerTaskPanel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/SetPanel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/UserMessagePanel.cs" />
@@ -113,6 +112,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Tool/ObjectPool/ObjectPool.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/DialoguePanel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/EnhancedPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/CharacterPanel.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2HZjwdHyCQfyqko8RaV0ymMn4sG" />
@@ -324,6 +324,7 @@
       <workItem from="1711076450121" duration="12748000" />
       <workItem from="1711161471131" duration="982000" />
       <workItem from="1711163173625" duration="577000" />
+      <workItem from="1711163863753" duration="514000" />
     </task>
     <task id="LOCAL-00001" summary="First submit">
       <created>1669188209138</created>
@@ -430,7 +431,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695014398482</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="1">
+      <created>1711164402858</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1711164402858</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -479,7 +487,8 @@
     <MESSAGE value="2333" />
     <MESSAGE value="结束" />
     <MESSAGE value="加载资源方式的优化及整合" />
-    <option name="LAST_COMMIT_MESSAGE" value="加载资源方式的优化及整合" />
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
