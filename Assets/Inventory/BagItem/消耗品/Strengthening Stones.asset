@@ -15,6 +15,7 @@ MonoBehaviour:
   itemName: Strengthening Stones
   itemImage: {fileID: 21300000, guid: 8f6d58fd471ba8a45a4b681953e29c26, type: 3}
   itemHeld: 1
-  itemInfo: "\u5F3A\u5316\u77F3\uFF0C\u53EF\u4EE5\u5F3A\u5316\u6B66\u5668"
+  itemInfo: "\u5F3A\u5316\u77F3\uFF0C\u7528\u4E8E\u5F3A\u5316\u6B66\u5668"
+  price: 50
   equip: 0
   useable: 0

@@ -13,8 +13,6 @@ public class BoxController : MonoBehaviour
     private ParticleSystem boxOpen;
     
     public BagItem thisItem;
-    
-    public Inventory PlayerInventory;
 
     private Vector3 target;
 
@@ -35,29 +33,8 @@ public class BoxController : MonoBehaviour
             boxOpen.Play();
             AudioManager.Instance.PlayAudio(4,"OpenBox");
             boxTop.transform.localRotation = Quaternion.Euler(-240,0,0);
-            AddNewItem();
+            InventoryManager.Instance.AddNewItem(thisItem);
             TaskManager.Instance.Tasks[0].TaskCompletion++;
-        }
-    }
-
-    private void AddNewItem()
-    {
-        if (!PlayerInventory.itemList.Contains(thisItem))
-        {
-            if (PlayerInventory.itemList.Count > PlayerInventory.MaxItemListCount) return;
-            for (int i = 0; i < PlayerInventory.itemList.Count; i++)
-            {
-                if (!PlayerInventory.itemList[i])
-                {
-                    PlayerInventory.itemList[i] = thisItem;
-                    return;
-                }
-            }
-            PlayerInventory.itemList.Add(thisItem);
-        }
-        else
-        {
-            thisItem.itemHeld += 1;
         }
     }
 }

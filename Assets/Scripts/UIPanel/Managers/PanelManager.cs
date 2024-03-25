@@ -83,14 +83,42 @@ public class PanelManager
          return stackPanel.Peek();
    }
 
-   public MainPanel mainPanel;
+   #region 游戏主界面获取
+   private MainPanel mainPanel;
 
    public MainPanel MainPanel()
    {
       if (mainPanel == null && stackPanel.Peek().UIType.Name == "MainPanel")
-         return stackPanel.Peek() as MainPanel;
+         mainPanel = stackPanel.Peek() as MainPanel;
       return mainPanel;
    }
+   #endregion
+
+   #region 商店界面获取
+
+   private StorePanel storePanel;
+
+   public StorePanel StorePanel()
+   {
+      if (storePanel == null && stackPanel.Peek().UIType.Name == "StorePanel")
+         storePanel = stackPanel.Peek() as StorePanel;
+      return storePanel;
+   }
+
+   #endregion
+
+   #region 强化界面获取
+
+   private EnhancedPanel enhancedPanel;
+
+   public EnhancedPanel EnhancedPanel()
+   {
+      if (enhancedPanel == null && stackPanel.Peek().UIType.Name == "EnhancedPanel")
+         enhancedPanel = stackPanel.Peek() as EnhancedPanel;
+      return enhancedPanel;
+   }
+
+   #endregion
 
    // public CharacterPanel CharacterPanel()
    // {

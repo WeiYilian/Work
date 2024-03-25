@@ -1,7 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b775748c-78e5-4a6e-a39a-082beed9becd" name="默认的" comment="" />
+    <list default="true" id="b775748c-78e5-4a6e-a39a-082beed9becd" name="默认的" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Inventory/BagItem/消耗品.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Inventory/BagItem/消耗品/BloodVials 1.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Inventory/BagItem/消耗品/BloodVials 1.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Inventory/BagItem/消耗品/BloodVials 2.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Inventory/BagItem/消耗品/BloodVials 2.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Inventory/BagItem/消耗品/BloodVials 3.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Inventory/BagItem/消耗品/BloodVials 3.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Inventory/BagItem/消耗品/BlueBottle 1.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Inventory/BagItem/消耗品/BlueBottle 1.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Inventory/BagItem/消耗品/BlueBottle 2.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Inventory/BagItem/消耗品/BlueBottle 2.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Inventory/BagItem/消耗品/BlueBottle 3.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Inventory/BagItem/消耗品/BlueBottle 3.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Inventory/BagItem/消耗品/Strengthening Stones.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Inventory/BagItem/消耗品/Strengthening Stones.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Inventory/BagItem/装备.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Inventory/BagItem/装备/Bow.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Inventory/BagItem/装备/Bow.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Inventory/BagItem/装备/Sword.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Inventory/BagItem/装备/Sword.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Inventory/BagItem/道具.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Inventory/BagItem/道具/Box.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Inventory/BagItem/道具/Box.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Inventory/BagItem/道具/WaterBottle.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Inventory/BagItem/道具/WaterBottle.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/BagItem/EquipItem.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/BagItem/EquipItem.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/BagItem/RestoreDrug.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/BagItem/RestoreDrug.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/BagItem/Slot.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/BagItem/Slot.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/PlayerController/EquipController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/EnhancementManager.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/EnhancementManager/EnhancedEquip.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/EnhancementManager/EnhancedEquip.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/StoreManager/Merchandise.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/StoreManager/Merchandise.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/StorePanel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/StorePanel.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Work/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Work/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Work/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Work/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/Bag/MyBag.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Inventory/Bag/MyBag.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/BagItem/Bow.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/BagItem/Bow.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/BagItem/Box.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/BagItem/Box.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/BagItem/RestoreDrug.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/BagItem/RestoreDrug.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/BagItem/Strengthening Stones.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/BagItem/Strengthening Stones.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/BagItem/Sword.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/BagItem/Sword.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GameObject/RestoreDrug.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GameObject/RestoreDrug.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GameObject/Slot.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GameObject/Slot.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Panel/CharacterPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Panel/CharacterPanel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Panel/EnhancedPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Panel/EnhancedPanel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Panel/StorePanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Panel/StorePanel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/Character Stats/ScriptableObject/CharacterData_SO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Character Stats/ScriptableObject/CharacterData_SO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/Character Stats/ScriptableObject/CharacterStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Character Stats/ScriptableObject/CharacterStats.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/PlayerController/PlayerConctroller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/PlayerController/PlayerConctroller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/ObjectController/BoxController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/ObjectController/BoxController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/InventoryManager/Base/BagItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/InventoryManager/Base/BagItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/InventoryManager/InventoryManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/InventoryManager/InventoryManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/MainSceneManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/MainSceneManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/SceneStateManager/Concrete/MainScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/SceneStateManager/Concrete/MainScene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/DialoguePanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/DialoguePanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/EnhancedPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/EnhancedPanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/MainPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/MainPanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Managers/PanelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIPanel/Managers/PanelManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/StreamingAssets" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/StreamingAssets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/StreamingAssets.manifest" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/StreamingAssets.manifest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/object.ab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/object.ab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/object.ab.manifest" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/object.ab.manifest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/ui.ab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/ui.ab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/ui.ab.manifest" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/ui.ab.manifest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/expandedItems" beforeDir="false" afterPath="$PROJECT_DIR$/Library/expandedItems" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.AssemblyReference.cache" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,59 +109,54 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/InventoryManager/InventoryManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/Character Stats/ScriptableObject/CharacterStats.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/InventoryManager/UseItem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/OverPanel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/RegisterPanel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/ObjectController/TriggerStayController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/CharacterPanel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/LoginPanel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/ObjectController/BoxController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/UserManagerPanel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/DataManager/DataManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/DialoguePanel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/EnemyController/Mage.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/NoticePanel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/PlayerTaskPanel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../HotUpdate/BigJobs/Assets/Scripts/SummonBar.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/EnemyController/Tool/MageAttack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/EnemyController/Tool/EnemySpawn.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/MainPanel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/EnemyController/Tool/HealthBarUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../HomeWork 1/Assets/Codes/RobotPlayer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/TaskManagerPanel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/AssetFactory/ResourceAssetProxy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/ConfirmPanel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/EnemyController/Tool/IEnemy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/AssetFactory/ResourceAssetFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Design Pattarn/unity/MyDemo3/Assets/Scripts/PlayerTrigger.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/AssetFactory/IAssetFactory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/AudioManager/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Managers/PanelManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/PlayerController/EquipController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/PlayerController/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/PlayerController/AttackController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/MainSceneManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/TaskManager/Task.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/TaskManager/TaskManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/TaskManager/Message.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/PlayerController/PlayerConctroller.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/Character Stats/ExtensionMethod.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameLoop.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/ObjectPool/ObjectPool.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/EnhancedPanel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/ObjectPool/IPoolable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/ObjectPool/Poolable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimationScript/StopAgent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimationScript/StopMove.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/OverPanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/RegisterPanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/CharacterPanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/LoginPanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/UserManagerPanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/DataManager/DataManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/DialoguePanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/StorePanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/NoticePanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/PlayerTaskPanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/MainPanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/TaskManagerPanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/AssetFactory/ResourceAssetProxy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/ConfirmPanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/AssetFactory/ResourceAssetFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/AssetFactory/IAssetFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool/AudioManager/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Managers/PanelManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/TaskManager/Task.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/TaskManager/TaskManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/TaskManager/Message.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/StoreManager/Merchandise.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/PlayerController/PlayerConctroller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/Character Stats/ExtensionMethod.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameLoop.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/EnhancedPanel.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Manager/DataManager/DataManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/AssetBundles-Browser/Tests/Editor/ABModelTests.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Manager/SceneStateManager/Concrete/LoadScene.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Manager/SceneStateManager/Concrete/StartScene.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/AssetFactory/IAssetFactory.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Tool/AudioManager/AudioManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Managers/ConcreteManager/AccountManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Base/UIType.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Managers/UIManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Tool/AssetFactory/ResourceAssetProxy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/StartPanel.cs" />
@@ -90,8 +177,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/UserMessagePanel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Base/BasePanel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Manager/SkillManager/Base/BaseSkill.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Manager/InventoryManager/InventoryManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Manager/InventoryManager/UseItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/PlayerController/MoveController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/AnimationScript/Attacked.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/AnimationScript/StopMove.cs" />
@@ -99,20 +184,30 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Character/ObjectController/TriggerStayController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/PlayerController/CameraController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/EnemyController/EnemyConcroller.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Manager/SceneStateManager/Concrete/MainScene.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Character/Character Stats/ScriptableObject/CharacterStats.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Character/Character Stats/ScriptableObject/CharacterData_SO.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/PlayerController/AttribController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Managers/PanelManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Manager/MainSceneManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameLoop.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/PlayerController/PlayerConctroller.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/MainPanel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/PlayerController/AttackController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Tool/ObjectPool/ObjectPool.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Manager/SceneStateManager/Concrete/MainScene.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/DialoguePanel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/EnhancedPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Manager/StoreManager/Merchandise.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Manager/MainSceneManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Manager/InventoryManager/Slot.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Manager/InventoryManager/UseItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/CharacterPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/StorePanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Character/ObjectController/BoxController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Manager/InventoryManager/InventoryManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/MainPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Managers/PanelManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Character/Character Stats/ScriptableObject/CharacterData_SO.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/PlayerController/PlayerConctroller.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterController/PlayerController/EquipController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Manager/InventoryManager/Base/BagItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Character/Character Stats/ScriptableObject/CharacterStats.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Manager/EnhancementManager/Weapon.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UIPanel/Concrete/EnhancedPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Manager/EnhancementManager/EnhancedEquip.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2HZjwdHyCQfyqko8RaV0ymMn4sG" />
@@ -324,7 +419,9 @@
       <workItem from="1711076450121" duration="12748000" />
       <workItem from="1711161471131" duration="982000" />
       <workItem from="1711163173625" duration="577000" />
-      <workItem from="1711163863753" duration="514000" />
+      <workItem from="1711163863753" duration="12846000" />
+      <workItem from="1711194617990" duration="891000" />
+      <workItem from="1711332443329" duration="9272000" />
     </task>
     <task id="LOCAL-00001" summary="First submit">
       <created>1669188209138</created>
@@ -438,7 +535,14 @@
       <option name="project" value="LOCAL" />
       <updated>1711164402858</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="1">
+      <created>1711164599896</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1711164599896</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

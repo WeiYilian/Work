@@ -93,12 +93,6 @@ public class CharacterStats : MonoBehaviour
         set { characterData.attributePoints = value; }
     }
 
-    public int WeaponLevel
-    {
-        get { if (characterData != null) return characterData.weaponLevel;else return 0; }
-        set { characterData.weaponLevel = value; }
-    }
-
     public int Money
     {
         get { if (characterData != null) return characterData.money;else return 0; }
@@ -189,8 +183,9 @@ public class CharacterStats : MonoBehaviour
         //增加武器伤害
         if (CompareTag("Player"))
         {
-            minDamage = minDamage + characterData.weaponLevel;
-            maxDamage = maxDamage + characterData.weaponLevel;
+            int weapondamage = MainSceneManager.Instance.PlayerConctroller.EquipController.Weapon.equipLevel;
+            minDamage = minDamage + weapondamage;
+            maxDamage = maxDamage + weapondamage;
         }
         
         float coreDamage = UnityEngine.Random.Range(minDamage, maxDamage);

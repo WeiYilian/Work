@@ -112,6 +112,7 @@ public class DialoguePanel : BasePanel
                     break;
                 case 3:
                     Debug.Log("购买商品");
+                    Push(new StorePanel());
                     break;
             }
             

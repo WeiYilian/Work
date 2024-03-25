@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 409208806
+CRC: 1246118743
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: ded5e45e85f899456d124479b1d7bf0d
+    Hash: ad2cef76e55537e604e2cbb96f3155e1
   TypeTreeHash:
     serializedVersion: 2
-    Hash: a08e4a2cb9caa6cb75ba94654921fedf
+    Hash: e0f1fd6ba858eca9f41c8e3c01db3607
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -40,6 +40,8 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: 759df6d170a17884ba540cb05233b2d1, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: 1a0c7efa3db64af42b0ea48fef9185c1, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: 2fafe2cfe61f6974895a912c3755e8f1, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
@@ -51,6 +53,8 @@ ClassTypes:
   Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a79656d7232115b4291214ff48b065db, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 2a4db7a114972834c8e4117be1d82ba3, type: 3}
 - Class: 114
@@ -130,6 +134,7 @@ Assets:
 - Assets/Prefabs/UI/Panel/LevelPanel.prefab
 - Assets/Prefabs/UI/Panel/ConfirmPanel.prefab
 - Assets/Prefabs/UI/Panel/EnhancedPanel.prefab
+- Assets/Prefabs/UI/Panel/StorePanel.prefab
 - Assets/Prefabs/UI/Panel/TaskManagerPanel.prefab
 Dependencies:
 - D:/learn/Unity/11111/HomeWork/Work/Assets/StreamingAssets/object.ab

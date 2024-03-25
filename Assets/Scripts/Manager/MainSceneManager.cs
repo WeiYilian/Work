@@ -14,7 +14,9 @@ public class MainSceneManager : MonoBehaviour
         private set;
     }
 
-    public PlayerConctroller PlayerConctroller;
+    //主角脚本调用
+    [HideInInspector] public PlayerConctroller PlayerConctroller;
+
 
     //判断是否暂停
     [HideInInspector] public bool isTimeOut;

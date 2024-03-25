@@ -32,6 +32,8 @@ public class PlayerConctroller : MonoBehaviour
 
     private AttackController attackController;
 
+    public EquipController EquipController;
+
     private string playerName;
 
     private List<string> playerAttrib;
@@ -72,7 +74,7 @@ public class PlayerConctroller : MonoBehaviour
         PanelManager = PanelManager.Instance;
         moveController = new MoveController();
         attackController = new AttackController();
-        
+        EquipController = new EquipController();
     }
 
     private void Start()

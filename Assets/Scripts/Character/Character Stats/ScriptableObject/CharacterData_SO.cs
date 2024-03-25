@@ -51,9 +51,6 @@ public class CharacterData_SO : ScriptableObject
     public float levelBuff;
 
     public int attributePoints;
-    
-    //武器等级
-    public int weaponLevel;
 
     public int money;
 

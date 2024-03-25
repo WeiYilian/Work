@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a79656d7232115b4291214ff48b065db, type: 3}
-  m_Name: Sword
+  m_Name: BlueBottle 3
   m_EditorClassIdentifier: 
-  itemName: Sword
-  itemImage: {fileID: 21300000, guid: 8f28955d92038974a9b04aafaeea79b0, type: 3}
+  itemName: BlueBottle
+  itemImage: {fileID: 21300000, guid: ace8a02646afeda4880fc3cb14cad705, type: 3}
   itemHeld: 1
-  itemInfo: "\u8FD9\u662F\u4E00\u628A\u666E\u901A\u7684\u5251"
-  equip: 1
+  itemInfo: "\u5927\u9B54\u836F\uFF0C\u53EF\u4EE5\u6062\u590D100\u70B9\u9B54\u6CD5\u503C"
+  price: 30
+  equip: 0
+  useable: 1

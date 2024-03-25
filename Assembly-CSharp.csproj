@@ -61,9 +61,11 @@
     <Compile Include="Assets\Scripts\Tool\AssetFactory\ResourceAssetProxy.cs" />
     <Compile Include="Assets\Scripts\UIPanel\Concrete\EnhancedPanel.cs" />
     <Compile Include="Assets\Asset Package\动画\ExplosiveLLC\SuperCharacterController\SuperCharacterController\Math3d.cs" />
+    <Compile Include="Assets\Scripts\Manager\StoreManager\Merchandise.cs" />
     <Compile Include="Assets\Asset Package\动画\ExplosiveLLC\SuperCharacterController\SuperCharacterController\Core\SuperMath.cs" />
     <Compile Include="Assets\Scripts\Manager\MainSceneManager.cs" />
     <Compile Include="Assets\Scripts\Character\CharacterController\EnemyController\Tool\HealthBarUI.cs" />
+    <Compile Include="Assets\Scripts\UIPanel\Concrete\StorePanel.cs" />
     <Compile Include="Assets\Scripts\Character\CharacterController\PlayerController\MoveController.cs" />
     <Compile Include="Assets\Scripts\Manager\SkillManager\Concrete\SkillOne.cs" />
     <Compile Include="Assets\Scripts\Manager\InventoryManager\Slot.cs" />
@@ -140,6 +142,8 @@
     <Compile Include="Assets\Scripts\UIPanel\Base\UIType.cs" />
     <Compile Include="Assets\Scripts\Manager\SceneStateManager\SceneStateController.cs" />
     <Compile Include="Assets\Scripts\Tool\AssetFactory\ResourceAssetFactory.cs" />
+    <Compile Include="Assets\Scripts\Manager\EnhancementManager\EnhancedEquip.cs" />
+    <Compile Include="Assets\Scripts\Character\CharacterController\PlayerController\EquipController.cs" />
     <None Include="Assets\Asset Package\UI\bag\Cainos\Pixel Art Icon Pack - RPG\Shader\SH UI Icon Outline Color.shader" />
     <None Include="Assets\Asset Package\主角\Toon\Shader\Toon_DoubleShadeWithFeather_Mobile_TransClipping_StencilMask.shader" />
     <None Include="Assets\Asset Package\主角\Toon\Shader\Toon_ShadingGradeMap_Mobile_StencilMask.shader" />

@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 1106436067
+CRC: 3978251246
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: da72b6c6234d19e5cdca4f9e0d47431f
+    Hash: 2107f69a2eba50a831a313063b019239
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 17238562a7d05b8ce8ccb5b143bb52f4
+    Hash: ce85cd73c7ee401eab47768f79b90e72
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -77,6 +77,8 @@ ClassTypes:
   Script: {fileID: 11500000, guid: 20a348fb5cdf3c046927e7719feb8823, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 28ff54e14777e6e4c8a48cfd53faefe4, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3e8fe75422410084b96bae253bc1c13f, type: 3}
 - Class: 115
   Script: {instanceID: 0}
 - Class: 128
@@ -130,16 +132,17 @@ SerializeReferenceClassIdentifiers:
   ClassName: UnityEngine.UI.SpriteState
 Assets:
 - Assets/Prefabs/GameObject/Sword_Slash_A.prefab
-- Assets/Prefabs/GameObject/Slot.prefab
+- Assets/Prefabs/BagItem/Slot.prefab
 - Assets/Prefabs/GameObject/Warrior.prefab
 - Assets/Prefabs/GameObject/UPLevel.prefab
-- Assets/Prefabs/GameObject/RestoreDrug.prefab
+- Assets/Prefabs/BagItem/RestoreDrug.prefab
 - Assets/Prefabs/GameObject/Account.prefab
 - Assets/Prefabs/GameObject/Sword_Slash_1.prefab
 - Assets/Prefabs/GameObject/MageSkill.prefab
 - Assets/Prefabs/GameObject/Sword_Slash_3.prefab
 - Assets/Prefabs/GameObject/Health.prefab
 - Assets/Prefabs/GameObject/Treat.prefab
+- Assets/Prefabs/BagItem/EquipItem.prefab
 - Assets/Prefabs/GameObject/Mage.prefab
 - Assets/Prefabs/GameObject/MageAttack.prefab
 - Assets/Prefabs/GameObject/UsePanel.prefab

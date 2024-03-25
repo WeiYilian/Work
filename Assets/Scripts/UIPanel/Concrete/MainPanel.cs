@@ -8,10 +8,7 @@ public class MainPanel : BasePanel
 {
     private static readonly string path = "MainPanel";
 
-    public MainPanel() : base(new UIType(path)) 
-    {
-        PanelManager.Instance.mainPanel = this;
-    }
+    public MainPanel() : base(new UIType(path)) { }
     
     public static event Action PlayerInit;
     

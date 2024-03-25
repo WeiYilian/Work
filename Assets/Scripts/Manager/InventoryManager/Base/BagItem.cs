@@ -11,6 +11,10 @@ public class BagItem : ScriptableObject
     [TextArea]
     public string itemInfo;
 
+    public int equipLevel;//装备等级
+    
+    public int price;
+
     public bool equip;//是否为装备
 
     public bool useable;//是否可以使用

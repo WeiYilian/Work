@@ -283,6 +283,7 @@
               <e p="PlayerController" t="Include">
                 <e p="AttackController.cs" t="Include" />
                 <e p="CameraController.cs" t="Include" />
+                <e p="EquipController.cs" t="Include" />
                 <e p="MoveController.cs" t="Include" />
                 <e p="PlayerConctroller.cs" t="Include" />
               </e>
@@ -295,6 +296,9 @@
           <e p="GameFacade.cs" t="Include" />
           <e p="GameLoop.cs" t="Include" />
           <e p="Manager" t="Include">
+            <e p="EnhancementManager" t="Include">
+              <e p="EnhancedEquip.cs" t="Include" />
+            </e>
             <e p="InventoryManager" t="Include">
               <e p="Base" t="Include">
                 <e p="BagItem.cs" t="Include" />
@@ -331,6 +335,9 @@
                 <e p="SkillThree.cs" t="Include" />
                 <e p="SkillTwo.cs" t="Include" />
               </e>
+            </e>
+            <e p="StoreManager" t="Include">
+              <e p="Merchandise.cs" t="Include" />
             </e>
             <e p="TaskManager" t="Include">
               <e p="Message.cs" t="Include" />
@@ -378,6 +385,7 @@
               <e p="RegisterPanel.cs" t="Include" />
               <e p="SetPanel.cs" t="Include" />
               <e p="StartPanel.cs" t="Include" />
+              <e p="StorePanel.cs" t="Include" />
               <e p="TaskManagerPanel.cs" t="Include" />
               <e p="UserManagerPanel.cs" t="Include" />
               <e p="UserMessagePanel.cs" t="Include" />
