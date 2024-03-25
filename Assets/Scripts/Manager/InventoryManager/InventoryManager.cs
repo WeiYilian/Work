@@ -78,6 +78,19 @@ public class InventoryManager
             }
             playerInventory.itemList.Add(item);
         }
+        else if (playerInventory.itemList.Contains(item) && item.equip)
+        {
+            if (playerInventory.itemList.Count > playerInventory.MaxItemListCount) return;
+            for (int i = 0; i < playerInventory.itemList.Count; i++)
+            {
+                if (!playerInventory.itemList[i])
+                {
+                    playerInventory.itemList[i] = item;
+                    return;
+                }
+            }
+            playerInventory.itemList.Add(item);
+        }
         else
         {
             item.itemHeld += 1;

@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a79656d7232115b4291214ff48b065db, type: 3}
   m_Name: BlueBottle 3
   m_EditorClassIdentifier: 
-  itemName: BlueBottle
+  itemName: "\u5927\u9B54\u836F"
   itemImage: {fileID: 21300000, guid: ace8a02646afeda4880fc3cb14cad705, type: 3}
   itemHeld: 1
   itemInfo: "\u5927\u9B54\u836F\uFF0C\u53EF\u4EE5\u6062\u590D100\u70B9\u9B54\u6CD5\u503C"
+  equipLevel: 0
   price: 30
   equip: 0
   useable: 1

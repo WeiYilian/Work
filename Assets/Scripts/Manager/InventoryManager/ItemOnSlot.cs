@@ -33,6 +33,19 @@ public class ItemOnSlot : MonoBehaviour
             }
             PlayerInventory.itemList.Add(thisItem);
         }
+        else if (PlayerInventory.itemList.Contains(thisItem) && thisItem.equip)
+        {
+            if (PlayerInventory.itemList.Count > PlayerInventory.MaxItemListCount) return;
+            for (int i = 0; i < PlayerInventory.itemList.Count; i++)
+            {
+                if (!PlayerInventory.itemList[i])
+                {
+                    PlayerInventory.itemList[i] = thisItem;
+                    return;
+                }
+            }
+            PlayerInventory.itemList.Add(thisItem);
+        }
         else
         {
             thisItem.itemHeld += 1;

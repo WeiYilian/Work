@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a79656d7232115b4291214ff48b065db, type: 3}
   m_Name: Box
   m_EditorClassIdentifier: 
-  itemName: Box
+  itemName: "\u68EE\u6797\u7684\u5B9D\u7269"
   itemImage: {fileID: 21300000, guid: c8303e833b0ef184e99c1bc8940fff84, type: 3}
   itemHeld: 1
   itemInfo: "\u4EFB\u52A1\u9053\u5177\uFF0C\u68EE\u6797\u7684\u5B9D\u7269"
+  equipLevel: 0
+  price: 0
   equip: 0
+  useable: 0

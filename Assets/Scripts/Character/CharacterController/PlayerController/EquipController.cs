@@ -8,7 +8,7 @@ public class EquipController
 
     private BagItem armor;//防具
 
-    private BagItem talisman;//护符
+    private BagItem quickItems;//快捷物品
 
     public BagItem Weapon
     {
@@ -22,19 +22,19 @@ public class EquipController
         private set => armor = value;
     }
 
-    public BagItem Talisman
+    public BagItem QuickItems
     {
-        get => talisman;
-        private set => talisman = value;
+        get => quickItems;
+        private set => quickItems = value;
     }
     
     /// <summary>
     /// 更换装备
     /// </summary>
-    public void ReplaceEquip(BagItem weapon,BagItem armor,BagItem talisman)
+    public void ReplaceEquip(BagItem weapon,BagItem armor,BagItem quickItems)
     {
         this.weapon = weapon;
         this.armor = armor;
-        this.talisman = armor;
+        this.quickItems = armor;
     }
 }

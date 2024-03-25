@@ -13,11 +13,22 @@ public class Slot : MonoBehaviour
 
     public GameObject itemInSlot;
 
+    public bool WeaponBox;
+    public bool ArmorBox;
+    public bool QuickItemsBox;
+
     public void ItemOncliked()
     {
         InventoryManager.Instance.UpdateItemInfo(slotInfo);
     }
-    
+
+    private void Start()
+    {
+        if (WeaponBox || ArmorBox || QuickItemsBox)
+            SetupSlot(slotItem);
+            
+    }
+
     public void SetupSlot(BagItem item)
     {
         if (item == null)
@@ -27,7 +38,12 @@ public class Slot : MonoBehaviour
         }
         slotItem = item;
         slotImage.sprite = item.itemImage;
-        slotNum.text = item.itemHeld.ToString();
+        if (item.equip)
+        {
+            if (item.equipLevel > 0) slotNum.text = "+" + item.equipLevel;
+            else slotNum.text = " ";
+        }
+        else slotNum.text = item.itemHeld.ToString();
         slotInfo = item.itemInfo;
     }
 

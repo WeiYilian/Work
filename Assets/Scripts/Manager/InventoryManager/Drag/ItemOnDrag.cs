@@ -15,6 +15,9 @@ public class ItemOnDrag : MonoBehaviour,IBeginDragHandler,IDragHandler,IEndDragH
     
     public UnityEvent<PointerEventData> rightClick;
 
+    private Slot startSlot;
+    private Slot endSlot;
+    
     private void Start()
     {
         rightClick.AddListener(ButtonRightClick);
@@ -25,8 +28,10 @@ public class ItemOnDrag : MonoBehaviour,IBeginDragHandler,IDragHandler,IEndDragH
     {
         //获取原来的格子位置
         originalParent = transform.parent;  
+        //获取原来的物品信息
+        startSlot = originalParent.GetComponent<Slot>();
         //将所要移动的物体变成到父物体的父物体的子物体
-        transform.SetParent(transform.parent.parent);
+        transform.SetParent(transform.parent.parent.parent.parent.parent);
         //物体的位置等于鼠标的位置
         transform.position = eventData.position;
         //关闭BlocksRaycasts功能，这样发射的射线可以返回拖动的物体下面一层的东西
@@ -46,6 +51,13 @@ public class ItemOnDrag : MonoBehaviour,IBeginDragHandler,IDragHandler,IEndDragH
         //如果返回的信息名字为Item Image，表示有物品，需要交换
         if (eventData.pointerCurrentRaycast.gameObject.transform.name == "Item Image")
         {
+            endSlot = eventData.pointerCurrentRaycast.gameObject.transform.parent.GetComponent<Slot>();
+            if (!DetermineType())
+            {
+                Reposition();
+                return;
+            }
+            
             var parent = eventData.pointerCurrentRaycast.gameObject.transform.parent;
             //由于指向物体是Item Image，即Item Image的父物体的父物体才是Slot,故要将拖拽的物体的父物体设成Item Image所在的Slot
             transform.SetParent(parent.parent);
@@ -61,17 +73,30 @@ public class ItemOnDrag : MonoBehaviour,IBeginDragHandler,IDragHandler,IEndDragH
         //放到空格子
         if(eventData.pointerCurrentRaycast.gameObject.transform.name == "Slot(Clone)")
         {
-            //没有物品的话，是返回的Slot
+            endSlot = eventData.pointerCurrentRaycast.gameObject.transform.GetComponent<Slot>();
+            if (!DetermineType())
+            {
+                Reposition();
+                return;
+            }
+
+                //没有物品的话，是返回的Slot
             transform.SetParent(eventData.pointerCurrentRaycast.gameObject.transform);
             transform.position = eventData.pointerCurrentRaycast.gameObject.transform.position;
             GetComponent<CanvasGroup>().blocksRaycasts = true;
             return;
         }
+
+        Reposition();
+    }
+
+
+    public void Reposition()
+    {
         transform.SetParent(originalParent);
         transform.position = originalParent.position;
         GetComponent<CanvasGroup>().blocksRaycasts = true;
     }
-
     
     public void OnPointerClick(PointerEventData eventData)
     {
@@ -86,5 +111,17 @@ public class ItemOnDrag : MonoBehaviour,IBeginDragHandler,IDragHandler,IEndDragH
         GameObject go = ObjectPool.Instance.Get("UsePanel", transform.parent.parent.parent);
         go.transform.position = eventData.position;
         go.GetComponent<UseItem>().Useitem = transform.parent.GetComponent<Slot>().slotItem;
+    }
+
+    //判断交换物品的类型
+    public bool DetermineType()
+    {
+        if (endSlot.WeaponBox && startSlot.slotItem.equipType == 1) return true;
+        if (endSlot.ArmorBox && startSlot.slotItem.equipType == 2) return true;
+        if (endSlot.QuickItemsBox && startSlot.slotItem.useable) return true;
+        if (!endSlot.WeaponBox && !endSlot.ArmorBox && !endSlot.QuickItemsBox) return true;
+        
+        Debug.Log("装备失败");
+        return false;
     }
 }

@@ -17,5 +17,7 @@ public class BagItem : ScriptableObject
 
     public bool equip;//是否为装备
 
+    public int equipType;//1是武器，2是防具
+
     public bool useable;//是否可以使用
 }
