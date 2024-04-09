@@ -21,6 +21,7 @@ public class MoveController
         
         characterController = PlayerConctroller.characterController;
         animator = PlayerConctroller.animator;
+        
         // photographer = PlayerConctroller.photographer;
         // followingTarget = PlayerConctroller.followingTarget;
         //

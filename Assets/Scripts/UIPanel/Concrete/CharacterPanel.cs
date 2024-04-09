@@ -79,6 +79,7 @@ public class CharacterPanel : BasePanel
         GameObject CharacterPanel = GameObject.Find("Canvas/CharacterPanel");
         //背包
         InventoryManager.Instance.slotGird = CharacterPanel.transform.Find("Center/Right/ItemView/Viewport/ItemList").gameObject;
+        InventoryManager.Instance.equipGird = CharacterPanel.transform.Find("Center/Middle").gameObject;
         Text itemInfromation = CharacterPanel.transform.Find("Center/Right/Footer").GetComponentInChildren<Text>();
         InventoryManager.Instance.itemInfromation = itemInfromation;
         //基本属性

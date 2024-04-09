@@ -10,13 +10,15 @@ public class ResourceAssetProxy : IAssetFactory
     private Dictionary<string, GameObject> GOSDic = new Dictionary<string, GameObject>();
     private Dictionary<string, AudioClip> AudioClipDic = new Dictionary<string, AudioClip>();
     private Dictionary<string, Sprite> SpriteDic = new Dictionary<string, Sprite>();
+    private Dictionary<string, RuntimeAnimatorController> AnimatorDic = new Dictionary<string, RuntimeAnimatorController>();
 
     public ResourceAssetProxy()
     {
         if (ResourceAssetFactory.ABDic.Count==0)
         {
-            AssetBundle manifestAB = AssetBundle.LoadFromFile(Application.streamingAssetsPath +  "/AssetBundles");
+            AssetBundle manifestAB = AssetBundle.LoadFromFile(Application.streamingAssetsPath +  "/StreamingAssets");
             AssetBundleManifest manifest = manifestAB.LoadAsset<AssetBundleManifest>("AssetBundleManifest");
+            
             foreach (string ABName in manifest.GetAllAssetBundles())
             {
                 AssetBundle ab = AssetBundle.LoadFromFile(Application.streamingAssetsPath +"/"+ ABName);
@@ -63,6 +65,20 @@ public class ResourceAssetProxy : IAssetFactory
         {
             Sprite asset = assetFactory.LoadAsset(resName, filePath) as Sprite;
             SpriteDic.Add(resName, asset);
+            return asset;
+        }
+    }
+    
+    public RuntimeAnimatorController LoadAnimator(string resName, string filePath)
+    {
+        if (AnimatorDic.ContainsKey(resName))
+        {
+            return AnimatorDic[resName];
+        }
+        else
+        {
+            RuntimeAnimatorController asset = assetFactory.LoadAsset(resName, filePath) as RuntimeAnimatorController;
+            AnimatorDic.Add(resName, asset);
             return asset;
         }
     }

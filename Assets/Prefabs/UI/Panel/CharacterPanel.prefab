@@ -2872,7 +2872,7 @@ GameObject:
   - component: {fileID: 3533342628608059268}
   - component: {fileID: 240852864142116454}
   m_Layer: 5
-  m_Name: 'Middle '
+  m_Name: Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

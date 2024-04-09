@@ -214,7 +214,7 @@
                 </e>
               </e>
             </e>
-            <e p="Frank_Mage" t="Include">
+            <e p="法师动画" t="Include">
               <e p="Documentation" t="Include">
                 <e p="Frank_Mage_Motion_List.txt" t="Include" />
               </e>

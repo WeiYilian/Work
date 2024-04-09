@@ -1,0 +1,29 @@
+ManifestFileVersion: 0
+CRC: 178375414
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 904705a1c56aa49b502a89b24affdfec
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: bf8a30467f1fdb79ec42f9d2623eafe0
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: c4d3424f54002bb49a67d93d76197df1, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0741cada5050d4b4fa1bbb452b4e6108, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 221
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Animations/Animators/Player Animator/PlayerSwordController.controller
+- Assets/Animations/Animators/Player Animator/PlayerUnarmedController.overrideController
+- Assets/Animations/Animators/Player Animator/PlayerMagicController.controller
+Dependencies: []

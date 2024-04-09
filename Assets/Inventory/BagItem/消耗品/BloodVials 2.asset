@@ -19,4 +19,5 @@ MonoBehaviour:
   equipLevel: 0
   price: 20
   equip: 0
+  equipType: 3
   useable: 1

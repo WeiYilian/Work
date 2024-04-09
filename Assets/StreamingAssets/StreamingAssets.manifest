@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 3554956606
+CRC: 2914219591
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -15,4 +15,7 @@ AssetBundleManifest:
       Dependencies: {}
     Info_3:
       Name: sprite.ab
+      Dependencies: {}
+    Info_4:
+      Name: animator.ab
       Dependencies: {}

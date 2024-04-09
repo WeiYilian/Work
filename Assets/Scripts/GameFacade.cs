@@ -80,6 +80,16 @@ public class GameFacade : MonoBehaviour
         return assetFactory.LoadSprite(resName,"sprite.ab");
     }
 
+    /// <summary>
+    /// 获得动画
+    /// </summary>
+    /// <param name="resName"></param>
+    /// <returns></returns>
+    public RuntimeAnimatorController LoadAnimator(string resName)
+    {
+        return assetFactory.LoadAnimator(resName, "animator.ab");
+    }
+
     #endregion
 
 }

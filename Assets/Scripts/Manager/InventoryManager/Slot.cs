@@ -26,7 +26,6 @@ public class Slot : MonoBehaviour
     {
         if (WeaponBox || ArmorBox || QuickItemsBox)
             SetupSlot(slotItem);
-            
     }
 
     public void SetupSlot(BagItem item)

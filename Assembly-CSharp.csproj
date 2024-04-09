@@ -82,6 +82,7 @@
     <Compile Include="Assets\Scripts\Manager\SceneStateManager\Concrete\MainScene.cs" />
     <Compile Include="Assets\Scripts\GameFacade.cs" />
     <Compile Include="Assets\Scripts\UIPanel\Concrete\UserMessagePanel.cs" />
+    <Compile Include="Assets\Scripts\Manager\EnhancementManager\EnhancedEquip.cs" />
     <Compile Include="Assets\Scripts\Tool\ObjectPool\ObjectPool.cs" />
     <Compile Include="Assets\Asset Package\动画\ExplosiveLLC\Warrior FREE\Code\WarriorController.cs" />
     <Compile Include="Assets\Scripts\AnimationScript\Attacked.cs" />
@@ -124,6 +125,7 @@
     <Compile Include="Assets\Scripts\Character\CharacterController\PlayerController\CameraController.cs" />
     <Compile Include="Assets\Asset Package\动画\ExplosiveLLC\SuperCharacterController\SuperCharacterController\Core\SuperCollider.cs" />
     <Compile Include="Assets\Scripts\Manager\SkillManager\Concrete\SkillFour.cs" />
+    <Compile Include="Assets\Scripts\Character\CharacterController\PlayerController\EquipController.cs" />
     <Compile Include="Assets\Scripts\UIPanel\Managers\ConcreteManager\AccountManager.cs" />
     <Compile Include="Assets\Asset Package\动画\ExplosiveLLC\Warrior FREE\Code\WarriorData.cs" />
     <Compile Include="Assets\Scripts\Tool\AudioManager\AudioObjectPool.cs" />
@@ -142,8 +144,6 @@
     <Compile Include="Assets\Scripts\UIPanel\Base\UIType.cs" />
     <Compile Include="Assets\Scripts\Manager\SceneStateManager\SceneStateController.cs" />
     <Compile Include="Assets\Scripts\Tool\AssetFactory\ResourceAssetFactory.cs" />
-    <Compile Include="Assets\Scripts\Manager\EnhancementManager\EnhancedEquip.cs" />
-    <Compile Include="Assets\Scripts\Character\CharacterController\PlayerController\EquipController.cs" />
     <None Include="Assets\Asset Package\UI\bag\Cainos\Pixel Art Icon Pack - RPG\Shader\SH UI Icon Outline Color.shader" />
     <None Include="Assets\Asset Package\主角\Toon\Shader\Toon_DoubleShadeWithFeather_Mobile_TransClipping_StencilMask.shader" />
     <None Include="Assets\Asset Package\主角\Toon\Shader\Toon_ShadingGradeMap_Mobile_StencilMask.shader" />
@@ -186,7 +186,7 @@
     <None Include="Assets\Asset Package\主角\Toon\Shader\Toon_DoubleShadeWithFeather_Clipping.shader" />
     <None Include="Assets\Asset Package\主角\Toon\Shader\Tess\Toon_ShadingGradeMap_AngelRing_TransClipping_Tess.shader" />
     <None Include="Assets\Asset Package\主角\Toon\Shader\ToonColor_ShadingGradeMap_StencilMask.shader" />
-    <None Include="Assets\Asset Package\动画\Frank_Mage\Documentation\Frank_Mage_Motion_List.txt" />
+    <None Include="Assets\Asset Package\动画\法师动画\Documentation\Frank_Mage_Motion_List.txt" />
     <None Include="Assets\Asset Package\主角\Toon\Shader\Tess\Toon_DoubleShadeWithFeather_Clipping_Tess_StencilOut.shader" />
     <None Include="Assets\Asset Package\主角\Toon\Shader\Toon_DoubleShadeWithFeather_Mobile_TransClipping.shader" />
     <None Include="Assets\Asset Package\主角\Toon\Shader\Tess\Toon_ShadingGradeMap_AngelRing_TransClipping_Tess_StencilOut.shader" />

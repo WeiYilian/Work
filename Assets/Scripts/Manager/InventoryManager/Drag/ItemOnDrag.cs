@@ -18,9 +18,14 @@ public class ItemOnDrag : MonoBehaviour,IBeginDragHandler,IDragHandler,IEndDragH
     private Slot startSlot;
     private Slot endSlot;
     
+    EquipController equipController;
+    List<BagItem> itemList;
+    
     private void Start()
     {
         rightClick.AddListener(ButtonRightClick);
+        equipController = MainSceneManager.Instance.PlayerConctroller.EquipController;
+        itemList = MainSceneManager.Instance.PlayerConctroller.myBag.itemList;
     }
     
     //开始拖动时的事件
@@ -80,7 +85,8 @@ public class ItemOnDrag : MonoBehaviour,IBeginDragHandler,IDragHandler,IEndDragH
                 return;
             }
 
-                //没有物品的话，是返回的Slot
+            Debug.Log("装备");
+            //没有物品的话，是返回的Slot
             transform.SetParent(eventData.pointerCurrentRaycast.gameObject.transform);
             transform.position = eventData.pointerCurrentRaycast.gameObject.transform.position;
             GetComponent<CanvasGroup>().blocksRaycasts = true;
@@ -116,12 +122,66 @@ public class ItemOnDrag : MonoBehaviour,IBeginDragHandler,IDragHandler,IEndDragH
     //判断交换物品的类型
     public bool DetermineType()
     {
-        if (endSlot.WeaponBox && startSlot.slotItem.equipType == 1) return true;
-        if (endSlot.ArmorBox && startSlot.slotItem.equipType == 2) return true;
-        if (endSlot.QuickItemsBox && startSlot.slotItem.useable) return true;
+        if (endSlot.WeaponBox && startSlot.slotItem.equipType == 1)
+        {
+            ReplaceWay1();
+            return true;
+        }
+
+        if (endSlot.ArmorBox && startSlot.slotItem.equipType == 2)
+        {
+            ReplaceWay1();
+            return true;
+        }
+
+        if (endSlot.QuickItemsBox && startSlot.slotItem.equipType == 3)
+        {
+            ReplaceWay1();
+            return true;
+        }
+        
+        if (startSlot.WeaponBox)
+        {
+            ReplaceWay2(1);
+            return true;
+        }
+
+        if (startSlot.ArmorBox)
+        {
+            ReplaceWay2(2);
+            return true;
+        }
+
+        if (startSlot.QuickItemsBox)
+        {
+            ReplaceWay2(3);
+            return true;
+        }
+        
         if (!endSlot.WeaponBox && !endSlot.ArmorBox && !endSlot.QuickItemsBox) return true;
         
         Debug.Log("装备失败");
         return false;
+    }
+
+    public void ReplaceWay1()
+    {
+        if(endSlot.slotItem) InventoryManager.Instance.AddNewItem(endSlot.slotItem);
+        equipController.ReplaceWeapon(startSlot.slotItem);
+        itemList.Remove(startSlot.slotItem);
+        itemList.Add(null);
+    }
+
+    public void ReplaceWay2(int index)
+    {
+        if (!endSlot.slotItem) equipController.ReplaceWeapon(null);
+            
+        if (endSlot.slotItem && endSlot.slotItem.equipType == index)
+        {
+            equipController.ReplaceWeapon(endSlot.slotItem);
+            itemList.Remove(endSlot.slotItem);
+            itemList.Add(null);
+        }
+        InventoryManager.Instance.AddNewItem(startSlot.slotItem);
     }
 }

@@ -2,8 +2,14 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
-using UnityEngine.Windows.WebCam;
+
+public enum PlayerState
+{
+    Unarmed,
+    Sword,
+    Bow,
+    Staffs
+}
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerConctroller : MonoBehaviour
@@ -46,6 +52,12 @@ public class PlayerConctroller : MonoBehaviour
     [HideInInspector] public bool isAttack;
     //判断是否死亡
     [HideInInspector] public bool isDeath;
+    //玩家状态
+    [HideInInspector] public PlayerState PlayerState;
+
+    public GameObject WeaponObj;
+
+    public BagItem Weapon;
 
     public string PlayerName
     {
@@ -79,22 +91,12 @@ public class PlayerConctroller : MonoBehaviour
 
     private void Start()
     {
+        EquipController.ReplaceWeapon(Weapon);
+        
         Init();
     }
 
-    public void Update()
-    {
-        if (MainSceneManager.Instance.isTimeOut) return;
-        
-        if (characterStats.CurrentHealth == 0)
-        {
-            PlayerDeath();
-            return;
-        }
-        moveController.PlayerAction();
-        attackController.Attack();
-        
-    }
+    
 
     private void Init()
     {
@@ -108,8 +110,40 @@ public class PlayerConctroller : MonoBehaviour
         characterStats.CurrentHealth = Convert.ToInt32(playerAttrib[7]);
         characterStats.CurrentMana = Convert.ToInt32(playerAttrib[8]);
         characterStats.Money = Convert.ToInt32(playerAttrib[9]);
+
+        //角色状态切换
+        EquipController.ReplaceWeaponState();
+
+    }
+    
+    public void Update()
+    {
+        if (MainSceneManager.Instance.isTimeOut) return;
         
-        
+        if (characterStats.CurrentHealth == 0)
+        {
+            PlayerDeath();
+            return;
+        }
+
+        switch (PlayerState)
+        {
+            case PlayerState.Unarmed:
+                moveController.PlayerAction();
+                break;
+            case PlayerState.Sword:
+                moveController.PlayerAction();
+                attackController.Attack();
+                break;
+            case PlayerState.Bow:
+                moveController.PlayerAction();
+                attackController.Attack();
+                break;
+            case PlayerState.Staffs:
+                moveController.PlayerAction();
+                attackController.Attack();
+                break;
+        }
     }
 
     // ReSharper disable Unity.PerformanceAnalysis

@@ -37,4 +37,9 @@ public class ResourceAssetFactory : IAssetFactory
     {
         return ABDic[filePath].LoadAsset<Sprite>(resName);
     }
+    
+    public RuntimeAnimatorController LoadAnimator(string resName, string filePath)
+    {
+        return ABDic[filePath].LoadAsset<RuntimeAnimatorController>(resName);
+    }
 }

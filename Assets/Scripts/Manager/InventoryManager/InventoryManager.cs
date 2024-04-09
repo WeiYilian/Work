@@ -24,6 +24,7 @@ public class InventoryManager
     private Inventory playerInventory; 
     
     public GameObject slotGird;
+    public GameObject equipGird;
     public Text itemInfromation;
     
     public InventoryManager()
@@ -59,6 +60,11 @@ public class InventoryManager
             slots[i].transform.SetParent(slotGird.transform);
             slots[i].GetComponent<Slot>().SetupSlot(playerConctroller.myBag.itemList[i]);
         }
+
+        EquipController equipController = MainSceneManager.Instance.PlayerConctroller.EquipController;
+        if(equipController.Weapon) equipGird.transform.GetChild(0).GetComponent<Slot>().slotItem = equipController.Weapon;
+        if(equipController.Armor) equipGird.transform.GetChild(1).GetComponent<Slot>().slotItem = equipController.Armor;
+        if(equipController.QuickItems) equipGird.transform.GetChild(2).GetComponent<Slot>().slotItem = equipController.QuickItems;
     }
     
     
@@ -78,7 +84,7 @@ public class InventoryManager
             }
             playerInventory.itemList.Add(item);
         }
-        else if (playerInventory.itemList.Contains(item) && item.equip)
+        else if (playerInventory.itemList.Contains(item))
         {
             if (playerInventory.itemList.Count > playerInventory.MaxItemListCount) return;
             for (int i = 0; i < playerInventory.itemList.Count; i++)
